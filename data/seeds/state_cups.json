@@ -1,0 +1,812 @@
+{
+ "AC": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 0
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 0
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 0
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 0
+  }
+ ],
+ "AL": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 1
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 1
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 1
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 1
+  }
+ ],
+ "AM": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 2
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 2
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 2
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 2
+  }
+ ],
+ "AP": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 3
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 3
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 3
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 3
+  }
+ ],
+ "BA": [
+  {
+   "divisao": 1,
+   "formula": 2,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 4
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 4
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 4
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 4
+  }
+ ],
+ "CE": [
+  {
+   "divisao": 1,
+   "formula": 2,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 5
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 5
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 5
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 5
+  }
+ ],
+ "DF": [
+  {
+   "divisao": 1,
+   "formula": 2,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 6
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 6
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 6
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 6
+  }
+ ],
+ "ES": [
+  {
+   "divisao": 1,
+   "formula": 2,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 7
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 7
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 7
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 7
+  }
+ ],
+ "GO": [
+  {
+   "divisao": 1,
+   "formula": 5,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 8
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 8
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 8
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 8
+  }
+ ],
+ "MA": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 9
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 9
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 9
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 9
+  }
+ ],
+ "MG": [
+  {
+   "divisao": 1,
+   "formula": 4,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 10
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 10
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 10
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 10
+  }
+ ],
+ "MS": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 11
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 11
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 11
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 11
+  }
+ ],
+ "MT": [
+  {
+   "divisao": 1,
+   "formula": 2,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 12
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 12
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 12
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 12
+  }
+ ],
+ "PA": [
+  {
+   "divisao": 1,
+   "formula": 5,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 13
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 13
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 13
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 13
+  }
+ ],
+ "PB": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 14
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 14
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 14
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 14
+  }
+ ],
+ "PE": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 15
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 15
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 15
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 15
+  }
+ ],
+ "PI": [
+  {
+   "divisao": 1,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 16
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 16
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 16
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 16
+  }
+ ],
+ "PR": [
+  {
+   "divisao": 1,
+   "formula": 5,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 17
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 17
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 17
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 17
+  }
+ ],
+ "RJ": [
+  {
+   "divisao": 1,
+   "formula": 5,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 18
+  },
+  {
+   "divisao": 2,
+   "formula": 2,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 18
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 18
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 18
+  }
+ ],
+ "RN": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 19
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 19
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 19
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 19
+  }
+ ],
+ "RO": [
+  {
+   "divisao": 1,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 20
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 20
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 20
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 20
+  }
+ ],
+ "RR": [
+  {
+   "divisao": 1,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 21
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 21
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 21
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 21
+  }
+ ],
+ "RS": [
+  {
+   "divisao": 1,
+   "formula": 5,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 22
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 22
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 22
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 22
+  }
+ ],
+ "SC": [
+  {
+   "divisao": 1,
+   "formula": 2,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 23
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 23
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 23
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 23
+  }
+ ],
+ "SE": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 24
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 24
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 24
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 24
+  }
+ ],
+ "SP": [
+  {
+   "divisao": 1,
+   "formula": 6,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 25
+  },
+  {
+   "divisao": 2,
+   "formula": 6,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 25
+  },
+  {
+   "divisao": 3,
+   "formula": 3,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 25
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 25
+  }
+ ],
+ "TO": [
+  {
+   "divisao": 1,
+   "formula": 1,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 26
+  },
+  {
+   "divisao": 2,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 26
+  },
+  {
+   "divisao": 3,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 26
+  },
+  {
+   "divisao": 4,
+   "formula": 0,
+   "n_rebaixados": 2,
+   "desempate": 0,
+   "id": 26
+  }
+ ]
+}

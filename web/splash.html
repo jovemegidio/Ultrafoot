@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brasfoot Ultimate</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#090a0f;
+  font-family:'Montserrat',sans-serif;
+  display:flex;align-items:center;justify-content:center;
+  height:100vh;overflow:hidden;
+  color:#fff;
+}
+.splash-container{
+  text-align:center;
+  animation:fadeIn 0.8s ease-out;
+}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+.logo-wrapper{
+  position:relative;
+  width:180px;height:180px;margin:0 auto 32px;
+}
+.logo-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(circle, rgba(212,255,0,0.15) 0%, transparent 70%);
+  border-radius:50%;
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:0.8}50%{transform:scale(1.1);opacity:1}}
+
+.logo-icon{
+  position:relative;
+  width:180px;height:180px;
+  display:flex;align-items:center;justify-content:center;
+}
+.logo-icon svg{width:120px;height:120px}
+
+.title{
+  font-size:2.2rem;font-weight:900;letter-spacing:3px;
+  background:linear-gradient(135deg,#d4ff00,#a3cc00);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  margin-bottom:6px;
+}
+.subtitle{
+  font-size:0.85rem;font-weight:300;color:#5a6275;letter-spacing:4px;
+  text-transform:uppercase;margin-bottom:48px;
+}
+
+.progress-container{
+  width:320px;margin:0 auto;
+}
+.progress-bar-bg{
+  width:100%;height:4px;background:rgba(255,255,255,0.06);
+  border-radius:2px;overflow:hidden;
+}
+.progress-bar{
+  height:100%;width:0%;
+  background:linear-gradient(90deg,#d4ff00,#a3cc00);
+  border-radius:2px;
+  transition:width 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.status{
+  margin-top:14px;font-size:0.75rem;color:#5a6275;letter-spacing:1px;
+}
+
+.version{
+  position:fixed;bottom:20px;right:24px;
+  font-size:0.65rem;color:#2a2d3a;letter-spacing:1px;
+}
+.footer{
+  position:fixed;bottom:20px;left:24px;
+  font-size:0.65rem;color:#2a2d3a;letter-spacing:1px;
+}
+</style>
+</head>
+<body>
+<div class="splash-container">
+  <div class="logo-wrapper">
+    <div class="logo-bg"></div>
+    <div class="logo-icon">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Football/Soccer ball -->
+        <circle cx="50" cy="50" r="45" stroke="#d4ff00" stroke-width="2.5" fill="none" opacity="0.9"/>
+        <path d="M50 5 L50 95 M5 50 L95 50" stroke="#d4ff00" stroke-width="0.5" opacity="0.3"/>
+        <!-- Pentagon pattern -->
+        <polygon points="50,20 62,35 58,50 42,50 38,35" fill="#d4ff00" opacity="0.15" stroke="#d4ff00" stroke-width="1"/>
+        <polygon points="73,38 80,55 70,65 58,58 62,42" fill="none" stroke="#d4ff00" stroke-width="0.8" opacity="0.4"/>
+        <polygon points="27,38 20,55 30,65 42,58 38,42" fill="none" stroke="#d4ff00" stroke-width="0.8" opacity="0.4"/>
+        <polygon points="35,68 42,58 58,58 65,68 50,78" fill="none" stroke="#d4ff00" stroke-width="0.8" opacity="0.4"/>
+        <!-- BU text -->
+        <text x="50" y="56" text-anchor="middle" fill="#d4ff00" font-family="Montserrat,sans-serif" font-weight="900" font-size="18" letter-spacing="2">BU</text>
+      </svg>
+    </div>
+  </div>
+  <div class="title">BRASFOOT ULTIMATE</div>
+  <div class="subtitle">Futebol Manager 2026</div>
+  <div class="progress-container">
+    <div class="progress-bar-bg"><div class="progress-bar" id="bar"></div></div>
+    <div class="status" id="status">Inicializando...</div>
+  </div>
+</div>
+<div class="footer">&copy; 2026 Brasfoot Ultimate</div>
+<div class="version">v2.0.0</div>
+
+<script>
+const bar = document.getElementById('bar');
+const status = document.getElementById('status');
+
+async function waitForServer() {
+  status.textContent = 'Iniciando servidor...';
+  bar.style.width = '15%';
+
+  // Read port from sidecar stdout (set by Rust via eval)
+  let apiUrl = window.__BRASFOOT_API_URL || '';
+  let attempts = 0;
+  const maxAttempts = 60; // 30 seconds max
+
+  while (attempts < maxAttempts) {
+    attempts++;
+    bar.style.width = Math.min(15 + (attempts / maxAttempts) * 60, 75) + '%';
+
+    if (attempts > 5) status.textContent = 'Conectando ao backend...';
+    if (attempts > 20) status.textContent = 'Carregando dados do jogo...';
+
+    try {
+      // Try fetching from the server
+      apiUrl = window.__BRASFOOT_API_URL || 'http://127.0.0.1:8226';
+      const r = await fetch(apiUrl + '/api/nomes_times', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: '[]',
+        signal: AbortSignal.timeout(2000)
+      });
+      if (r.ok) {
+        bar.style.width = '85%';
+        status.textContent = 'Servidor pronto!';
+        await new Promise(r => setTimeout(r, 400));
+        bar.style.width = '100%';
+        status.textContent = 'Carregando interface...';
+        await new Promise(r => setTimeout(r, 300));
+        // Navigate to the main app
+        window.location.href = apiUrl;
+        return;
+      }
+    } catch (e) {
+      // Server not ready yet
+    }
+    await new Promise(r => setTimeout(r, 500));
+  }
+
+  status.textContent = 'Erro ao conectar. Reinicie o aplicativo.';
+  bar.style.width = '0%';
+}
+
+waitForServer();
+</script>
+</body>
+</html>

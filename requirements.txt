@@ -1,0 +1,9 @@
+# Runtime
+pywebview>=5.0
+orjson>=3.10.0
+Pillow>=10.0.0
+pypresence>=4.3.0
+mercadopago>=2.2.0
+
+# Dev only (not needed for build)
+# pytest>=9.0.0

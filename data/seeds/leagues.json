@@ -1,0 +1,6108 @@
+{
+  "AFG": [
+    {
+      "divisao": 1,
+      "n_times": 18,
+      "nome": "Afghan Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Afghan 2nd Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Afghan 3rd Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Afghan 4th Division",
+      "licenciada": true
+    }
+  ],
+  "AFS": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Premier Soccer League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "National First Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "ABC Motsepe League",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "SAB League",
+      "licenciada": true
+    }
+  ],
+  "ALE": [
+    {
+      "nome": "Bundesliga",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "2.Bundesliga",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "3.Liga",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Regionalliga",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "ARG": [
+    {
+      "divisao": 1,
+      "n_times": 30,
+      "nome": "Superliga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 36,
+      "nome": "Primera B Nacional",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 64,
+      "nome": "Metropolitana B",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 36,
+      "nome": "Metropolitana C",
+      "licenciada": true
+    }
+  ],
+  "ARS": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Saudi Professional League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "MS League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Second Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Arábia Saudita",
+      "licenciada": true
+    }
+  ],
+  "AUS": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "A-League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "1st NPL",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 16,
+      "nome": "2nd NPL",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 16,
+      "nome": "3rd NPL",
+      "licenciada": true
+    }
+  ],
+  "AUT": [
+    {
+      "nome": "Austrian Bundesliga ",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 12,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 2,
+      "licenciada": true
+    },
+    {
+      "nome": "2. Liga",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 16,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "3. Liga",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 16,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "4. Liga",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 16,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "BEL": [
+    {
+      "nome": "Pro League",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 16,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Challenger Pro League",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 18,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Reserve League 1A",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 18,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Reserve League 2A",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 16,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "BOL": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Primera División",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Nacional B",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "BRA": [
+    {
+      "nome": "Brasileirão",
+      "divisao_nome": "Serie A",
+      "divisao": 1,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Brasileirão",
+      "divisao_nome": "Serie B",
+      "divisao": 2,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Brasileirão",
+      "divisao_nome": "Serie C",
+      "divisao": 3,
+      "n_times": 20,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Brasileirão",
+      "divisao_nome": "Serie D",
+      "divisao": 4,
+      "n_times": 68,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 8,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "CAT": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "QSL Stars League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Qatargas League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Catar",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CHI": [
+    {
+      "divisao": 1,
+      "n_times": 18,
+      "nome": "Primera División",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Primera B",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 14,
+      "nome": "Segunda División",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 14,
+      "nome": "Tercera División",
+      "licenciada": true
+    }
+  ],
+  "CHN": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Super League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "League One",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 16,
+      "nome": "League Two",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 12,
+      "nome": "CMCL",
+      "licenciada": true
+    }
+  ],
+  "COL": [
+    {
+      "divisao": 1,
+      "n_times": 20,
+      "nome": "Liga Águila ",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Torneo Águila",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Colômbia",
+      "licenciada": true
+    }
+  ],
+  "CRO": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Prva liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Druga HNL",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 25,
+      "nome": "Druga NL",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 36,
+      "nome": "Treća NL",
+      "licenciada": true
+    }
+  ],
+  "DIN": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Alka Superligaen",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "NordicBet LIGA ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 14,
+      "nome": "2nd Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 12,
+      "nome": "3nd Division",
+      "licenciada": true
+    }
+  ],
+  "EGI": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Second Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 8,
+      "nome": "Third Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Fourth Division",
+      "licenciada": true
+    }
+  ],
+  "EMI": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Arabian Gulf League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "First Division League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "EQU": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Primera A",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Primera B",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Equador",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Equador",
+      "licenciada": true
+    }
+  ],
+  "ESC": [
+    {
+      "nome": "Scottish Premiership",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 12,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 3,
+      "licenciada": true
+    },
+    {
+      "nome": "Scottish Championship",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 10,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 3,
+      "licenciada": true
+    },
+    {
+      "nome": "Scottish League One",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 10,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 3,
+      "licenciada": true
+    },
+    {
+      "nome": "Scottish League Two",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 10,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 3,
+      "licenciada": true
+    }
+  ],
+  "ESP": [
+    {
+      "nome": "LaLiga",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 20,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "LaLiga 2",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 22,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Primera Federación",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Segunda Federación",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 18,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "EUA": [
+    {
+      "divisao": 1,
+      "n_times": 28,
+      "nome": "Major League Soccer",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 30,
+      "nome": "USL Championship",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "USL League One",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 30,
+      "nome": "PDL",
+      "licenciada": true
+    }
+  ],
+  "FRA": [
+    {
+      "nome": "Ligue 1",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Ligue 2",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "National 1",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 18,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "National 2",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 16,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "GRE": [
+    {
+      "nome": "Stoiximan Super League",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 14,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 2,
+      "licenciada": true
+    },
+    {
+      "nome": "Super League 2",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 14,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 2,
+      "licenciada": true
+    },
+    {
+      "nome": "Campeonato Grego",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Campeonato Grego",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "HOL": [
+    {
+      "nome": "Eredivisie",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Eerste Divisie",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 20,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Tweede Divisie",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 18,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Vierde Divise",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 18,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "ING": [
+    {
+      "nome": "Premier League",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 20,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Championship",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 24,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "League One",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 24,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "League Two",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 24,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "ITA": [
+    {
+      "nome": "Serie A",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 20,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Serie B",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Serie C",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Serie D",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "JAP": [
+    {
+      "divisao": 1,
+      "n_times": 18,
+      "nome": "J1 League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 22,
+      "nome": "J2 League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 18,
+      "nome": "J3 League",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 30,
+      "nome": "Japan Football League",
+      "licenciada": true
+    }
+  ],
+  "MAR": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Botola Pro ",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "Botola 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 30,
+      "nome": "GNFA 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 30,
+      "nome": "GNFA 2",
+      "licenciada": true
+    }
+  ],
+  "MEX": [
+    {
+      "divisao": 1,
+      "n_times": 18,
+      "nome": "Liga MX",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Liga de Expansión MX",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 16,
+      "nome": "Liga Premier",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 8,
+      "nome": "Liga TDP",
+      "licenciada": true
+    }
+  ],
+  "NOR": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Eliteserien",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "OBOS-Ligaen",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "PostNord-Ligaen",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 12,
+      "nome": "NorskTipping-Ligaen",
+      "licenciada": true
+    }
+  ],
+  "PAR": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Primera División",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "División Intermedia",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 8,
+      "nome": "Primera B Nacional",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Paraguai",
+      "licenciada": true
+    }
+  ],
+  "PER": [
+    {
+      "divisao": 1,
+      "n_times": 20,
+      "nome": "Liga 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Liga 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "Liga 3",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 14,
+      "nome": "Peru",
+      "licenciada": true
+    }
+  ],
+  "POR": [
+    {
+      "nome": "Liga Portugal",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Liga Portugal 2",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Liga 3",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 24,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 2,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Liga 4",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 24,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 2,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "RUS": [
+    {
+      "nome": "Russian Premier League",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 16,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "First League",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Second League, Division A",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 24,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 2,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "Second League, Division B",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 24,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 2,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "SER": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Superliga Srbije",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Prva Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Srpska Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Sérvia",
+      "licenciada": true
+    }
+  ],
+  "SUE": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Allsvenskan",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Superettan",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 18,
+      "nome": "Divisão 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 16,
+      "nome": "Divisão 2",
+      "licenciada": true
+    }
+  ],
+  "SUI": [
+    {
+      "nome": "Swiss Super League",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 12,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 3,
+      "licenciada": true
+    },
+    {
+      "nome": "Challenge League",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 10,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 3,
+      "licenciada": true
+    },
+    {
+      "nome": "Promotion League",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 10,
+      "n_rebaixados": 1,
+      "rebaixados_direto": 1,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 3,
+      "licenciada": true
+    },
+    {
+      "nome": "Campeonato Suiço",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "TUR": [
+    {
+      "nome": "Süper Lig",
+      "divisao_nome": "",
+      "divisao": 1,
+      "n_times": 18,
+      "n_rebaixados": 3,
+      "rebaixados_direto": 3,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "1.Lig",
+      "divisao_nome": "",
+      "divisao": 2,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "2.Lig",
+      "divisao_nome": "",
+      "divisao": 3,
+      "n_times": 20,
+      "n_rebaixados": 4,
+      "rebaixados_direto": 4,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    },
+    {
+      "nome": "3.Lig",
+      "divisao_nome": "",
+      "divisao": 4,
+      "n_times": 20,
+      "n_rebaixados": 2,
+      "rebaixados_direto": 2,
+      "dois_turnos": true,
+      "n_grupos": 0,
+      "formula": 0,
+      "licenciada": true
+    }
+  ],
+  "UCR": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "1º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "Ucrânia",
+      "licenciada": true
+    }
+  ],
+  "URU": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Primera División",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "Segunda División",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Uruguai",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 12,
+      "nome": "Uruguai",
+      "licenciada": true
+    }
+  ],
+  "VEN": [
+    {
+      "divisao": 1,
+      "n_times": 20,
+      "nome": "Primera División",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Segunda División",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Tercera División ",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 68,
+      "nome": "Venezuela",
+      "licenciada": true
+    }
+  ],
+  "AGO": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Girabola",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Gira Angola",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Provincial Football Stage",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Fourth Division",
+      "licenciada": true
+    }
+  ],
+  "AIA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "AFA Senior League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Anguilla",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ALB": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Kategoria Superiore",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "Kategoria e Parë",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Kategoria e Dytë",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Kategoria e Tretë",
+      "licenciada": true
+    }
+  ],
+  "ALG": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Ligue Pro 1 d'Algérie",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Ligue Pro 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 16,
+      "nome": "Ligue Pro 3",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 16,
+      "nome": "Ligue Pro 4",
+      "licenciada": true
+    }
+  ],
+  "AND": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Primera Divisió",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "Segona Divisió",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Andorra",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Andorra",
+      "licenciada": true
+    }
+  ],
+  "ARM": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Armenian Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Armenian First League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ARU": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Aruba Division di Honor",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ATG": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "ABFA Premier Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "AZE": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Supreme League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Birinci Dasta",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Reserve League",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 16,
+      "nome": "Birinci Adsta 2",
+      "licenciada": true
+    }
+  ],
+  "BAH": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "BFA Senior League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BAN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Bangladesh Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Bangladesh Championship League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BAR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "BFA Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "BEN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Championnat National du Bénin",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BER": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Bermuda Premier Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BHR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Bahraini Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BIE": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Vysheyshaya Liha",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Pershava Liha",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Druhava Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BKF": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Burkinabè Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BLZ": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Premier League of Belize",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BON": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Bonaire League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BOS": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Premijer Liga BiH",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Prva Liga FBiH",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Prva Liga RS",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BOT": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "Botsuana",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BRU": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BUL": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "3º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 16,
+      "nome": "4º DIvisão",
+      "licenciada": true
+    }
+  ],
+  "BUR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Ligue 1 du Burundi",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "BUT": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Bhutan A-Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CAM": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Ligue 1 du Cameroun",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Ligue 2 du Cameroun",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CAN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "CSL Super League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 14,
+      "nome": "PCSL 1st Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "PCSL 2nd Division",
+      "licenciada": true
+    }
+  ],
+  "CAV": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Cape Verdean Football Championship",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CAZ": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "First Division ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "Lower Division A",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "Lower Division A",
+      "licenciada": true
+    }
+  ],
+  "CHA": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Championnat du Tchad",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CMJ": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "J1 League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "J2 League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "J3 League",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CNG": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "MTN Ligue 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "MTN Ligue 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "COM": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Comoros Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 14,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CPR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Cypriot First Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Cypriot Second Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4º Divisão",
+      "licenciada": true
+    }
+  ],
+  "CRN": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Championnat du Congo Brazzaville",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CRS": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "K League 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "K League 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Liga K2",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 25,
+      "nome": "Liga K3",
+      "licenciada": true
+    }
+  ],
+  "CUB": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Campeonato Nacional de Cuba",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "CUR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Curaçao Sekshon Pagá",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "DJI": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Djibouti Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "DOM": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Liga Dominicana de Fútbol",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ELQ": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Fortuna Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "DOXXbet Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3. Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4. Liga",
+      "licenciada": true
+    }
+  ],
+  "ELS": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Primera División de El Salvador",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 14,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ERI": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Eritrean Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ESS": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Eswatini Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "EST": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Meistriliiga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Esiliiga",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ESV": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Slovenian PrvaLiga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Slovenian 2.SNL",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 16,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "Eslovênia",
+      "licenciada": true
+    }
+  ],
+  "ETI": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Ethiopian Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "FIJ": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Liga Nacional",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Second Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "FIL": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Philippines Football League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "FIN": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Veikkausliiga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Ykkönen",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 18,
+      "nome": "Kakkonen",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 18,
+      "nome": "Kolmonen",
+      "licenciada": true
+    }
+  ],
+  "GAB": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Championnat du Gabon",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GAM": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "GFF League First Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GAN": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2nd Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GDA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GEO": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Crystalbet Erovnuli Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Erovnuli Liga 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 16,
+      "nome": "Liga 3",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "GFR": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Championnat de Guyane",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GIB": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GMA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GNB": [
+    {
+      "divisao": 1,
+      "n_times": 8,
+      "nome": "Campeonato da Guiné-Bissau",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GNE": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Liga Nacional de Guinea Ecuatorial",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GRA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Grenada Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GUA": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Liga Nacional",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Primera División",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GUI": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Ligue 1 Guinéenne",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 14,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "GUN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Championnat de la Guinée",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "HAI": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Ligue Haïtienne",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "HKG": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Hong Kong Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "HON": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Liga Nacional de Honduras",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "HUN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "NB I.",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "NB II.",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "NB III.",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 8,
+      "nome": "Lower Division",
+      "licenciada": true
+    }
+  ],
+  "ICA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Íslenska úrvalsdeild karla",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ICM": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Cayman Islands Football League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ICO": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "K League 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "K League 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "K3 League",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "K4 League",
+      "licenciada": true
+    }
+  ],
+  "IDO": [
+    {
+      "divisao": 1,
+      "n_times": 18,
+      "nome": "Shopee Liga 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 24,
+      "nome": "Liga 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Liga 3",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 16,
+      "nome": "Liga 4",
+      "licenciada": true
+    }
+  ],
+  "IEM": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Yemen League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IFA": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Faroe Islands Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão ",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IMA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Isle of Man Football League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IMR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Championnat de la Mauritanie",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IND": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Super League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "I-League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "I-League 2nd Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 8,
+      "nome": "I-League 3rd Division",
+      "licenciada": true
+    }
+  ],
+  "IRA": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Persian Gulf Pro League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 18,
+      "nome": "Azadegan League 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Azadegan League 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IRL": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IRN": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IRQ": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Iraqi Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ISA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "S-League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2. S-League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Ilhas Salomão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "ISL": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Pepsi-deild",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Inkasso-deild",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "2. Deild",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 12,
+      "nome": "3. Deild",
+      "licenciada": true
+    }
+  ],
+  "ISR": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ITC": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IVA": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "Ligue 2 Ivoirienne",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "IVB": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "BVI Football League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "JAM": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Jamaica Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "JOR": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Jordanian Pro League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "KIR": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "KOS": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Football Superleague of Kosovo",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "KUW": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Kuwait Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LAO": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Lao Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LBN": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Lebanese Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LES": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Lesotho Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LET": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Latvian Higher League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Latvian First League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LIB": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Libyan Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LIE": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Liechtenstein Football Cup",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LIT": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "A Lyga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "I Lyga",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LRI": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Liberian First Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "LUX": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "BGL Ligue",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Éirepromotioun",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MAC": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Liga Macaense de Futebol",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MAD": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "THB Champions League (Madagascar)",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MAL": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Malaysian Super League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Malaysia Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MAU": [
+    {
+      "divisao": 1,
+      "n_times": 8,
+      "nome": "Mauritian League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MCD": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Macedonian First League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Macedonian Second League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 8,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MGL": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Mongolian Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MIA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Myanmar National League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MLD": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Maldives National Football League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MLI": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Malian Première Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MNC": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Ligue 1 (Monaco)",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MOC": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Moçambola",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MOL": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Moldovan Super Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Divizia A",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MON": [
+    {
+      "divisao": 1,
+      "n_times": 8,
+      "nome": "1ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "MST": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MTA": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Maltese Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Maltese Challenge League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "4º Divisão",
+      "licenciada": true
+    }
+  ],
+  "MTI": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "MWI": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "TNM Super League (Malawi)",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "NAM": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Namibia Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "NAU": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Nauru Football Championship",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "NCA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Super Ligue",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Promotion d’Honneur",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "NEP": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Nepal Super League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "NIC": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Liga Primera",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Segunda División",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Tercera Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 68,
+      "nome": "Regional BAmazing",
+      "licenciada": true
+    }
+  ],
+  "NIG": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Nigeria Professional Football League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Nigeria National League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "NIR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "NIFL Premiership",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "NIFL Championship",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "NOZ": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "ISPS Handa Premiership",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Central League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "OMA": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Oman Professional League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "PAL": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "West Bank Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "PAN": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Liga Panameña de Fútbol",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "2ª Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "PAQ": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Pakistan Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2ª Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "PGA": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Primeira Liga Timorense",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "PLU": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "PNG": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Papua New Guinea National Soccer League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "2ª Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "POL": [
+    {
+      "divisao": 1,
+      "n_times": 18,
+      "nome": "Ekstraklasa",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "1 Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 30,
+      "nome": "2 Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 64,
+      "nome": "3 Liga",
+      "licenciada": true
+    }
+  ],
+  "PRI": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "QUE": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Kenya Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Kenya National Super League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "QUI": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "RCA": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "RDG": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Linafoot Ligue 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Linafoot Ligue 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Linafoot Ligue 3",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Rep. Dem. Congo",
+      "licenciada": true
+    }
+  ],
+  "RDO": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "LDF",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Segunda División",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ROM": [
+    {
+      "divisao": 1,
+      "n_times": 20,
+      "nome": "SuperLiga România",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 16,
+      "nome": "Liga II",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 8,
+      "nome": "Liga III",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "Romênia",
+      "licenciada": true
+    }
+  ],
+  "RTC": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Fortuna Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Fortuna Národní Liga",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "ČFL/MSFL",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 12,
+      "nome": "Rep. Tcheca",
+      "licenciada": true
+    }
+  ],
+  "RUA": [
+    {
+      "divisao": 1,
+      "n_times": 8,
+      "nome": "Ligue 1 du Rwanda",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 8,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SAM": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Samoa Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SAN": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Campionato Sammarinese",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SCN": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Saint Kitts Premier Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SEN": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Ligue 1 Sénégalaise",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SEY": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Seychelles Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SIN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Singapore Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SIR": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Syrian Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2. Syrian League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Síria",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SLE": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Sierra Leone Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SME": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Campionato Sammarinese",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SMF": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Championnat de Saint-Martin",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "2ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "SMH": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Saint Helena Football",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SOM": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Somali First Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SRI": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Sri Lanka Football Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "STL": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "SLFA Premier League (St. Lucia)",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "STP": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Campeonato de São Tomé e Príncipe",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SUD": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Sudanese Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SUR": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "SVB Hoofdklasse",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SUS": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "1º DIvisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "SVG": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "SVGFF Premier Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TAD": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Tajikistan Higher League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TAI": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Thai League 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Thai League 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Thai League 3",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 68,
+      "nome": "Thai League 4",
+      "licenciada": true
+    }
+  ],
+  "TAN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Ligi kuu Bara",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "Ligi Daraja la Kwanza",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Ligi Daraja La Pili",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 10,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TAW": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Taiwan Football Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TCM": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Turkmenistan Higher League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TML": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Championnat du Togo",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TON": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Tonga Major League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TRT": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "TT Pro League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TTI": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Ligue 1 Vini",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "Ligue 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "Ligue 3",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TUN": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Ligue 1 Tunisienne",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Ligue 2 Tunisienne",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "TUV": [
+    {
+      "divisao": 1,
+      "n_times": 16,
+      "nome": "Tuvalu A-Division",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "UGA": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Uganda Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "UZB": [
+    {
+      "divisao": 1,
+      "n_times": 12,
+      "nome": "Uzbekistan Super League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "Uzbekistan Pro League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 12,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "VAN": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Vanuatu Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 10,
+      "nome": "3º Divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "VIE": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "V.League 1",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 14,
+      "nome": "V.League 2",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Vietnã",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ],
+  "ZAM": [
+    {
+      "divisao": 1,
+      "n_times": 10,
+      "nome": "Premier League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 10,
+      "nome": "2. League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "3ª divisão",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "4ª divisão",
+      "licenciada": true
+    }
+  ],
+  "ZIM": [
+    {
+      "divisao": 1,
+      "n_times": 14,
+      "nome": "Premier Soccer League",
+      "licenciada": true
+    },
+    {
+      "divisao": 2,
+      "n_times": 12,
+      "nome": "2. Soccer League",
+      "licenciada": true
+    },
+    {
+      "divisao": 3,
+      "n_times": 20,
+      "nome": "Zimbabue",
+      "licenciada": true
+    },
+    {
+      "divisao": 4,
+      "n_times": 20,
+      "nome": "",
+      "licenciada": true
+    }
+  ]
+}

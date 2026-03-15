@@ -1,0 +1,86 @@
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+*.egg
+
+# ── Environment / Secrets ──
+.env
+.env.*
+license_status.json
+user_settings.json
+
+# ── Databases ──
+*.db
+*.sqlite3
+
+# ── Build artifacts ──
+build/
+dist/
+release_build/
+*.spec
+
+# ── IDE / Editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Logs & Saves ──
+logs/
+saves/
+
+# ── Legacy / Archive ──
+_legacy/
+_archive/
+
+# ── Tauri build artifacts (5+ GB) ──
+src-tauri/target/
+src-tauri/binaries/
+src-tauri/gen/
+
+# ── Donwloader (scraping scripts + downloaded assets ~550 MB) ──
+Donwloader/
+
+# ── Brasfoot source data ──
+BF2026-27/
+
+# ── Large binary assets ──
+data/assets/players/
+data/assets/escudos/
+data/assets/estadios/
+data/assets/patrocinadores/
+data/assets/selecoes/
+data/assets/
+music/
+sons/
+teams/
+
+# ── Large images/GIFs in project root ──
+*.gif
+Fundo*.png
+Logo*.png
+
+# ── Temp files ──
+*.tmp
+tauri_build.log
+
+# ── OS files ──
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ── Node (if any) ──
+node_modules/
+
+# ── Test artifacts ──
+_test_*
+
+# ── Tracker / pre-jogo ──
+Tracker/
+pre-jogo/

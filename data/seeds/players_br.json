@@ -1,0 +1,8300 @@
+{
+  "Flamengo": [
+    {
+      "nome": "Agustín Rossi",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 71
+    },
+    {
+      "nome": "Andrew",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 75
+    },
+    {
+      "nome": "Dyogo Alves",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 73
+    },
+    {
+      "nome": "Guillermo Varela",
+      "pos": "LD",
+      "idade": 32,
+      "base": 85
+    },
+    {
+      "nome": "Alex Sandro",
+      "pos": "LE",
+      "idade": 34,
+      "base": 82
+    },
+    {
+      "nome": "Ayrton Lucas",
+      "pos": "LD",
+      "idade": 28,
+      "base": 86
+    },
+    {
+      "nome": "Emerson Royal",
+      "pos": "LE",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Danilo",
+      "pos": "LD",
+      "idade": 34,
+      "base": 83
+    },
+    {
+      "nome": "Léo Ortiz",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 89
+    },
+    {
+      "nome": "Léo Pereira",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 82
+    },
+    {
+      "nome": "Vitão",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 74
+    },
+    {
+      "nome": "João Victor",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 88
+    },
+    {
+      "nome": "De Arrascaeta",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 78
+    },
+    {
+      "nome": "Lucas Paquetá",
+      "pos": "VOL",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Evertton Araújo ",
+      "pos": "ME",
+      "idade": 23,
+      "base": 91
+    },
+    {
+      "nome": "Jorginho",
+      "pos": "MC",
+      "idade": 34,
+      "base": 88
+    },
+    {
+      "nome": "Erick Pulgar",
+      "pos": "MC",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Nicolás De La Cruz",
+      "pos": "MC",
+      "idade": 28,
+      "base": 88
+    },
+    {
+      "nome": "Saúl Ñíguez",
+      "pos": "MC",
+      "idade": 30,
+      "base": 89
+    },
+    {
+      "nome": "Jorge Carrascal",
+      "pos": "MC",
+      "idade": 27,
+      "base": 83
+    },
+    {
+      "nome": "Samuel Lino",
+      "pos": "VOL",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Pedro",
+      "pos": "CA",
+      "idade": 28,
+      "base": 83
+    },
+    {
+      "nome": "Bruno Henrique",
+      "pos": "CA",
+      "idade": 35,
+      "base": 90
+    },
+    {
+      "nome": "Gonzalo Plata",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Luiz Araújo",
+      "pos": "PE",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Everton Cebolinha",
+      "pos": "PD",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Wallace Yan",
+      "pos": "PD",
+      "idade": 20,
+      "base": 92
+    }
+  ],
+  "Palmeiras": [
+    {
+      "nome": "Aranha",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 71
+    },
+    {
+      "nome": "Carlos Miguel",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 72
+    },
+    {
+      "nome": "Marcelo Lomba",
+      "pos": "GOL",
+      "idade": 38,
+      "base": 63
+    },
+    {
+      "nome": "Joaquín Piquerez",
+      "pos": "LD",
+      "idade": 26,
+      "base": 81
+    },
+    {
+      "nome": "Agustín Giay",
+      "pos": "LE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Khellven",
+      "pos": "LD",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Jefté",
+      "pos": "LE",
+      "idade": 21,
+      "base": 90
+    },
+    {
+      "nome": "Gustavo Gómez",
+      "pos": "ZAG",
+      "idade": 32,
+      "base": 84
+    },
+    {
+      "nome": "Murilo",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 83
+    },
+    {
+      "nome": "Bruno Fuchs",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Luis Benedetti",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Jhon Arias",
+      "pos": "MC",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Marlon Freitas",
+      "pos": "MC",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "Andreas Pereira",
+      "pos": "ME",
+      "idade": 29,
+      "base": 84
+    },
+    {
+      "nome": "Emiliano Martínez",
+      "pos": "MC",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Lucas Evangelista",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Allan",
+      "pos": "VOL",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Figueiredo",
+      "pos": "MC",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Maurício",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 79
+    },
+    {
+      "nome": "Larson",
+      "pos": "MC",
+      "idade": 20,
+      "base": 86
+    },
+    {
+      "nome": "Erick Belé",
+      "pos": "MC",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Luis Pacheco",
+      "pos": "MEI",
+      "idade": 18,
+      "base": 91
+    },
+    {
+      "nome": "Flaco López",
+      "pos": "CA",
+      "idade": 24,
+      "base": 80
+    },
+    {
+      "nome": "Vitor Roque",
+      "pos": "CA",
+      "idade": 19,
+      "base": 90
+    },
+    {
+      "nome": "Luighi",
+      "pos": "CA",
+      "idade": 19,
+      "base": 86
+    },
+    {
+      "nome": "Ramón Sosa",
+      "pos": "PE",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Felipe Anderson",
+      "pos": "PE",
+      "idade": 32,
+      "base": 87
+    },
+    {
+      "nome": "Riquelme Fillipi",
+      "pos": "PE",
+      "idade": 19,
+      "base": 81
+    },
+    {
+      "nome": "Paulinho",
+      "pos": "PD",
+      "idade": 25,
+      "base": 83
+    },
+    {
+      "nome": "Fabiano",
+      "pos": "PD",
+      "idade": 19,
+      "base": 92
+    }
+  ],
+  "Corinthians": [
+    {
+      "nome": "Hugo Souza",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 68
+    },
+    {
+      "nome": "Matheus Donelli",
+      "pos": "GOL",
+      "idade": 23,
+      "base": 71
+    },
+    {
+      "nome": "Felipe Longo",
+      "pos": "GOL",
+      "idade": 20,
+      "base": 70
+    },
+    {
+      "nome": "Kauê",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 66
+    },
+    {
+      "nome": "Matheuzinho",
+      "pos": "LD",
+      "idade": 25,
+      "base": 84
+    },
+    {
+      "nome": "Matheus Bidu",
+      "pos": "LE",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Fabricio Angileri",
+      "pos": "LD",
+      "idade": 31,
+      "base": 89
+    },
+    {
+      "nome": "Hugo",
+      "pos": "LE",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Pedro Milans ",
+      "pos": "LD",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Gabriel Paulista",
+      "pos": "ZAG",
+      "idade": 35,
+      "base": 86
+    },
+    {
+      "nome": "André Ramalho",
+      "pos": "ZAG",
+      "idade": 33,
+      "base": 72
+    },
+    {
+      "nome": "João Pedro Tchoca",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Gustavo Henrique",
+      "pos": "ZAG",
+      "idade": 32,
+      "base": 73
+    },
+    {
+      "nome": "Renato Santos",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Rodrigo Garro",
+      "pos": "VOL",
+      "idade": 27,
+      "base": 84
+    },
+    {
+      "nome": "Raniele",
+      "pos": "MC",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Breno Bidon",
+      "pos": "ME",
+      "idade": 20,
+      "base": 85
+    },
+    {
+      "nome": "Charles Rigon",
+      "pos": "MC",
+      "idade": 29,
+      "base": 87
+    },
+    {
+      "nome": "André Carrillo",
+      "pos": "MEI",
+      "idade": 34,
+      "base": 88
+    },
+    {
+      "nome": "Matheus Pereira",
+      "pos": "MC",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "André Luiz",
+      "pos": "MC",
+      "idade": 19,
+      "base": 81
+    },
+    {
+      "nome": "Allan",
+      "pos": "MC",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Zakaria Labyad",
+      "pos": "ME",
+      "idade": 32,
+      "base": 89
+    },
+    {
+      "nome": "Alex Santana",
+      "pos": "MC",
+      "idade": 30,
+      "base": 89
+    },
+    {
+      "nome": "Jesse Lingard",
+      "pos": "MEI",
+      "idade": 33,
+      "base": 88
+    },
+    {
+      "nome": "Bahia",
+      "pos": "MC",
+      "idade": 20,
+      "base": 86
+    },
+    {
+      "nome": "Yuri Alberto",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Memphis Depay",
+      "pos": "CA",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Gui Negão",
+      "pos": "CA",
+      "idade": 18,
+      "base": 92
+    },
+    {
+      "nome": "Kayke Ferrari",
+      "pos": "PE",
+      "idade": 21,
+      "base": 81
+    },
+    {
+      "nome": "Vitinho",
+      "pos": "PE",
+      "idade": 28,
+      "base": 89
+    },
+    {
+      "nome": "Pedro Raul",
+      "pos": "PE",
+      "idade": 28,
+      "base": 80
+    },
+    {
+      "nome": "Kaio César",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Dieguinho",
+      "pos": "PD",
+      "idade": 18,
+      "base": 86
+    }
+  ],
+  "São Paulo": [
+    {
+      "nome": "Rafael",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 63
+    },
+    {
+      "nome": "Young",
+      "pos": "GOL",
+      "idade": 23,
+      "base": 66
+    },
+    {
+      "nome": "Carlos Coronel",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 62
+    },
+    {
+      "nome": "Felipe Preis",
+      "pos": "GOL",
+      "idade": 20,
+      "base": 65
+    },
+    {
+      "nome": "Enzo Díaz",
+      "pos": "LD",
+      "idade": 30,
+      "base": 85
+    },
+    {
+      "nome": "Cédric Soares",
+      "pos": "LE",
+      "idade": 33,
+      "base": 85
+    },
+    {
+      "nome": "Wendell",
+      "pos": "LD",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Guilherme Reis",
+      "pos": "LE",
+      "idade": 19,
+      "base": 82
+    },
+    {
+      "nome": "Maik",
+      "pos": "LD",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Lucas Ramon",
+      "pos": "LE",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "João Moreira",
+      "pos": "LD",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Igor Felisberto",
+      "pos": "LE",
+      "idade": 18,
+      "base": 90
+    },
+    {
+      "nome": "Alan Franco",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Robert Arboleda",
+      "pos": "ZAG",
+      "idade": 34,
+      "base": 72
+    },
+    {
+      "nome": "Sabino",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Matheus Dória",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 73
+    },
+    {
+      "nome": "Rafael Tolói ",
+      "pos": "ZAG",
+      "idade": 35,
+      "base": 86
+    },
+    {
+      "nome": "Cauly",
+      "pos": "VOL",
+      "idade": 30,
+      "base": 75
+    },
+    {
+      "nome": "Danielzinho",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 86
+    },
+    {
+      "nome": "Marcos Antônio",
+      "pos": "MC",
+      "idade": 25,
+      "base": 90
+    },
+    {
+      "nome": "Lucas Moura",
+      "pos": "MEI",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Damián Bobadilla",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Pablo Maia",
+      "pos": "MC",
+      "idade": 23,
+      "base": 80
+    },
+    {
+      "nome": "Luan",
+      "pos": "MC",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Djhordney",
+      "pos": "MEI",
+      "idade": 18,
+      "base": 88
+    },
+    {
+      "nome": "Pedro Ferreira",
+      "pos": "VOL",
+      "idade": 18,
+      "base": 92
+    },
+    {
+      "nome": "Gonzalo Tapia",
+      "pos": "CA",
+      "idade": 23,
+      "base": 90
+    },
+    {
+      "nome": "Lucca",
+      "pos": "CA",
+      "idade": 18,
+      "base": 92
+    },
+    {
+      "nome": "Luciano",
+      "pos": "CA",
+      "idade": 32,
+      "base": 88
+    },
+    {
+      "nome": "Ferreirinha",
+      "pos": "CA",
+      "idade": 28,
+      "base": 88
+    },
+    {
+      "nome": "André Silva",
+      "pos": "PE",
+      "idade": 28,
+      "base": 89
+    },
+    {
+      "nome": "Jonathan Calleri",
+      "pos": "PE",
+      "idade": 31,
+      "base": 87
+    },
+    {
+      "nome": "Ryan Francisco",
+      "pos": "PD",
+      "idade": 19,
+      "base": 89
+    },
+    {
+      "nome": "Tetê",
+      "pos": "PD",
+      "idade": 18,
+      "base": 92
+    },
+    {
+      "nome": "Paulinho",
+      "pos": "PD",
+      "idade": 18,
+      "base": 81
+    }
+  ],
+  "Fluminense": [
+    {
+      "nome": "Fábio",
+      "pos": "GOL",
+      "idade": 45,
+      "base": 64
+    },
+    {
+      "nome": "Marcelo Pitaluga",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 65
+    },
+    {
+      "nome": "Vitor Eudes",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 73
+    },
+    {
+      "nome": "Guilherme Arana",
+      "pos": "LD",
+      "idade": 28,
+      "base": 81
+    },
+    {
+      "nome": "Guga",
+      "pos": "LE",
+      "idade": 27,
+      "base": 86
+    },
+    {
+      "nome": "Samuel Xavier",
+      "pos": "LD",
+      "idade": 35,
+      "base": 86
+    },
+    {
+      "nome": "Renê",
+      "pos": "LE",
+      "idade": 32,
+      "base": 74
+    },
+    {
+      "nome": "Julio Fidelis",
+      "pos": "LD",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Jhonny",
+      "pos": "LE",
+      "idade": 23,
+      "base": 90
+    },
+    {
+      "nome": "Jemmes",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 74
+    },
+    {
+      "nome": "Juan Freytes",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Ignácio",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 83
+    },
+    {
+      "nome": "Igor Rabello",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 73
+    },
+    {
+      "nome": "Davi Schuindt",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 83
+    },
+    {
+      "nome": "Julián Millán",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "João Loiola",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 72
+    },
+    {
+      "nome": "Luciano Acosta",
+      "pos": "MC",
+      "idade": 31,
+      "base": 82
+    },
+    {
+      "nome": "Jefferson Savarino",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 79
+    },
+    {
+      "nome": "Ganso",
+      "pos": "ME",
+      "idade": 36,
+      "base": 80
+    },
+    {
+      "nome": "Facundo Bernal",
+      "pos": "MC",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Otávio",
+      "pos": "MC",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Nonato",
+      "pos": "MD",
+      "idade": 27,
+      "base": 84
+    },
+    {
+      "nome": "Martinelli",
+      "pos": "MC",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "Hércules",
+      "pos": "MC",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "David Terans",
+      "pos": "MC",
+      "idade": 31,
+      "base": 82
+    },
+    {
+      "nome": "Alisson",
+      "pos": "MC",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Yeferson Soteldo",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Rodrigo Castillo",
+      "pos": "CA",
+      "idade": 24,
+      "base": 85
+    },
+    {
+      "nome": "Agustín Canobbio",
+      "pos": "CA",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Riquelme",
+      "pos": "CA",
+      "idade": 18,
+      "base": 92
+    },
+    {
+      "nome": "Santiago Moreno ",
+      "pos": "PE",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "John Kennedy",
+      "pos": "PE",
+      "idade": 23,
+      "base": 90
+    },
+    {
+      "nome": "Kevin Serna",
+      "pos": "PD",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Germán Cano",
+      "pos": "PD",
+      "idade": 38,
+      "base": 76
+    },
+    {
+      "nome": "Matheus Reis",
+      "pos": "PD",
+      "idade": 18,
+      "base": 92
+    }
+  ],
+  "Atlético-MG": [
+    {
+      "nome": "Gabriel Delfim",
+      "pos": "GOL",
+      "idade": 23,
+      "base": 71
+    },
+    {
+      "nome": "Éverson",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 63
+    },
+    {
+      "nome": "Pedro Cobra",
+      "pos": "GOL",
+      "idade": 19,
+      "base": 66
+    },
+    {
+      "nome": "Natanael",
+      "pos": "LD",
+      "idade": 23,
+      "base": 82
+    },
+    {
+      "nome": "Vitor Gabriel",
+      "pos": "LE",
+      "idade": 19,
+      "base": 90
+    },
+    {
+      "nome": "Renan Lodi",
+      "pos": "LD",
+      "idade": 26,
+      "base": 84
+    },
+    {
+      "nome": "Kauã Pascini",
+      "pos": "LE",
+      "idade": 17,
+      "base": 73
+    },
+    {
+      "nome": "Angelo Preciado",
+      "pos": "LD",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Luís Gustavo",
+      "pos": "LE",
+      "idade": 19,
+      "base": 90
+    },
+    {
+      "nome": "Iván Román",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 83
+    },
+    {
+      "nome": "Lyanco",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 83
+    },
+    {
+      "nome": "Júnior Alonso",
+      "pos": "ZAG",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Vitor Hugo",
+      "pos": "ZAG",
+      "idade": 34,
+      "base": 72
+    },
+    {
+      "nome": "Ruan ",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Samuel",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Vitão",
+      "pos": "ZAG",
+      "idade": 18,
+      "base": 91
+    },
+    {
+      "nome": "Gustavo Scarpa",
+      "pos": "VOL",
+      "idade": 31,
+      "base": 83
+    },
+    {
+      "nome": "Tomás Cuello",
+      "pos": "VOL",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Reinier",
+      "pos": "ME",
+      "idade": 24,
+      "base": 76
+    },
+    {
+      "nome": "Alexsander",
+      "pos": "MC",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Alan Franco",
+      "pos": "MC",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Igor Gomes",
+      "pos": "MD",
+      "idade": 26,
+      "base": 84
+    },
+    {
+      "nome": "Victor Hugo",
+      "pos": "MC",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Maycon",
+      "pos": "MC",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Tomás Pérez",
+      "pos": "ME",
+      "idade": 20,
+      "base": 85
+    },
+    {
+      "nome": "Patrick",
+      "pos": "MC",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Igor Toledo",
+      "pos": "MC",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Índio",
+      "pos": "VOL",
+      "idade": 17,
+      "base": 82
+    },
+    {
+      "nome": "Mamady Cissé",
+      "pos": "MEI",
+      "idade": 18,
+      "base": 92
+    },
+    {
+      "nome": "Mateus Iseppe",
+      "pos": "MC",
+      "idade": 19,
+      "base": 86
+    },
+    {
+      "nome": "Hulk",
+      "pos": "CA",
+      "idade": 39,
+      "base": 88
+    },
+    {
+      "nome": "Alan Minda",
+      "pos": "CA",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Dudu",
+      "pos": "CA",
+      "idade": 34,
+      "base": 92
+    },
+    {
+      "nome": "Bernard",
+      "pos": "PE",
+      "idade": 33,
+      "base": 86
+    },
+    {
+      "nome": "Mateo Cassierra",
+      "pos": "PD",
+      "idade": 28,
+      "base": 80
+    },
+    {
+      "nome": "Cauã Soares",
+      "pos": "PD",
+      "idade": 17,
+      "base": 87
+    }
+  ],
+  "Botafogo": [
+    {
+      "nome": "Raul",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 73
+    },
+    {
+      "nome": "Léo Linck",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 75
+    },
+    {
+      "nome": "Neto",
+      "pos": "GOL",
+      "idade": 36,
+      "base": 58
+    },
+    {
+      "nome": "Cristhian Loor",
+      "pos": "GOL",
+      "idade": 19,
+      "base": 73
+    },
+    {
+      "nome": "Vitinho",
+      "pos": "LD",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Alex Telles",
+      "pos": "LE",
+      "idade": 32,
+      "base": 85
+    },
+    {
+      "nome": "Mateo Ponte",
+      "pos": "LD",
+      "idade": 22,
+      "base": 85
+    },
+    {
+      "nome": "Marçal",
+      "pos": "LE",
+      "idade": 36,
+      "base": 90
+    },
+    {
+      "nome": "Jhoan Hernández",
+      "pos": "LD",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Kadu Santos ",
+      "pos": "LE",
+      "idade": 20,
+      "base": 84
+    },
+    {
+      "nome": "Bastos",
+      "pos": "ZAG",
+      "idade": 33,
+      "base": 83
+    },
+    {
+      "nome": "Kaio Pantaleão",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 74
+    },
+    {
+      "nome": "Alexander Barboza",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "Ythallo",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 91
+    },
+    {
+      "nome": "Nahuel Ferraresi",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 83
+    },
+    {
+      "nome": "Cristian Medina",
+      "pos": "VOL",
+      "idade": 23,
+      "base": 74
+    },
+    {
+      "nome": "Danilo",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Newton",
+      "pos": "MC",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Santiago Rodríguez",
+      "pos": "VOL",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Álvaro Montoro",
+      "pos": "MEI",
+      "idade": 18,
+      "base": 74
+    },
+    {
+      "nome": "Allan",
+      "pos": "MC",
+      "idade": 35,
+      "base": 81
+    },
+    {
+      "nome": "Wallace Davi",
+      "pos": "MC",
+      "idade": 18,
+      "base": 92
+    },
+    {
+      "nome": "Jordan Barrera",
+      "pos": "MC",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Edenílson",
+      "pos": "ME",
+      "idade": 35,
+      "base": 75
+    },
+    {
+      "nome": "Júnior Santos",
+      "pos": "VOL",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Artur",
+      "pos": "CA",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Matheus Martins",
+      "pos": "CA",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Arthur Cabral",
+      "pos": "CA",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Joaquín Correa",
+      "pos": "PE",
+      "idade": 31,
+      "base": 88
+    },
+    {
+      "nome": "Nathan Fernandes",
+      "pos": "PE",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Chris Ramos",
+      "pos": "PE",
+      "idade": 26,
+      "base": 88
+    },
+    {
+      "nome": "Lucas Villalba",
+      "pos": "PD",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Kadir Barría ",
+      "pos": "PD",
+      "idade": 18,
+      "base": 92
+    }
+  ],
+  "Internacional": [
+    {
+      "nome": "Anthoni",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 68
+    },
+    {
+      "nome": "Sergio Rochet",
+      "pos": "GOL",
+      "idade": 32,
+      "base": 72
+    },
+    {
+      "nome": "Kauan Jesus",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 71
+    },
+    {
+      "nome": "Bruno Gomes",
+      "pos": "LD",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "Braian Aguirre",
+      "pos": "LE",
+      "idade": 25,
+      "base": 84
+    },
+    {
+      "nome": "Alexandro Bernabei",
+      "pos": "LD",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Victor Gabriel",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 83
+    },
+    {
+      "nome": "Juninho",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 73
+    },
+    {
+      "nome": "Clayton Sampaio",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 83
+    },
+    {
+      "nome": "Gabriel Mercado",
+      "pos": "ZAG",
+      "idade": 38,
+      "base": 89
+    },
+    {
+      "nome": "Félix Torres",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Alan Patrick",
+      "pos": "MEI",
+      "idade": 34,
+      "base": 77
+    },
+    {
+      "nome": "Thiago Maia",
+      "pos": "MC",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Bruno Henrique",
+      "pos": "ME",
+      "idade": 36,
+      "base": 80
+    },
+    {
+      "nome": "Ronaldo",
+      "pos": "MC",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Richard",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 86
+    },
+    {
+      "nome": "Rodrigo Villagra",
+      "pos": "MD",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Alan Rodríguez",
+      "pos": "MC",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Paulinho Paula",
+      "pos": "MC",
+      "idade": 28,
+      "base": 88
+    },
+    {
+      "nome": "Yago Noal",
+      "pos": "ME",
+      "idade": 19,
+      "base": 77
+    },
+    {
+      "nome": "Allex",
+      "pos": "MC",
+      "idade": 19,
+      "base": 81
+    },
+    {
+      "nome": "Gustavo Prado",
+      "pos": "CA",
+      "idade": 20,
+      "base": 81
+    },
+    {
+      "nome": "Rafael Borré",
+      "pos": "CA",
+      "idade": 29,
+      "base": 83
+    },
+    {
+      "nome": "Bruno Tabata",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Vitinho",
+      "pos": "PE",
+      "idade": 26,
+      "base": 88
+    },
+    {
+      "nome": "Johan Carbonero",
+      "pos": "PE",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Alerrandro",
+      "pos": "PE",
+      "idade": 26,
+      "base": 83
+    },
+    {
+      "nome": "Kayky",
+      "pos": "PD",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Raykkonen",
+      "pos": "PD",
+      "idade": 17,
+      "base": 92
+    }
+  ],
+  "Grêmio": [
+    {
+      "nome": "Gabriel Grando",
+      "pos": "GOL",
+      "idade": 25,
+      "base": 67
+    },
+    {
+      "nome": "Weverton",
+      "pos": "GOL",
+      "idade": 37,
+      "base": 63
+    },
+    {
+      "nome": "Thiago Beltrame",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 70
+    },
+    {
+      "nome": "João Pedro",
+      "pos": "LD",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Marlon",
+      "pos": "LE",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Marcos Rocha",
+      "pos": "LD",
+      "idade": 36,
+      "base": 80
+    },
+    {
+      "nome": "Caio Paulista",
+      "pos": "LE",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Wagner Leonardo",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 85
+    },
+    {
+      "nome": "Wálter Kannemann",
+      "pos": "ZAG",
+      "idade": 34,
+      "base": 86
+    },
+    {
+      "nome": "Fabián Balbuena",
+      "pos": "ZAG",
+      "idade": 33,
+      "base": 72
+    },
+    {
+      "nome": "Gustavo Martins",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "Viery",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 91
+    },
+    {
+      "nome": "Luis Eduardo",
+      "pos": "ZAG",
+      "idade": 18,
+      "base": 80
+    },
+    {
+      "nome": "Erick Noriega",
+      "pos": "MC",
+      "idade": 24,
+      "base": 74
+    },
+    {
+      "nome": "Juan Nardoni ",
+      "pos": "MC",
+      "idade": 22,
+      "base": 83
+    },
+    {
+      "nome": "Arthur Melo",
+      "pos": "ME",
+      "idade": 26,
+      "base": 87
+    },
+    {
+      "nome": "Dodi",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Mathias Villasanti",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 87
+    },
+    {
+      "nome": "Miguel Monsalve",
+      "pos": "MD",
+      "idade": 21,
+      "base": 77
+    },
+    {
+      "nome": "Willian",
+      "pos": "MC",
+      "idade": 37,
+      "base": 79
+    },
+    {
+      "nome": "Gabriel Mec",
+      "pos": "MC",
+      "idade": 17,
+      "base": 81
+    },
+    {
+      "nome": "Tiaguinho",
+      "pos": "ME",
+      "idade": 18,
+      "base": 85
+    },
+    {
+      "nome": "José Enamorado",
+      "pos": "VOL",
+      "idade": 27,
+      "base": 76
+    },
+    {
+      "nome": "Leonel Pérez",
+      "pos": "MC",
+      "idade": 21,
+      "base": 83
+    },
+    {
+      "nome": "Carlos Vinícius",
+      "pos": "CA",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Martin Braithwaite",
+      "pos": "CA",
+      "idade": 34,
+      "base": 78
+    },
+    {
+      "nome": "Cristian Pavón ",
+      "pos": "CA",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Francis Amuzu",
+      "pos": "PE",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Tetê",
+      "pos": "PE",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Roger",
+      "pos": "PD",
+      "idade": 17,
+      "base": 92
+    },
+    {
+      "nome": "André Henrique",
+      "pos": "PD",
+      "idade": 24,
+      "base": 92
+    }
+  ],
+  "Cruzeiro": [
+    {
+      "nome": "Cássio",
+      "pos": "GOL",
+      "idade": 38,
+      "base": 58
+    },
+    {
+      "nome": "Matheus Cunha",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 72
+    },
+    {
+      "nome": "Otávio Costa",
+      "pos": "GOL",
+      "idade": 20,
+      "base": 65
+    },
+    {
+      "nome": "William Furtado",
+      "pos": "LD",
+      "idade": 30,
+      "base": 83
+    },
+    {
+      "nome": "Fagner",
+      "pos": "LE",
+      "idade": 36,
+      "base": 81
+    },
+    {
+      "nome": "Kaiki",
+      "pos": "LD",
+      "idade": 22,
+      "base": 90
+    },
+    {
+      "nome": "Kauã Moraes",
+      "pos": "LE",
+      "idade": 19,
+      "base": 82
+    },
+    {
+      "nome": "Kauã Prates",
+      "pos": "LD",
+      "idade": 17,
+      "base": 73
+    },
+    {
+      "nome": "Jonathan Jesus",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 83
+    },
+    {
+      "nome": "Lucas Villalba",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "João Marcelo",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 83
+    },
+    {
+      "nome": "Fabrício Bruno",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Bruno Alves",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 81
+    },
+    {
+      "nome": "Janderson",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 83
+    },
+    {
+      "nome": "Matheus Pereira",
+      "pos": "MC",
+      "idade": 29,
+      "base": 89
+    },
+    {
+      "nome": "Lucas Silva",
+      "pos": "MC",
+      "idade": 32,
+      "base": 86
+    },
+    {
+      "nome": "Walace",
+      "pos": "MC",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "Lucas Romero",
+      "pos": "MC",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Matheus Henrique",
+      "pos": "MC",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Japa",
+      "pos": "MC",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Murilo Rhikman",
+      "pos": "MC",
+      "idade": 19,
+      "base": 85
+    },
+    {
+      "nome": "Keny Arroyo",
+      "pos": "MC",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Christian",
+      "pos": "MC",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Gerson",
+      "pos": "MEI",
+      "idade": 27,
+      "base": 87
+    },
+    {
+      "nome": "Vitinho",
+      "pos": "MEI",
+      "idade": 22,
+      "base": 88
+    },
+    {
+      "nome": "Jhosefer",
+      "pos": "VOL",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Kaio Jorge",
+      "pos": "CA",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Marquinhos",
+      "pos": "CA",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Luis Sinisterra",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Chico da Costa",
+      "pos": "PE",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Néiser Villarreal",
+      "pos": "PE",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Wanderson",
+      "pos": "PE",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Bruno Rodrigues",
+      "pos": "PD",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Kaique Kenji",
+      "pos": "PD",
+      "idade": 20,
+      "base": 92
+    }
+  ],
+  "Santos": [
+    {
+      "nome": "Gabriel Brazão",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 67
+    },
+    {
+      "nome": "Diógenes",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 62
+    },
+    {
+      "nome": "Rodrigo Falcão",
+      "pos": "GOL",
+      "idade": 20,
+      "base": 66
+    },
+    {
+      "nome": "João Pedro",
+      "pos": "GOL",
+      "idade": 17,
+      "base": 70
+    },
+    {
+      "nome": "Gonzalo Escobar",
+      "pos": "LD",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Igor Vinícius",
+      "pos": "LE",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Mayke",
+      "pos": "LD",
+      "idade": 33,
+      "base": 82
+    },
+    {
+      "nome": "Vinicius Lira",
+      "pos": "LE",
+      "idade": 18,
+      "base": 88
+    },
+    {
+      "nome": "Luan Peres",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Alex",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 74
+    },
+    {
+      "nome": "Adonis Frías",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Lucas Veríssimo",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 90
+    },
+    {
+      "nome": "Zé Ivaldo",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Neymar",
+      "pos": "VOL",
+      "idade": 33,
+      "base": 74
+    },
+    {
+      "nome": "João Schmidt",
+      "pos": "MC",
+      "idade": 32,
+      "base": 84
+    },
+    {
+      "nome": "Tomás Rincón",
+      "pos": "MC",
+      "idade": 37,
+      "base": 81
+    },
+    {
+      "nome": "Gabriel Bontempo",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Thaciano",
+      "pos": "MC",
+      "idade": 30,
+      "base": 88
+    },
+    {
+      "nome": "Zé Rafael",
+      "pos": "MC",
+      "idade": 32,
+      "base": 89
+    },
+    {
+      "nome": "Willian Arão",
+      "pos": "MC",
+      "idade": 32,
+      "base": 84
+    },
+    {
+      "nome": "Gabriel Menino",
+      "pos": "MC",
+      "idade": 24,
+      "base": 82
+    },
+    {
+      "nome": "Miguelito",
+      "pos": "MC",
+      "idade": 21,
+      "base": 81
+    },
+    {
+      "nome": "Christian Oliva",
+      "pos": "MEI",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Gabriel Barbosa",
+      "pos": "CA",
+      "idade": 28,
+      "base": 89
+    },
+    {
+      "nome": "Enzo Boer",
+      "pos": "CA",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Robinho Jr",
+      "pos": "CA",
+      "idade": 17,
+      "base": 86
+    },
+    {
+      "nome": "Álvaro Barreal",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Benjamín Rollheiser",
+      "pos": "PE",
+      "idade": 25,
+      "base": 88
+    },
+    {
+      "nome": "Lautaro Díaz",
+      "pos": "PE",
+      "idade": 25,
+      "base": 89
+    },
+    {
+      "nome": "Rony",
+      "pos": "PE",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Moisés",
+      "pos": "PD",
+      "idade": 29,
+      "base": 88
+    },
+    {
+      "nome": "Nadson",
+      "pos": "PD",
+      "idade": 17,
+      "base": 86
+    },
+    {
+      "nome": "Mateus Xavier",
+      "pos": "PD",
+      "idade": 18,
+      "base": 92
+    }
+  ],
+  "Bahia": [
+    {
+      "nome": "Ronaldo",
+      "pos": "GOL",
+      "idade": 28,
+      "base": 73
+    },
+    {
+      "nome": "João Paulo",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 67
+    },
+    {
+      "nome": "Luciano Juba",
+      "pos": "LD",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Gilberto",
+      "pos": "LE",
+      "idade": 32,
+      "base": 89
+    },
+    {
+      "nome": "Iago Borduchi",
+      "pos": "LD",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Zé Guilherme",
+      "pos": "LE",
+      "idade": 20,
+      "base": 82
+    },
+    {
+      "nome": "Román Gómez",
+      "pos": "LD",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Santiago Ramos Mingo",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 74
+    },
+    {
+      "nome": "David Duarte",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 82
+    },
+    {
+      "nome": "Kanu",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 74
+    },
+    {
+      "nome": "Gabriel Xavier",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 83
+    },
+    {
+      "nome": "Daniel Costa",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 91
+    },
+    {
+      "nome": "Luiz Gustavo",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 81
+    },
+    {
+      "nome": "Marcos Victor",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 85
+    },
+    {
+      "nome": "Éverton Ribeiro",
+      "pos": "MEI",
+      "idade": 36,
+      "base": 75
+    },
+    {
+      "nome": "Caio Alexandre",
+      "pos": "MEI",
+      "idade": 26,
+      "base": 87
+    },
+    {
+      "nome": "Jean Lucas",
+      "pos": "MC",
+      "idade": 27,
+      "base": 87
+    },
+    {
+      "nome": "Nicolás Acevedo",
+      "pos": "MC",
+      "idade": 26,
+      "base": 85
+    },
+    {
+      "nome": "Rodrigo Nestor",
+      "pos": "MC",
+      "idade": 24,
+      "base": 89
+    },
+    {
+      "nome": "Erick",
+      "pos": "MC",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Michel Araújo",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Miqueias",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 84
+    },
+    {
+      "nome": "Jota",
+      "pos": "ME",
+      "idade": 22,
+      "base": 88
+    },
+    {
+      "nome": "Willian José",
+      "pos": "CA",
+      "idade": 34,
+      "base": 78
+    },
+    {
+      "nome": "Ademir",
+      "pos": "CA",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Erick Pulga",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Ruan Pablo",
+      "pos": "PE",
+      "idade": 17,
+      "base": 81
+    },
+    {
+      "nome": "Mateo Sanabria",
+      "pos": "PE",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Dell",
+      "pos": "PE",
+      "idade": 17,
+      "base": 90
+    },
+    {
+      "nome": "Cristian Olivera",
+      "pos": "PD",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Everaldo",
+      "pos": "PD",
+      "idade": 34,
+      "base": 87
+    }
+  ],
+  "Athletico-PR": [
+    {
+      "nome": "Mycael",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 65
+    },
+    {
+      "nome": "Santos",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 63
+    },
+    {
+      "nome": "Matheus Soares",
+      "pos": "GOL",
+      "idade": 20,
+      "base": 60
+    },
+    {
+      "nome": "Lucas Esquivel",
+      "pos": "LD",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Léo Derik",
+      "pos": "LE",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Gastón Benavídez",
+      "pos": "LD",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Dudu",
+      "pos": "LE",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Gilberto Junior",
+      "pos": "LD",
+      "idade": 20,
+      "base": 82
+    },
+    {
+      "nome": "Arthur Dias",
+      "pos": "ZAG",
+      "idade": 18,
+      "base": 83
+    },
+    {
+      "nome": "Léo Pelé",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Habraão",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 85
+    },
+    {
+      "nome": "Felipe Aguirre",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Carlos Terán",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Felipinho",
+      "pos": "MEI",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "Bruno Zapelli",
+      "pos": "VOL",
+      "idade": 23,
+      "base": 82
+    },
+    {
+      "nome": "Jádson",
+      "pos": "ME",
+      "idade": 32,
+      "base": 86
+    },
+    {
+      "nome": "Luiz Gustavo",
+      "pos": "MC",
+      "idade": 38,
+      "base": 86
+    },
+    {
+      "nome": "Alejandro García",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 90
+    },
+    {
+      "nome": "Juan Portilla",
+      "pos": "MD",
+      "idade": 27,
+      "base": 87
+    },
+    {
+      "nome": "Dudu",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Kevin Viveros",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Isaac",
+      "pos": "CA",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Renan Peixoto",
+      "pos": "CA",
+      "idade": 25,
+      "base": 83
+    },
+    {
+      "nome": "Stiven Mendoza",
+      "pos": "CA",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Gonzalo Mastriani",
+      "pos": "PE",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Renan Viana",
+      "pos": "PE",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Julimar",
+      "pos": "PD",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Daniel Aguilar",
+      "pos": "PD",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Leozinho",
+      "pos": "PD",
+      "idade": 27,
+      "base": 88
+    }
+  ],
+  "Fortaleza": [
+    {
+      "nome": "Brenno",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 75
+    },
+    {
+      "nome": "João Ricardo",
+      "pos": "GOL",
+      "idade": 37,
+      "base": 63
+    },
+    {
+      "nome": "Magrão",
+      "pos": "GOL",
+      "idade": 25,
+      "base": 67
+    },
+    {
+      "nome": "Vinícius",
+      "pos": "GOL",
+      "idade": 31,
+      "base": 71
+    },
+    {
+      "nome": "Maílton",
+      "pos": "LD",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Gabriel Fuentes",
+      "pos": "LE",
+      "idade": 29,
+      "base": 84
+    },
+    {
+      "nome": "Paulinho",
+      "pos": "LD",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Diogo Barbosa",
+      "pos": "LE",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Tomás Cardona",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 73
+    },
+    {
+      "nome": "Lucas Gazal",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Tobias Figueiredo",
+      "pos": "ZAG",
+      "idade": 32,
+      "base": 89
+    },
+    {
+      "nome": "Emanuel Brítez",
+      "pos": "ZAG",
+      "idade": 33,
+      "base": 83
+    },
+    {
+      "nome": "Luan Freitas",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 74
+    },
+    {
+      "nome": "Tomás Pochettino",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 75
+    },
+    {
+      "nome": "Ronald",
+      "pos": "MEI",
+      "idade": 23,
+      "base": 85
+    },
+    {
+      "nome": "Ryan",
+      "pos": "MC",
+      "idade": 22,
+      "base": 83
+    },
+    {
+      "nome": "Matheus Rossetto",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 84
+    },
+    {
+      "nome": "Lucas Crispim",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 75
+    },
+    {
+      "nome": "Pierre",
+      "pos": "MC",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "Lucca Prior",
+      "pos": "MEI",
+      "idade": 22,
+      "base": 77
+    },
+    {
+      "nome": "Lucas Sasha",
+      "pos": "MC",
+      "idade": 35,
+      "base": 81
+    },
+    {
+      "nome": "Rodrigo Santos",
+      "pos": "MC",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "GB",
+      "pos": "CA",
+      "idade": 21,
+      "base": 90
+    },
+    {
+      "nome": "Vitinho",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Luiz Fernando",
+      "pos": "CA",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Kayke",
+      "pos": "PE",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Rodriguinho",
+      "pos": "PE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Juan Miritello",
+      "pos": "PD",
+      "idade": 27,
+      "base": 80
+    },
+    {
+      "nome": "Paulo Baya",
+      "pos": "PD",
+      "idade": 26,
+      "base": 92
+    }
+  ],
+  "Cuiabá": [
+    {
+      "nome": "João Carlos",
+      "pos": "GOL",
+      "idade": 37,
+      "base": 58
+    },
+    {
+      "nome": "Pedro Mello",
+      "pos": "GOL",
+      "idade": 19,
+      "base": 60
+    },
+    {
+      "nome": "Marlon",
+      "pos": "LD",
+      "idade": 32,
+      "base": 83
+    },
+    {
+      "nome": "Railan",
+      "pos": "LE",
+      "idade": 25,
+      "base": 86
+    },
+    {
+      "nome": "Marcelo Henrique",
+      "pos": "LD",
+      "idade": 20,
+      "base": 85
+    },
+    {
+      "nome": "Sander",
+      "pos": "LE",
+      "idade": 35,
+      "base": 83
+    },
+    {
+      "nome": "Nino Paraíba",
+      "pos": "LD",
+      "idade": 40,
+      "base": 83
+    },
+    {
+      "nome": "Alan Empereur",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Gabriel",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 83
+    },
+    {
+      "nome": "Vitor Mendes",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Luis Soares",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 72
+    },
+    {
+      "nome": "Edson",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 91
+    },
+    {
+      "nome": "Pepê",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 76
+    },
+    {
+      "nome": "Patrick de Lucca",
+      "pos": "MC",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "David Miguel",
+      "pos": "ME",
+      "idade": 18,
+      "base": 77
+    },
+    {
+      "nome": "Calebe Costa",
+      "pos": "MC",
+      "idade": 22,
+      "base": 83
+    },
+    {
+      "nome": "Eduardo Vinícius",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "João Araújo",
+      "pos": "MD",
+      "idade": 20,
+      "base": 85
+    },
+    {
+      "nome": "Luiz Felipe",
+      "pos": "MC",
+      "idade": 21,
+      "base": 81
+    },
+    {
+      "nome": "Raul",
+      "pos": "MC",
+      "idade": 29,
+      "base": 85
+    },
+    {
+      "nome": "Yamil Asad",
+      "pos": "CA",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Eliel",
+      "pos": "CA",
+      "idade": 23,
+      "base": 81
+    },
+    {
+      "nome": "Hernandes",
+      "pos": "CA",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Mateus Santos",
+      "pos": "CA",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Jadson",
+      "pos": "PE",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Gabriel Mineiro",
+      "pos": "PE",
+      "idade": 20,
+      "base": 90
+    },
+    {
+      "nome": "Victor Barbara",
+      "pos": "PE",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Nathan Cruz",
+      "pos": "PE",
+      "idade": 19,
+      "base": 87
+    },
+    {
+      "nome": "Kauan Cristtyan",
+      "pos": "PD",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "João Silva",
+      "pos": "PD",
+      "idade": 20,
+      "base": 86
+    },
+    {
+      "nome": "Rodrigo Rodrigues",
+      "pos": "PD",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Eric",
+      "pos": "LE",
+      "idade": 25,
+      "base": 92
+    }
+  ],
+  "Juventude": [
+    {
+      "nome": "Jandrei",
+      "pos": "GOL",
+      "idade": 32,
+      "base": 72
+    },
+    {
+      "nome": "Pedro Rocha",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 72
+    },
+    {
+      "nome": "Ruan Carneiro",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 58
+    },
+    {
+      "nome": "Zé Henrique",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 65
+    },
+    {
+      "nome": "Patryck",
+      "pos": "LD",
+      "idade": 23,
+      "base": 82
+    },
+    {
+      "nome": "Nathan",
+      "pos": "LE",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Raí Ramos",
+      "pos": "LD",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Alan Ruschel",
+      "pos": "LE",
+      "idade": 36,
+      "base": 86
+    },
+    {
+      "nome": "Abner",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 91
+    },
+    {
+      "nome": "Messias",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Rodrigo Sam",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 82
+    },
+    {
+      "nome": "Marcos Paulo",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "Gabriel Pinheiro",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Mandaca",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 79
+    },
+    {
+      "nome": "Lucas Fernandes",
+      "pos": "VOL",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Lucas Mineiro",
+      "pos": "ME",
+      "idade": 29,
+      "base": 87
+    },
+    {
+      "nome": "Raí",
+      "pos": "MC",
+      "idade": 23,
+      "base": 87
+    },
+    {
+      "nome": "Pablo Roberto",
+      "pos": "MEI",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Davi Góes",
+      "pos": "MC",
+      "idade": 20,
+      "base": 83
+    },
+    {
+      "nome": "Léo Oliveira",
+      "pos": "MC",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Iba Ly",
+      "pos": "MC",
+      "idade": 23,
+      "base": 83
+    },
+    {
+      "nome": "Ray Breno",
+      "pos": "ME",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Gabriel Taliari",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Manuel Castro",
+      "pos": "CA",
+      "idade": 30,
+      "base": 87
+    },
+    {
+      "nome": "Alisson Safira",
+      "pos": "CA",
+      "idade": 30,
+      "base": 79
+    },
+    {
+      "nome": "Juan Christian",
+      "pos": "PE",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Marcos Paulo",
+      "pos": "PE",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Emerson Galego",
+      "pos": "PD",
+      "idade": 26,
+      "base": 89
+    },
+    {
+      "nome": "Fábio Lima ",
+      "pos": "PD",
+      "idade": 29,
+      "base": 92
+    }
+  ],
+  "Vitória": [
+    {
+      "nome": "Lucas Arcanjo",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 67
+    },
+    {
+      "nome": "Gabriel",
+      "pos": "GOL",
+      "idade": 33,
+      "base": 66
+    },
+    {
+      "nome": "Fintelman",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 62
+    },
+    {
+      "nome": "Yuri Sena",
+      "pos": "GOL",
+      "idade": 25,
+      "base": 75
+    },
+    {
+      "nome": "Claudinho",
+      "pos": "LD",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Jamerson",
+      "pos": "LE",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Mateusinho",
+      "pos": "LD",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Luan Cândido",
+      "pos": "LE",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Nathan Mendes",
+      "pos": "LD",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Ramon",
+      "pos": "LE",
+      "idade": 24,
+      "base": 87
+    },
+    {
+      "nome": "Edu Ribeiro",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 74
+    },
+    {
+      "nome": "Riccieli",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Camutanga",
+      "pos": "ZAG",
+      "idade": 32,
+      "base": 73
+    },
+    {
+      "nome": "Cacá",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 74
+    },
+    {
+      "nome": "Neris",
+      "pos": "ZAG",
+      "idade": 33,
+      "base": 72
+    },
+    {
+      "nome": "Caíque Gonçalves",
+      "pos": "MC",
+      "idade": 30,
+      "base": 89
+    },
+    {
+      "nome": "Baralhas",
+      "pos": "MC",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Matheuzinho",
+      "pos": "MC",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Dudu",
+      "pos": "MC",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Rúben Ismael",
+      "pos": "MC",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Ronald",
+      "pos": "MD",
+      "idade": 22,
+      "base": 91
+    },
+    {
+      "nome": "Aitor Cantalapiedra",
+      "pos": "MC",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Emmanuel Martínez",
+      "pos": "MC",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Renato Kayzer",
+      "pos": "CA",
+      "idade": 29,
+      "base": 80
+    },
+    {
+      "nome": "Fabri",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Osvaldo",
+      "pos": "CA",
+      "idade": 38,
+      "base": 79
+    },
+    {
+      "nome": "Erick",
+      "pos": "PE",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Lucas Braga",
+      "pos": "PE",
+      "idade": 28,
+      "base": 89
+    },
+    {
+      "nome": "Renzo López",
+      "pos": "PE",
+      "idade": 31,
+      "base": 79
+    },
+    {
+      "nome": "Marinho",
+      "pos": "PD",
+      "idade": 35,
+      "base": 90
+    },
+    {
+      "nome": "Diego Tarzia",
+      "pos": "PD",
+      "idade": 22,
+      "base": 92
+    }
+  ],
+  "Criciúma": [
+    {
+      "nome": "Kauã Moroso",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 65
+    },
+    {
+      "nome": "Caíque",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 68
+    },
+    {
+      "nome": "Alisson",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 72
+    },
+    {
+      "nome": "Airton",
+      "pos": "GOL",
+      "idade": 31,
+      "base": 66
+    },
+    {
+      "nome": "Marcinho",
+      "pos": "LD",
+      "idade": 29,
+      "base": 85
+    },
+    {
+      "nome": "Léo Alaba",
+      "pos": "LE",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Jonathan",
+      "pos": "LD",
+      "idade": 32,
+      "base": 85
+    },
+    {
+      "nome": "Felipinho",
+      "pos": "LE",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Rodrigo",
+      "pos": "ZAG",
+      "idade": 38,
+      "base": 86
+    },
+    {
+      "nome": "Luciano Castán",
+      "pos": "ZAG",
+      "idade": 35,
+      "base": 70
+    },
+    {
+      "nome": "Yan Souto",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 72
+    },
+    {
+      "nome": "Matheus Trindade",
+      "pos": "MC",
+      "idade": 29,
+      "base": 90
+    },
+    {
+      "nome": "Juninho",
+      "pos": "MC",
+      "idade": 24,
+      "base": 82
+    },
+    {
+      "nome": "Jhonata Robert",
+      "pos": "ME",
+      "idade": 25,
+      "base": 84
+    },
+    {
+      "nome": "Fellipe Mateus",
+      "pos": "MC",
+      "idade": 34,
+      "base": 92
+    },
+    {
+      "nome": "Luiz Henrique",
+      "pos": "MC",
+      "idade": 26,
+      "base": 88
+    },
+    {
+      "nome": "Guilherme Lobo",
+      "pos": "MC",
+      "idade": 25,
+      "base": 79
+    },
+    {
+      "nome": "Zé Gabriel",
+      "pos": "MC",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Jean Carlos",
+      "pos": "MC",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Romulo Otero",
+      "pos": "MC",
+      "idade": 32,
+      "base": 82
+    },
+    {
+      "nome": "Diego Gonçalves",
+      "pos": "CA",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Sassá",
+      "pos": "CA",
+      "idade": 31,
+      "base": 79
+    },
+    {
+      "nome": "João Carlos",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Nicolas",
+      "pos": "PE",
+      "idade": 35,
+      "base": 76
+    },
+    {
+      "nome": "Samuel Otusanya",
+      "pos": "PE",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Benjamín Borasi",
+      "pos": "PD",
+      "idade": 27,
+      "base": 80
+    },
+    {
+      "nome": "Gustavo Maia",
+      "pos": "PD",
+      "idade": 24,
+      "base": 92
+    }
+  ],
+  "Sport": [
+    {
+      "nome": "Thiago Couto",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 72
+    },
+    {
+      "nome": "Halls",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 67
+    },
+    {
+      "nome": "Denis",
+      "pos": "GOL",
+      "idade": 38,
+      "base": 63
+    },
+    {
+      "nome": "Adriano",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 60
+    },
+    {
+      "nome": "Matheus Alexandre",
+      "pos": "LD",
+      "idade": 26,
+      "base": 75
+    },
+    {
+      "nome": "Felipinho",
+      "pos": "LE",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Davi Gabriel",
+      "pos": "LD",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Ramon Menezes",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 82
+    },
+    {
+      "nome": "Marcelo Ajul",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 83
+    },
+    {
+      "nome": "Zé Marcos",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Zé Lucas",
+      "pos": "MEI",
+      "idade": 17,
+      "base": 85
+    },
+    {
+      "nome": "Yago Felipe",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 75
+    },
+    {
+      "nome": "Sérgio Oliveira",
+      "pos": "ME",
+      "idade": 33,
+      "base": 82
+    },
+    {
+      "nome": "Pedro Augusto",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 79
+    },
+    {
+      "nome": "Fábio Matheus",
+      "pos": "MEI",
+      "idade": 22,
+      "base": 82
+    },
+    {
+      "nome": "Max",
+      "pos": "MD",
+      "idade": 24,
+      "base": 84
+    },
+    {
+      "nome": "Zé Gabriel",
+      "pos": "MEI",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Pedro Martins",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 87
+    },
+    {
+      "nome": "Lucas André",
+      "pos": "ME",
+      "idade": 23,
+      "base": 77
+    },
+    {
+      "nome": "Luciano",
+      "pos": "MC",
+      "idade": 22,
+      "base": 83
+    },
+    {
+      "nome": "Biel Fonseca",
+      "pos": "MC",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Gustavo Coutinho",
+      "pos": "CA",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Chrystian Barletta",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Carlos de Pena",
+      "pos": "CA",
+      "idade": 33,
+      "base": 86
+    },
+    {
+      "nome": "Clayson",
+      "pos": "CA",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Iury Castilho",
+      "pos": "PE",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Romarinho",
+      "pos": "PE",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Marlon",
+      "pos": "PE",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Zé Roberto",
+      "pos": "PD",
+      "idade": 32,
+      "base": 79
+    },
+    {
+      "nome": "Gustavo Maia",
+      "pos": "PD",
+      "idade": 25,
+      "base": 88
+    },
+    {
+      "nome": "Dieguinho",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Marcelo Benevenuto",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 90
+    }
+  ],
+  "Ceará": [
+    {
+      "nome": "Bruno",
+      "pos": "GOL",
+      "idade": 31,
+      "base": 74
+    },
+    {
+      "nome": "Richard Costa",
+      "pos": "GOL",
+      "idade": 34,
+      "base": 70
+    },
+    {
+      "nome": "Jorge Meurer",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 72
+    },
+    {
+      "nome": "Fernando",
+      "pos": "LD",
+      "idade": 26,
+      "base": 75
+    },
+    {
+      "nome": "Rafael Ramos",
+      "pos": "LE",
+      "idade": 31,
+      "base": 86
+    },
+    {
+      "nome": "Alex Silva",
+      "pos": "LD",
+      "idade": 31,
+      "base": 89
+    },
+    {
+      "nome": "Sánchez",
+      "pos": "LE",
+      "idade": 30,
+      "base": 83
+    },
+    {
+      "nome": "Luiz Otávio",
+      "pos": "ZAG",
+      "idade": 33,
+      "base": 72
+    },
+    {
+      "nome": "Júlio César",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 91
+    },
+    {
+      "nome": "Éder",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 82
+    },
+    {
+      "nome": "Luiz Otávio",
+      "pos": "ZAG",
+      "idade": 37,
+      "base": 86
+    },
+    {
+      "nome": "Ronald Carvalho",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Stanley Boateng",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 81
+    },
+    {
+      "nome": "Pedro Gilmar",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 83
+    },
+    {
+      "nome": "Zanocelo",
+      "pos": "MC",
+      "idade": 25,
+      "base": 90
+    },
+    {
+      "nome": "Dieguinho",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 86
+    },
+    {
+      "nome": "Matheus Araújo",
+      "pos": "ME",
+      "idade": 23,
+      "base": 82
+    },
+    {
+      "nome": "Matheusinho",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 76
+    },
+    {
+      "nome": "Juan Alano",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 84
+    },
+    {
+      "nome": "Lucas Lima",
+      "pos": "MC",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Vina",
+      "pos": "VOL",
+      "idade": 34,
+      "base": 77
+    },
+    {
+      "nome": "Richardson",
+      "pos": "MEI",
+      "idade": 34,
+      "base": 85
+    },
+    {
+      "nome": "Wendel",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Fernandinho",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Lucca",
+      "pos": "PE",
+      "idade": 22,
+      "base": 90
+    },
+    {
+      "nome": "Pedro Henrique",
+      "pos": "PE",
+      "idade": 35,
+      "base": 85
+    },
+    {
+      "nome": "Kauã",
+      "pos": "PD",
+      "idade": 19,
+      "base": 92
+    }
+  ],
+  "Coritiba": [
+    {
+      "nome": "Pedro Rangel",
+      "pos": "GOL",
+      "idade": 25,
+      "base": 72
+    },
+    {
+      "nome": "Pedro Morisco",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 65
+    },
+    {
+      "nome": "Keiller",
+      "pos": "GOL",
+      "idade": 29,
+      "base": 67
+    },
+    {
+      "nome": "Benassi",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 65
+    },
+    {
+      "nome": "João Almeida",
+      "pos": "LD",
+      "idade": 19,
+      "base": 82
+    },
+    {
+      "nome": "Felipe Guimarães",
+      "pos": "LE",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Tinga",
+      "pos": "LD",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Bruno Melo",
+      "pos": "LE",
+      "idade": 32,
+      "base": 83
+    },
+    {
+      "nome": "João Pedro Chermont",
+      "pos": "LD",
+      "idade": 20,
+      "base": 90
+    },
+    {
+      "nome": "Felipe Jonatan",
+      "pos": "LE",
+      "idade": 27,
+      "base": 74
+    },
+    {
+      "nome": "Thiago Santos",
+      "pos": "ZAG",
+      "idade": 36,
+      "base": 79
+    },
+    {
+      "nome": "Jacy Maranhão",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Maicon",
+      "pos": "ZAG",
+      "idade": 36,
+      "base": 70
+    },
+    {
+      "nome": "Tiago Cóser",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 88
+    },
+    {
+      "nome": "Rodrigo Moledo",
+      "pos": "ZAG",
+      "idade": 38,
+      "base": 86
+    },
+    {
+      "nome": "Sebastián Gómez",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Josué",
+      "pos": "MEI",
+      "idade": 35,
+      "base": 72
+    },
+    {
+      "nome": "Vini Paulista",
+      "pos": "MC",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Wallisson",
+      "pos": "MC",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Fernando Sobral",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 86
+    },
+    {
+      "nome": "Jean Gabriel",
+      "pos": "MD",
+      "idade": 23,
+      "base": 77
+    },
+    {
+      "nome": "Gustavo",
+      "pos": "MC",
+      "idade": 23,
+      "base": 87
+    },
+    {
+      "nome": "Willian Oliveira",
+      "pos": "MC",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Wallisson Luiz",
+      "pos": "VOL",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Alejandro Ararat",
+      "pos": "MEI",
+      "idade": 19,
+      "base": 88
+    },
+    {
+      "nome": "Lucas Ronier",
+      "pos": "MC",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Joaquín Lavega",
+      "pos": "CA",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Keno",
+      "pos": "CA",
+      "idade": 36,
+      "base": 84
+    },
+    {
+      "nome": "Breno Lopes",
+      "pos": "CA",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Pedro Rocha",
+      "pos": "PE",
+      "idade": 30,
+      "base": 79
+    },
+    {
+      "nome": "Rodrigo Rodrigues",
+      "pos": "PD",
+      "idade": 29,
+      "base": 80
+    },
+    {
+      "nome": "Fabinho",
+      "pos": "PD",
+      "idade": 26,
+      "base": 92
+    }
+  ],
+  "Ponte Preta": [
+    {
+      "nome": "Diogo Silva",
+      "pos": "GOL",
+      "idade": 39,
+      "base": 68
+    },
+    {
+      "nome": "Thiago Coelho",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 66
+    },
+    {
+      "nome": "Vinicius Ferrari",
+      "pos": "GOL",
+      "idade": 23,
+      "base": 73
+    },
+    {
+      "nome": "Guilherme Viana",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 60
+    },
+    {
+      "nome": "Kevyson",
+      "pos": "LD",
+      "idade": 21,
+      "base": 90
+    },
+    {
+      "nome": "Bryan Borges",
+      "pos": "LE",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Danilo Barcelos",
+      "pos": "LD",
+      "idade": 34,
+      "base": 84
+    },
+    {
+      "nome": "Pacheco",
+      "pos": "LE",
+      "idade": 34,
+      "base": 85
+    },
+    {
+      "nome": "Diego Tavares",
+      "pos": "LD",
+      "idade": 34,
+      "base": 90
+    },
+    {
+      "nome": "Justen",
+      "pos": "LE",
+      "idade": 22,
+      "base": 79
+    },
+    {
+      "nome": "João Gabriel",
+      "pos": "LD",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Diego Porfírio",
+      "pos": "LE",
+      "idade": 26,
+      "base": 84
+    },
+    {
+      "nome": "Lucas Cunha",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 85
+    },
+    {
+      "nome": "David Braz",
+      "pos": "ZAG",
+      "idade": 38,
+      "base": 70
+    },
+    {
+      "nome": "Tarik",
+      "pos": "MC",
+      "idade": 33,
+      "base": 83
+    },
+    {
+      "nome": "Rodrigo Souza",
+      "pos": "MEI",
+      "idade": 38,
+      "base": 83
+    },
+    {
+      "nome": "Dudu Scheit",
+      "pos": "ME",
+      "idade": 24,
+      "base": 76
+    },
+    {
+      "nome": "Lucas Emanuel",
+      "pos": "MEI",
+      "idade": 17,
+      "base": 82
+    },
+    {
+      "nome": "Élvis",
+      "pos": "MC",
+      "idade": 35,
+      "base": 84
+    },
+    {
+      "nome": "Diogo Mora",
+      "pos": "MD",
+      "idade": 24,
+      "base": 87
+    },
+    {
+      "nome": "Murilo Cavalcante",
+      "pos": "MEI",
+      "idade": 26,
+      "base": 87
+    },
+    {
+      "nome": "William Pottker",
+      "pos": "CA",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Luis Phelipe",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Jonathan Cafu",
+      "pos": "CA",
+      "idade": 34,
+      "base": 92
+    },
+    {
+      "nome": "João Damião",
+      "pos": "PE",
+      "idade": 17,
+      "base": 92
+    },
+    {
+      "nome": "Brandão",
+      "pos": "PD",
+      "idade": 21,
+      "base": 78
+    },
+    {
+      "nome": "David da Hora",
+      "pos": "PD",
+      "idade": 26,
+      "base": 91
+    }
+  ],
+  "Guarani": [
+    {
+      "nome": "Andrey Ventura",
+      "pos": "GOL",
+      "idade": 32,
+      "base": 61
+    },
+    {
+      "nome": "Fred Conte",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 65
+    },
+    {
+      "nome": "Ralf ",
+      "pos": "MC",
+      "idade": 41,
+      "base": 86
+    },
+    {
+      "nome": "Emerson",
+      "pos": "LD",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Lucas Justen",
+      "pos": "LE",
+      "idade": 22,
+      "base": 88
+    },
+    {
+      "nome": "JP Galvão",
+      "pos": "LD",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Cicinho",
+      "pos": "LE",
+      "idade": 36,
+      "base": 82
+    },
+    {
+      "nome": "Vinicius Kauê",
+      "pos": "LD",
+      "idade": 22,
+      "base": 79
+    },
+    {
+      "nome": "Renan Castro",
+      "pos": "LE",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Raphael",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 74
+    },
+    {
+      "nome": "Lucão",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Titi",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 72
+    },
+    {
+      "nome": "Alan Santos",
+      "pos": "ZAG",
+      "idade": 34,
+      "base": 72
+    },
+    {
+      "nome": "Léo Coltro",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 77
+    },
+    {
+      "nome": "Maurício Antônio",
+      "pos": "ZAG",
+      "idade": 34,
+      "base": 88
+    },
+    {
+      "nome": "Kadi Silva",
+      "pos": "MC",
+      "idade": 29,
+      "base": 85
+    },
+    {
+      "nome": "Mateus Sarará",
+      "pos": "ME",
+      "idade": 23,
+      "base": 85
+    },
+    {
+      "nome": "Caio Mello",
+      "pos": "MC",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Isaque",
+      "pos": "MC",
+      "idade": 28,
+      "base": 89
+    },
+    {
+      "nome": "Giva",
+      "pos": "VOL",
+      "idade": 26,
+      "base": 76
+    },
+    {
+      "nome": "Diego Torres",
+      "pos": "MC",
+      "idade": 34,
+      "base": 92
+    },
+    {
+      "nome": "Kauã Jesus",
+      "pos": "VOL",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Kelvi Gomes",
+      "pos": "ME",
+      "idade": 22,
+      "base": 85
+    },
+    {
+      "nome": "Pablo",
+      "pos": "MC",
+      "idade": 21,
+      "base": 83
+    },
+    {
+      "nome": "Vinicius Yuji",
+      "pos": "MC",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Deni Júnior",
+      "pos": "CA",
+      "idade": 30,
+      "base": 88
+    },
+    {
+      "nome": "Bruno Santos",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "João Victor",
+      "pos": "PE",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Luiz Miguel",
+      "pos": "PE",
+      "idade": 23,
+      "base": 86
+    },
+    {
+      "nome": "Samuel",
+      "pos": "PD",
+      "idade": 24,
+      "base": 91
+    }
+  ],
+  "Avaí": [
+    {
+      "nome": "Léo Aragão",
+      "pos": "GOL",
+      "idade": 23,
+      "base": 70
+    },
+    {
+      "nome": "Igor Bohn",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 71
+    },
+    {
+      "nome": "Otávio",
+      "pos": "GOL",
+      "idade": 33,
+      "base": 73
+    },
+    {
+      "nome": "Quaresma",
+      "pos": "LD",
+      "idade": 29,
+      "base": 84
+    },
+    {
+      "nome": "Wallison",
+      "pos": "LE",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Douglas Teixeira",
+      "pos": "LD",
+      "idade": 24,
+      "base": 75
+    },
+    {
+      "nome": "João Bezerra",
+      "pos": "LE",
+      "idade": 21,
+      "base": 85
+    },
+    {
+      "nome": "Guilherme Aquino",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 72
+    },
+    {
+      "nome": "Nicolas Cabral",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Allyson",
+      "pos": "ZAG",
+      "idade": 35,
+      "base": 89
+    },
+    {
+      "nome": "João Maistro",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Gabriel Simples",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 72
+    },
+    {
+      "nome": "Bruno Baldini",
+      "pos": "ZAG",
+      "idade": 18,
+      "base": 88
+    },
+    {
+      "nome": "Kauã Dias",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 72
+    },
+    {
+      "nome": "Paulo Vitor",
+      "pos": "MC",
+      "idade": 21,
+      "base": 83
+    },
+    {
+      "nome": "Daniel Penha",
+      "pos": "MEI",
+      "idade": 27,
+      "base": 79
+    },
+    {
+      "nome": "Zé Ricardo",
+      "pos": "ME",
+      "idade": 29,
+      "base": 87
+    },
+    {
+      "nome": "Romildo Del Piage",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 84
+    },
+    {
+      "nome": "Hyan",
+      "pos": "MEI",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Luiz Henrique",
+      "pos": "MD",
+      "idade": 26,
+      "base": 79
+    },
+    {
+      "nome": "Jamerson",
+      "pos": "MC",
+      "idade": 19,
+      "base": 83
+    },
+    {
+      "nome": "Jean Lucas",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 75
+    },
+    {
+      "nome": "Vinicius Gugel",
+      "pos": "MC",
+      "idade": 18,
+      "base": 83
+    },
+    {
+      "nome": "Pedro Cuiabá",
+      "pos": "MEI",
+      "idade": 23,
+      "base": 77
+    },
+    {
+      "nome": "Cristiano",
+      "pos": "MEI",
+      "idade": 39,
+      "base": 75
+    },
+    {
+      "nome": "Wenderson",
+      "pos": "MC",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Thayllon",
+      "pos": "CA",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Rafael Bilu",
+      "pos": "CA",
+      "idade": 26,
+      "base": 88
+    },
+    {
+      "nome": "Felipe Avenatti",
+      "pos": "CA",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Gaspar",
+      "pos": "PE",
+      "idade": 23,
+      "base": 86
+    },
+    {
+      "nome": "Walace França",
+      "pos": "PE",
+      "idade": 20,
+      "base": 90
+    },
+    {
+      "nome": "Kevin",
+      "pos": "PD",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Sorriso",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Wesley Gasolina",
+      "pos": "LD",
+      "idade": 25,
+      "base": 92
+    }
+  ],
+  "Chapecoense": [
+    {
+      "nome": "Rafael Santos",
+      "pos": "GOL",
+      "idade": 36,
+      "base": 69
+    },
+    {
+      "nome": "Anderson",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 73
+    },
+    {
+      "nome": "Léo Vieira",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 63
+    },
+    {
+      "nome": "Everton",
+      "pos": "LD",
+      "idade": 30,
+      "base": 83
+    },
+    {
+      "nome": "Walter Clar",
+      "pos": "LE",
+      "idade": 30,
+      "base": 83
+    },
+    {
+      "nome": "Marcos Vinícius",
+      "pos": "LD",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Mancha",
+      "pos": "LE",
+      "idade": 23,
+      "base": 82
+    },
+    {
+      "nome": "Bruno Pacheco",
+      "pos": "LD",
+      "idade": 34,
+      "base": 84
+    },
+    {
+      "nome": "Gustavo Talles",
+      "pos": "LE",
+      "idade": 22,
+      "base": 82
+    },
+    {
+      "nome": "Eduardo Doma",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 85
+    },
+    {
+      "nome": "João Paulo",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 74
+    },
+    {
+      "nome": "Bruno Leonardo",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 85
+    },
+    {
+      "nome": "Victor Caetano",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 85
+    },
+    {
+      "nome": "Rafael Thyere",
+      "pos": "ZAG",
+      "idade": 32,
+      "base": 82
+    },
+    {
+      "nome": "Kauan Faria",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 83
+    },
+    {
+      "nome": "Bruno Matias",
+      "pos": "MC",
+      "idade": 26,
+      "base": 89
+    },
+    {
+      "nome": "Rafael Carvalheira",
+      "pos": "MC",
+      "idade": 26,
+      "base": 85
+    },
+    {
+      "nome": "Giovanni Augusto",
+      "pos": "MC",
+      "idade": 36,
+      "base": 85
+    },
+    {
+      "nome": "Camilo",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 87
+    },
+    {
+      "nome": "Robert Santos",
+      "pos": "MC",
+      "idade": 22,
+      "base": 81
+    },
+    {
+      "nome": "Jean Carlos",
+      "pos": "MD",
+      "idade": 34,
+      "base": 74
+    },
+    {
+      "nome": "Higor Meritão",
+      "pos": "MC",
+      "idade": 31,
+      "base": 89
+    },
+    {
+      "nome": "Vinicius Balieiro",
+      "pos": "MC",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Marcinho",
+      "pos": "CA",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Italo Vargas",
+      "pos": "CA",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Neto Pessoa",
+      "pos": "CA",
+      "idade": 31,
+      "base": 79
+    },
+    {
+      "nome": "Mailson",
+      "pos": "CA",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "João Bom",
+      "pos": "PE",
+      "idade": 20,
+      "base": 81
+    },
+    {
+      "nome": "Yannick Bolasie",
+      "pos": "PE",
+      "idade": 36,
+      "base": 81
+    },
+    {
+      "nome": "Perotti",
+      "pos": "PE",
+      "idade": 27,
+      "base": 83
+    },
+    {
+      "nome": "Ênio",
+      "pos": "PD",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Jonathan Palacios",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Maurício Garcez",
+      "pos": "PD",
+      "idade": 28,
+      "base": 92
+    }
+  ],
+  "Náutico": [
+    {
+      "nome": "Gastón Guruceaga",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 61
+    },
+    {
+      "nome": "Muriel",
+      "pos": "GOL",
+      "idade": 39,
+      "base": 71
+    },
+    {
+      "nome": "Arthur",
+      "pos": "GOL",
+      "idade": 29,
+      "base": 62
+    },
+    {
+      "nome": "Reginaldo",
+      "pos": "LD",
+      "idade": 33,
+      "base": 73
+    },
+    {
+      "nome": "Yuri",
+      "pos": "LE",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Igor Fernandes",
+      "pos": "LD",
+      "idade": 33,
+      "base": 85
+    },
+    {
+      "nome": "Luiz Paulo",
+      "pos": "LE",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Léo Jance",
+      "pos": "LD",
+      "idade": 20,
+      "base": 82
+    },
+    {
+      "nome": "Arnaldo",
+      "pos": "LE",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Luiz Felipe",
+      "pos": "LD",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Alemão",
+      "pos": "ZAG",
+      "idade": 35,
+      "base": 70
+    },
+    {
+      "nome": "Wanderson",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Mateus Silva",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "Índio",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 72
+    },
+    {
+      "nome": "Dodô",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 90
+    },
+    {
+      "nome": "Juninho",
+      "pos": "MC",
+      "idade": 30,
+      "base": 82
+    },
+    {
+      "nome": "Auremir",
+      "pos": "MC",
+      "idade": 34,
+      "base": 91
+    },
+    {
+      "nome": "Wenderson",
+      "pos": "MC",
+      "idade": 27,
+      "base": 85
+    },
+    {
+      "nome": "Ramon",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Felipe Cardoso",
+      "pos": "MC",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Jonas Toró",
+      "pos": "CA",
+      "idade": 26,
+      "base": 88
+    },
+    {
+      "nome": "Júnior Todinho",
+      "pos": "CA",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Felipe Saraiva",
+      "pos": "CA",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Vinícius",
+      "pos": "PE",
+      "idade": 32,
+      "base": 87
+    },
+    {
+      "nome": "Paulo Sérgio",
+      "pos": "PD",
+      "idade": 36,
+      "base": 76
+    },
+    {
+      "nome": "Samuel Otusanya",
+      "pos": "PD",
+      "idade": 21,
+      "base": 86
+    }
+  ],
+  "CRB": [
+    {
+      "nome": "Matheus Albino",
+      "pos": "GOL",
+      "idade": 31,
+      "base": 71
+    },
+    {
+      "nome": "Vitor Caetano",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 72
+    },
+    {
+      "nome": "Fábio Henrique",
+      "pos": "GOL",
+      "idade": 23,
+      "base": 73
+    },
+    {
+      "nome": "Hereda",
+      "pos": "LD",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Lucas Lovat",
+      "pos": "LE",
+      "idade": 29,
+      "base": 87
+    },
+    {
+      "nome": "Weverton",
+      "pos": "LD",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Léo Campos",
+      "pos": "LE",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Henri",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 85
+    },
+    {
+      "nome": "Fábio Alemão",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 74
+    },
+    {
+      "nome": "Bressan",
+      "pos": "ZAG",
+      "idade": 33,
+      "base": 91
+    },
+    {
+      "nome": "Darlisson",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 72
+    },
+    {
+      "nome": "Lyncon",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Danielzinho",
+      "pos": "VOL",
+      "idade": 30,
+      "base": 78
+    },
+    {
+      "nome": "Crystopher",
+      "pos": "MEI",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Geovane",
+      "pos": "ME",
+      "idade": 26,
+      "base": 79
+    },
+    {
+      "nome": "Lucas Kallyel",
+      "pos": "MEI",
+      "idade": 21,
+      "base": 85
+    },
+    {
+      "nome": "Luizão",
+      "pos": "MC",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Pedro Castro",
+      "pos": "MD",
+      "idade": 33,
+      "base": 74
+    },
+    {
+      "nome": "Luiz Fernando",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 78
+    },
+    {
+      "nome": "Thiaguinho",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Mikael",
+      "pos": "CA",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Douglas Baggio",
+      "pos": "CA",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Luiz Phellype",
+      "pos": "PE",
+      "idade": 32,
+      "base": 88
+    },
+    {
+      "nome": "Dadá Belmonte",
+      "pos": "PE",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "João Neto",
+      "pos": "PE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Vinícius Barata",
+      "pos": "PD",
+      "idade": 27,
+      "base": 83
+    },
+    {
+      "nome": "Guilherme Pato",
+      "pos": "PD",
+      "idade": 25,
+      "base": 92
+    }
+  ],
+  "CSA": [
+    {
+      "nome": "Gabriel Felix",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 67
+    },
+    {
+      "nome": "Enzo",
+      "pos": "LD",
+      "idade": 23,
+      "base": 82
+    },
+    {
+      "nome": "Roberto",
+      "pos": "LE",
+      "idade": 34,
+      "base": 84
+    },
+    {
+      "nome": "Felipe Albuquerque",
+      "pos": "LD",
+      "idade": 25,
+      "base": 84
+    },
+    {
+      "nome": "Betão",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 85
+    },
+    {
+      "nome": "Marcão",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Islan",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 79
+    },
+    {
+      "nome": "Gustavo Nicola",
+      "pos": "MC",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Camacho",
+      "pos": "MC",
+      "idade": 35,
+      "base": 86
+    },
+    {
+      "nome": "Brayann",
+      "pos": "MC",
+      "idade": 27,
+      "base": 79
+    },
+    {
+      "nome": "Vander",
+      "pos": "MC",
+      "idade": 26,
+      "base": 89
+    },
+    {
+      "nome": "Álvaro",
+      "pos": "MC",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Silas",
+      "pos": "VOL",
+      "idade": 29,
+      "base": 82
+    },
+    {
+      "nome": "Gustavinho",
+      "pos": "MEI",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Guilherme Cachoeira",
+      "pos": "CA",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Igor Bahia",
+      "pos": "CA",
+      "idade": 32,
+      "base": 79
+    },
+    {
+      "nome": "Tiago Marques",
+      "pos": "CA",
+      "idade": 37,
+      "base": 76
+    },
+    {
+      "nome": "Marcelinho",
+      "pos": "PE",
+      "idade": 29,
+      "base": 88
+    },
+    {
+      "nome": "Matías Cavalleri",
+      "pos": "PE",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Klenisson",
+      "pos": "PE",
+      "idade": 30,
+      "base": 79
+    },
+    {
+      "nome": "Robinho",
+      "pos": "PD",
+      "idade": 24,
+      "base": 91
+    },
+    {
+      "nome": "Baianinho",
+      "pos": "PD",
+      "idade": 25,
+      "base": 83
+    }
+  ],
+  "Goiás": [
+    {
+      "nome": "Tadeu",
+      "pos": "GOL",
+      "idade": 34,
+      "base": 65
+    },
+    {
+      "nome": "Ezequiel Oliveira",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 70
+    },
+    {
+      "nome": "Thiago Rodrigues",
+      "pos": "GOL",
+      "idade": 37,
+      "base": 63
+    },
+    {
+      "nome": "José Catula",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 70
+    },
+    {
+      "nome": "Rodrigo Soares",
+      "pos": "LD",
+      "idade": 33,
+      "base": 82
+    },
+    {
+      "nome": "Diego Caito",
+      "pos": "LE",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Nicolas",
+      "pos": "LD",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Djalma Silva",
+      "pos": "LE",
+      "idade": 31,
+      "base": 83
+    },
+    {
+      "nome": "Danilo Cunha",
+      "pos": "LD",
+      "idade": 18,
+      "base": 85
+    },
+    {
+      "nome": "Lucas Ribeiro",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Luisão",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 72
+    },
+    {
+      "nome": "Luiz Felipe",
+      "pos": "ZAG",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Anthony",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 81
+    },
+    {
+      "nome": "Titi",
+      "pos": "ZAG",
+      "idade": 37,
+      "base": 86
+    },
+    {
+      "nome": "Lourenço",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Filipe Machado",
+      "pos": "MC",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "Lucas Lima",
+      "pos": "ME",
+      "idade": 35,
+      "base": 72
+    },
+    {
+      "nome": "Baldória",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 91
+    },
+    {
+      "nome": "Gegê",
+      "pos": "MC",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Brayann",
+      "pos": "MD",
+      "idade": 28,
+      "base": 76
+    },
+    {
+      "nome": "Lucas Rodrigues",
+      "pos": "VOL",
+      "idade": 18,
+      "base": 77
+    },
+    {
+      "nome": "Bruno Sávio",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 78
+    },
+    {
+      "nome": "Juninho",
+      "pos": "ME",
+      "idade": 38,
+      "base": 83
+    },
+    {
+      "nome": "Jean Carlos",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 74
+    },
+    {
+      "nome": "Wellington Rato",
+      "pos": "MC",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Pedrinho",
+      "pos": "CA",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Cadu",
+      "pos": "CA",
+      "idade": 21,
+      "base": 83
+    },
+    {
+      "nome": "Esli García",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Anselmo Ramon",
+      "pos": "PE",
+      "idade": 37,
+      "base": 88
+    },
+    {
+      "nome": "Kadu",
+      "pos": "PD",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Vitor Hugo",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    }
+  ],
+  "Vila Nova": [
+    {
+      "nome": "Gabriel Átila",
+      "pos": "GOL",
+      "idade": 23,
+      "base": 73
+    },
+    {
+      "nome": "Dalberson",
+      "pos": "GOL",
+      "idade": 29,
+      "base": 72
+    },
+    {
+      "nome": "Kauã Paes",
+      "pos": "GOL",
+      "idade": 19,
+      "base": 73
+    },
+    {
+      "nome": "Helton Leite",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 71
+    },
+    {
+      "nome": "Elias",
+      "pos": "LD",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Hayner",
+      "pos": "LE",
+      "idade": 30,
+      "base": 85
+    },
+    {
+      "nome": "Thalys",
+      "pos": "LD",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Willian Formiga",
+      "pos": "LE",
+      "idade": 31,
+      "base": 86
+    },
+    {
+      "nome": "Higor",
+      "pos": "LD",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Anderson",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 82
+    },
+    {
+      "nome": "Weverton",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "Pedro Romano",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Tiago Pagnussat",
+      "pos": "ZAG",
+      "idade": 35,
+      "base": 86
+    },
+    {
+      "nome": "Willian Maranhão",
+      "pos": "MC",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "João Vieira",
+      "pos": "MC",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Bruno Xavier",
+      "pos": "ME",
+      "idade": 29,
+      "base": 79
+    },
+    {
+      "nome": "Nathan Camargo",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 85
+    },
+    {
+      "nome": "Marquinhos Gabriel",
+      "pos": "VOL",
+      "idade": 35,
+      "base": 72
+    },
+    {
+      "nome": "Enzo",
+      "pos": "MD",
+      "idade": 22,
+      "base": 88
+    },
+    {
+      "nome": "Marco Antônio",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 87
+    },
+    {
+      "nome": "Daniel Mendes",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 84
+    },
+    {
+      "nome": "Janderson",
+      "pos": "CA",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "André Luis",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Emerson Urso",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Dellatorre",
+      "pos": "PE",
+      "idade": 34,
+      "base": 90
+    },
+    {
+      "nome": "Rafa Silva",
+      "pos": "PE",
+      "idade": 33,
+      "base": 87
+    },
+    {
+      "nome": "Ruan Ribeiro",
+      "pos": "PE",
+      "idade": 22,
+      "base": 87
+    },
+    {
+      "nome": "Dodô",
+      "pos": "PD",
+      "idade": 31,
+      "base": 82
+    },
+    {
+      "nome": "Ryan",
+      "pos": "PD",
+      "idade": 24,
+      "base": 92
+    }
+  ],
+  "Sampaio Corrêa": [
+    {
+      "nome": "Zé Pompeu",
+      "pos": "GOL",
+      "idade": 19,
+      "base": 65
+    },
+    {
+      "nome": "Kaká",
+      "pos": "GOL",
+      "idade": 19,
+      "base": 66
+    },
+    {
+      "nome": "Zé Carlos",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 66
+    },
+    {
+      "nome": "Paulinho",
+      "pos": "LD",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Cauã",
+      "pos": "LE",
+      "idade": 18,
+      "base": 90
+    },
+    {
+      "nome": "Eliandro Carvalho",
+      "pos": "LD",
+      "idade": 26,
+      "base": 87
+    },
+    {
+      "nome": "Rafael Oliveira",
+      "pos": "LE",
+      "idade": 20,
+      "base": 90
+    },
+    {
+      "nome": "Eduardo Thuram",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 83
+    },
+    {
+      "nome": "Gabriel Custódio",
+      "pos": "ZAG",
+      "idade": 18,
+      "base": 72
+    },
+    {
+      "nome": "Caíque",
+      "pos": "MC",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "David Tota",
+      "pos": "MC",
+      "idade": 21,
+      "base": 81
+    },
+    {
+      "nome": "Matú",
+      "pos": "ME",
+      "idade": 23,
+      "base": 85
+    },
+    {
+      "nome": "Natan",
+      "pos": "MC",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Davi Gomes",
+      "pos": "MC",
+      "idade": 24,
+      "base": 83
+    },
+    {
+      "nome": "Paulo Henrique",
+      "pos": "MC",
+      "idade": 20,
+      "base": 86
+    },
+    {
+      "nome": "Rômulo",
+      "pos": "CA",
+      "idade": 44,
+      "base": 76
+    }
+  ],
+  "Tombense": [
+    {
+      "nome": "Matheus Aurélio",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 67
+    },
+    {
+      "nome": "Vinícius Dias",
+      "pos": "GOL",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Júlio Henrique",
+      "pos": "LD",
+      "idade": 22,
+      "base": 84
+    },
+    {
+      "nome": "Dudu Mandai",
+      "pos": "LE",
+      "idade": 32,
+      "base": 83
+    },
+    {
+      "nome": "Léo Pereira",
+      "pos": "LD",
+      "idade": 27,
+      "base": 87
+    },
+    {
+      "nome": "Kaike",
+      "pos": "LE",
+      "idade": 30,
+      "base": 85
+    },
+    {
+      "nome": "Tarcísio",
+      "pos": "LD",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Roger Carvalho",
+      "pos": "ZAG",
+      "idade": 38,
+      "base": 79
+    },
+    {
+      "nome": "Ianson",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "João Mandovani",
+      "pos": "ZAG",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Rony Fernandes",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Pedro Oliveira",
+      "pos": "MC",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Jefferson Renan",
+      "pos": "MC",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Lucas Mila",
+      "pos": "ME",
+      "idade": 22,
+      "base": 74
+    },
+    {
+      "nome": "Fabricio Dias",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Rickson",
+      "pos": "MC",
+      "idade": 27,
+      "base": 85
+    },
+    {
+      "nome": "João Vitor",
+      "pos": "MD",
+      "idade": 21,
+      "base": 82
+    },
+    {
+      "nome": "Cleiton",
+      "pos": "MC",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "João Pedro",
+      "pos": "CA",
+      "idade": 22,
+      "base": 81
+    },
+    {
+      "nome": "Anderson Ligeiro",
+      "pos": "CA",
+      "idade": 30,
+      "base": 79
+    },
+    {
+      "nome": "Douglas Coutinho",
+      "pos": "CA",
+      "idade": 31,
+      "base": 79
+    },
+    {
+      "nome": "Rafael Silva",
+      "pos": "PE",
+      "idade": 30,
+      "base": 79
+    },
+    {
+      "nome": "Zé Eduardo",
+      "pos": "PD",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Jupi",
+      "pos": "PD",
+      "idade": 21,
+      "base": 81
+    }
+  ],
+  "Mirassol": [
+    {
+      "nome": "Alex Muralha",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 71
+    },
+    {
+      "nome": "Walter",
+      "pos": "GOL",
+      "idade": 38,
+      "base": 58
+    },
+    {
+      "nome": "Thomazella",
+      "pos": "GOL",
+      "idade": 35,
+      "base": 64
+    },
+    {
+      "nome": "Georgemy",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 61
+    },
+    {
+      "nome": "Reinaldo",
+      "pos": "LD",
+      "idade": 36,
+      "base": 77
+    },
+    {
+      "nome": "Daniel Borges",
+      "pos": "LE",
+      "idade": 32,
+      "base": 74
+    },
+    {
+      "nome": "Igor Formiga",
+      "pos": "LD",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Victor Luís",
+      "pos": "LE",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Igor Cariús",
+      "pos": "LD",
+      "idade": 32,
+      "base": 74
+    },
+    {
+      "nome": "João Victor",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 83
+    },
+    {
+      "nome": "Willian Machado",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 85
+    },
+    {
+      "nome": "Lucas Oliveira",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 83
+    },
+    {
+      "nome": "Rodrigues",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Gabriel Pires",
+      "pos": "MC",
+      "idade": 32,
+      "base": 89
+    },
+    {
+      "nome": "Yuri Lara",
+      "pos": "MC",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Neto Moura",
+      "pos": "MC",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Chico Kim",
+      "pos": "MC",
+      "idade": 34,
+      "base": 92
+    },
+    {
+      "nome": "José Aldo",
+      "pos": "MC",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Carlos Eduardo",
+      "pos": "MD",
+      "idade": 36,
+      "base": 80
+    },
+    {
+      "nome": "Lucas Mugni",
+      "pos": "MEI",
+      "idade": 33,
+      "base": 74
+    },
+    {
+      "nome": "Shaylon",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 76
+    },
+    {
+      "nome": "Denilson",
+      "pos": "MC",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Negueba",
+      "pos": "CA",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Edson Carioca",
+      "pos": "CA",
+      "idade": 28,
+      "base": 80
+    },
+    {
+      "nome": "Alesson",
+      "pos": "CA",
+      "idade": 26,
+      "base": 83
+    },
+    {
+      "nome": "Carlos Eduardo",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Antonio Galeano",
+      "pos": "PE",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Nathan Fogaça",
+      "pos": "PE",
+      "idade": 26,
+      "base": 80
+    },
+    {
+      "nome": "Tiquinho Soares",
+      "pos": "PE",
+      "idade": 34,
+      "base": 78
+    },
+    {
+      "nome": "Everton Galdino",
+      "pos": "PD",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "André Luis",
+      "pos": "PD",
+      "idade": 31,
+      "base": 82
+    },
+    {
+      "nome": "Renato Marques",
+      "pos": "PD",
+      "idade": 22,
+      "base": 90
+    }
+  ],
+  "Operário-PR": [
+    {
+      "nome": "Elias Curzel",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 61
+    },
+    {
+      "nome": "Talles",
+      "pos": "GOL",
+      "idade": 29,
+      "base": 62
+    },
+    {
+      "nome": "Vagner",
+      "pos": "GOL",
+      "idade": 39,
+      "base": 58
+    },
+    {
+      "nome": "Gabriel Feliciano",
+      "pos": "LD",
+      "idade": 24,
+      "base": 70
+    },
+    {
+      "nome": "Mikael Doka",
+      "pos": "LE",
+      "idade": 26,
+      "base": 73
+    },
+    {
+      "nome": "Moraes",
+      "pos": "LD",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "João Gabriel",
+      "pos": "LE",
+      "idade": 19,
+      "base": 88
+    },
+    {
+      "nome": "Diogo Mateus",
+      "pos": "LD",
+      "idade": 33,
+      "base": 82
+    },
+    {
+      "nome": "Miranda",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 74
+    },
+    {
+      "nome": "José Cuenú",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Jhan Torres",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 90
+    },
+    {
+      "nome": "André",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 83
+    },
+    {
+      "nome": "Renan Gustavo",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 72
+    },
+    {
+      "nome": "Gabriel Boschilia",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 76
+    },
+    {
+      "nome": "Vinícius Diniz",
+      "pos": "MC",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Pedro Vilhena",
+      "pos": "ME",
+      "idade": 24,
+      "base": 79
+    },
+    {
+      "nome": "Juan Zuluaga",
+      "pos": "MEI",
+      "idade": 32,
+      "base": 83
+    },
+    {
+      "nome": "Matheus Trindade",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 90
+    },
+    {
+      "nome": "Thiago Conti",
+      "pos": "MD",
+      "idade": 28,
+      "base": 84
+    },
+    {
+      "nome": "Índio",
+      "pos": "MC",
+      "idade": 33,
+      "base": 83
+    },
+    {
+      "nome": "Léo Silva",
+      "pos": "MEI",
+      "idade": 23,
+      "base": 85
+    },
+    {
+      "nome": "Neto Paraíba",
+      "pos": "ME",
+      "idade": 33,
+      "base": 74
+    },
+    {
+      "nome": "Charles Raphael",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 86
+    },
+    {
+      "nome": "Léo Cittadini",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 86
+    },
+    {
+      "nome": "Edwin Torres",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Vinicius Mingotti",
+      "pos": "CA",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Pablo",
+      "pos": "CA",
+      "idade": 33,
+      "base": 86
+    },
+    {
+      "nome": "Ademilson",
+      "pos": "CA",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Léo Gaúcho",
+      "pos": "PE",
+      "idade": 24,
+      "base": 83
+    },
+    {
+      "nome": "Aylon",
+      "pos": "PE",
+      "idade": 33,
+      "base": 90
+    },
+    {
+      "nome": "Berto",
+      "pos": "PD",
+      "idade": 29,
+      "base": 83
+    },
+    {
+      "nome": "Kauã Gomes",
+      "pos": "PD",
+      "idade": 22,
+      "base": 86
+    },
+    {
+      "nome": "Matheus Galdino",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    }
+  ],
+  "Londrina": [
+    {
+      "nome": "Mauricio Kozlinski",
+      "pos": "GOL",
+      "idade": 34,
+      "base": 60
+    },
+    {
+      "nome": "Luan Ribeiro",
+      "pos": "GOL",
+      "idade": 28,
+      "base": 72
+    },
+    {
+      "nome": "Zanella",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 73
+    },
+    {
+      "nome": "André Dhominique",
+      "pos": "LD",
+      "idade": 22,
+      "base": 82
+    },
+    {
+      "nome": "Kevyn",
+      "pos": "LE",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Rafael Monteiro",
+      "pos": "LD",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Maurício Júnior",
+      "pos": "LE",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Heron",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 74
+    },
+    {
+      "nome": "Gabriel Lacerda",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 85
+    },
+    {
+      "nome": "Wallace",
+      "pos": "ZAG",
+      "idade": 38,
+      "base": 70
+    },
+    {
+      "nome": "Yago Lincoln",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 83
+    },
+    {
+      "nome": "Yuri Lima",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 83
+    },
+    {
+      "nome": "Caio",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 72
+    },
+    {
+      "nome": "André Luiz",
+      "pos": "MC",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "João Tavares",
+      "pos": "MC",
+      "idade": 22,
+      "base": 91
+    },
+    {
+      "nome": "André Cardoso",
+      "pos": "ME",
+      "idade": 22,
+      "base": 85
+    },
+    {
+      "nome": "Chumbinho",
+      "pos": "MC",
+      "idade": 22,
+      "base": 88
+    },
+    {
+      "nome": "Murilo Sousa",
+      "pos": "MEI",
+      "idade": 21,
+      "base": 91
+    },
+    {
+      "nome": "Fabiano",
+      "pos": "MC",
+      "idade": 20,
+      "base": 88
+    },
+    {
+      "nome": "Lucas Marques",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 78
+    },
+    {
+      "nome": "Vitor Jacaré",
+      "pos": "CA",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "João Pedro",
+      "pos": "CA",
+      "idade": 23,
+      "base": 86
+    },
+    {
+      "nome": "Paulinho Moccelin",
+      "pos": "CA",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Gilberto",
+      "pos": "CA",
+      "idade": 36,
+      "base": 84
+    },
+    {
+      "nome": "Iago Teles",
+      "pos": "CA",
+      "idade": 25,
+      "base": 88
+    },
+    {
+      "nome": "Caio Maia",
+      "pos": "PE",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Fabricio",
+      "pos": "PE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Juninho",
+      "pos": "PE",
+      "idade": 20,
+      "base": 81
+    },
+    {
+      "nome": "Vitinho Mota",
+      "pos": "PE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Bruno Santos",
+      "pos": "PD",
+      "idade": 29,
+      "base": 80
+    },
+    {
+      "nome": "Kauã Jonathan",
+      "pos": "PD",
+      "idade": 18,
+      "base": 87
+    },
+    {
+      "nome": "Fernando",
+      "pos": "PD",
+      "idade": 19,
+      "base": 92
+    },
+    {
+      "nome": "Crysthyan Lucas",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    }
+  ],
+  "ABC": [
+    {
+      "nome": "Felipe Garcia",
+      "pos": "GOL",
+      "idade": 37,
+      "base": 69
+    },
+    {
+      "nome": "Pedro Paulo",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 68
+    },
+    {
+      "nome": "Lucas Sampaio",
+      "pos": "LD",
+      "idade": 30,
+      "base": 83
+    },
+    {
+      "nome": "Matheus Rocha",
+      "pos": "LE",
+      "idade": 26,
+      "base": 86
+    },
+    {
+      "nome": "Manoel",
+      "pos": "LD",
+      "idade": 29,
+      "base": 78
+    },
+    {
+      "nome": "Lucas Mota",
+      "pos": "LE",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Ezequiel",
+      "pos": "LD",
+      "idade": 32,
+      "base": 89
+    },
+    {
+      "nome": "Bruno Bispo",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 74
+    },
+    {
+      "nome": "Windson",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "Ian",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 85
+    },
+    {
+      "nome": "Wendel",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Octávio",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 75
+    },
+    {
+      "nome": "Adeílson Maranhão",
+      "pos": "MC",
+      "idade": 27,
+      "base": 79
+    },
+    {
+      "nome": "Wellington Reis",
+      "pos": "MEI",
+      "idade": 33,
+      "base": 88
+    },
+    {
+      "nome": "Anderson Rosa",
+      "pos": "MC",
+      "idade": 32,
+      "base": 88
+    },
+    {
+      "nome": "Carlos Eduardo",
+      "pos": "MC",
+      "idade": 24,
+      "base": 86
+    },
+    {
+      "nome": "Jonatha Carlos",
+      "pos": "MC",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Bruno Leite",
+      "pos": "MC",
+      "idade": 25,
+      "base": 79
+    },
+    {
+      "nome": "Édson",
+      "pos": "MC",
+      "idade": 31,
+      "base": 84
+    },
+    {
+      "nome": "Wallyson",
+      "pos": "CA",
+      "idade": 36,
+      "base": 90
+    },
+    {
+      "nome": "Emanuel",
+      "pos": "CA",
+      "idade": 19,
+      "base": 89
+    },
+    {
+      "nome": "Matheus Martins",
+      "pos": "CA",
+      "idade": 27,
+      "base": 80
+    },
+    {
+      "nome": "Orlando Júnior",
+      "pos": "PE",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Joãozinho",
+      "pos": "PE",
+      "idade": 32,
+      "base": 87
+    },
+    {
+      "nome": "Islan",
+      "pos": "PD",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Danilo Alves",
+      "pos": "PD",
+      "idade": 34,
+      "base": 83
+    }
+  ],
+  "Paysandu": [
+    {
+      "nome": "Matheus Nogueira",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 62
+    },
+    {
+      "nome": "Gabriel Mesquita",
+      "pos": "GOL",
+      "idade": 26,
+      "base": 73
+    },
+    {
+      "nome": "Iago Hass",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 66
+    },
+    {
+      "nome": "Cláudio Vitor",
+      "pos": "GOL",
+      "idade": 21,
+      "base": 70
+    },
+    {
+      "nome": "Bryan Borges",
+      "pos": "LD",
+      "idade": 28,
+      "base": 87
+    },
+    {
+      "nome": "Edílson",
+      "pos": "LE",
+      "idade": 30,
+      "base": 85
+    },
+    {
+      "nome": "PK",
+      "pos": "LD",
+      "idade": 31,
+      "base": 90
+    },
+    {
+      "nome": "Reverson",
+      "pos": "LE",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Luan Freitas",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 83
+    },
+    {
+      "nome": "Joaquín Novillo",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 85
+    },
+    {
+      "nome": "Yeferson Quintana",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 83
+    },
+    {
+      "nome": "Thiago Heleno",
+      "pos": "ZAG",
+      "idade": 36,
+      "base": 79
+    },
+    {
+      "nome": "Matheus Vargas",
+      "pos": "MEI",
+      "idade": 29,
+      "base": 76
+    },
+    {
+      "nome": "Leandro Vilela",
+      "pos": "MC",
+      "idade": 30,
+      "base": 81
+    },
+    {
+      "nome": "Ramón Martínez",
+      "pos": "VOL",
+      "idade": 29,
+      "base": 79
+    },
+    {
+      "nome": "Pedro Delvalle",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 86
+    },
+    {
+      "nome": "André Lima",
+      "pos": "MC",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Dudu Vieira",
+      "pos": "MC",
+      "idade": 31,
+      "base": 88
+    },
+    {
+      "nome": "Ronaldo Henrique",
+      "pos": "MEI",
+      "idade": 31,
+      "base": 83
+    },
+    {
+      "nome": "Denner",
+      "pos": "MC",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Anderson Leite",
+      "pos": "VOL",
+      "idade": 32,
+      "base": 78
+    },
+    {
+      "nome": "Rossi",
+      "pos": "CA",
+      "idade": 32,
+      "base": 79
+    },
+    {
+      "nome": "Marlon Douglas",
+      "pos": "CA",
+      "idade": 27,
+      "base": 88
+    },
+    {
+      "nome": "Jorge Benítez",
+      "pos": "CA",
+      "idade": 32,
+      "base": 90
+    },
+    {
+      "nome": "Marcelinho",
+      "pos": "PE",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Diogo Oliveira",
+      "pos": "PD",
+      "idade": 28,
+      "base": 83
+    },
+    {
+      "nome": "Vinni Faria",
+      "pos": "PD",
+      "idade": 25,
+      "base": 89
+    }
+  ],
+  "Vasco da Gama": [
+    {
+      "nome": "Léo Jardim",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 61
+    },
+    {
+      "nome": "Daniel Fuzato",
+      "pos": "GOL",
+      "idade": 28,
+      "base": 67
+    },
+    {
+      "nome": "Pablo",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 65
+    },
+    {
+      "nome": "Paulo Henrique",
+      "pos": "LD",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Pumita Rodríguez",
+      "pos": "LE",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Lucas Piton",
+      "pos": "LD",
+      "idade": 24,
+      "base": 90
+    },
+    {
+      "nome": "Cuiabano",
+      "pos": "LE",
+      "idade": 22,
+      "base": 90
+    },
+    {
+      "nome": "Lucas Freitas",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 83
+    },
+    {
+      "nome": "Robert Renan",
+      "pos": "ZAG",
+      "idade": 22,
+      "base": 85
+    },
+    {
+      "nome": "Carlos Cuesta",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Alan Saldivia ",
+      "pos": "ZAG",
+      "idade": 23,
+      "base": 91
+    },
+    {
+      "nome": "Cauan Barros",
+      "pos": "MC",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Thiago Mendes",
+      "pos": "MC",
+      "idade": 33,
+      "base": 88
+    },
+    {
+      "nome": "Tchê Tchê",
+      "pos": "ME",
+      "idade": 32,
+      "base": 86
+    },
+    {
+      "nome": "Jair",
+      "pos": "MC",
+      "idade": 30,
+      "base": 84
+    },
+    {
+      "nome": "Hugo Moura",
+      "pos": "MEI",
+      "idade": 27,
+      "base": 92
+    },
+    {
+      "nome": "Adson",
+      "pos": "MC",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Matheus França",
+      "pos": "MEI",
+      "idade": 21,
+      "base": 77
+    },
+    {
+      "nome": "Nuno Moreira",
+      "pos": "VOL",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Johan Rojas",
+      "pos": "MC",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Mateus Carvalho",
+      "pos": "MC",
+      "idade": 23,
+      "base": 88
+    },
+    {
+      "nome": "JP",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 82
+    },
+    {
+      "nome": "Guilherme Estrella",
+      "pos": "MD",
+      "idade": 21,
+      "base": 77
+    },
+    {
+      "nome": "Lucas Eduardo",
+      "pos": "MEI",
+      "idade": 22,
+      "base": 85
+    },
+    {
+      "nome": "Claudio Spinelli",
+      "pos": "CA",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Andrés Gómez",
+      "pos": "CA",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Marino Hinestroza",
+      "pos": "PE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "David",
+      "pos": "PE",
+      "idade": 29,
+      "base": 92
+    },
+    {
+      "nome": "Brenner",
+      "pos": "PD",
+      "idade": 25,
+      "base": 92
+    }
+  ],
+  "RB Bragantino": [
+    {
+      "nome": "Cleiton",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 75
+    },
+    {
+      "nome": "Fabrício",
+      "pos": "GOL",
+      "idade": 25,
+      "base": 68
+    },
+    {
+      "nome": "Tiago Volpi",
+      "pos": "GOL",
+      "idade": 34,
+      "base": 70
+    },
+    {
+      "nome": "Juninho Capixaba",
+      "pos": "LD",
+      "idade": 28,
+      "base": 92
+    },
+    {
+      "nome": "Vanderlan",
+      "pos": "LE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Agustín Sant’Anna",
+      "pos": "LD",
+      "idade": 27,
+      "base": 75
+    },
+    {
+      "nome": "Andrés Hurtado",
+      "pos": "LE",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Cauê Nascimento",
+      "pos": "LD",
+      "idade": 19,
+      "base": 84
+    },
+    {
+      "nome": "Pedro Henrique",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 83
+    },
+    {
+      "nome": "Guzmán Rodríguez",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 85
+    },
+    {
+      "nome": "Eduardo Santos",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Gustavo Marques",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 83
+    },
+    {
+      "nome": "Alix Vinicius",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 90
+    },
+    {
+      "nome": "Sergio Palacios",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 81
+    },
+    {
+      "nome": "Gabriel",
+      "pos": "MEI",
+      "idade": 33,
+      "base": 88
+    },
+    {
+      "nome": "Eric Ramires",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Matheus Fernandes",
+      "pos": "MC",
+      "idade": 27,
+      "base": 90
+    },
+    {
+      "nome": "Fabinho",
+      "pos": "MC",
+      "idade": 23,
+      "base": 83
+    },
+    {
+      "nome": "Praxedes",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 79
+    },
+    {
+      "nome": "Ignacio Sosa",
+      "pos": "MD",
+      "idade": 22,
+      "base": 91
+    },
+    {
+      "nome": "Gustavo Neves",
+      "pos": "MC",
+      "idade": 21,
+      "base": 86
+    },
+    {
+      "nome": "Rodriguinho",
+      "pos": "MC",
+      "idade": 21,
+      "base": 86
+    },
+    {
+      "nome": "Bruninho",
+      "pos": "MC",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Marcelinho Braz",
+      "pos": "MEI",
+      "idade": 21,
+      "base": 77
+    },
+    {
+      "nome": "Isidro Pitta",
+      "pos": "CA",
+      "idade": 26,
+      "base": 80
+    },
+    {
+      "nome": "Vinicinho",
+      "pos": "CA",
+      "idade": 21,
+      "base": 92
+    },
+    {
+      "nome": "Eduardo Sasha",
+      "pos": "CA",
+      "idade": 33,
+      "base": 87
+    },
+    {
+      "nome": "Henry Mosquera",
+      "pos": "CA",
+      "idade": 23,
+      "base": 92
+    },
+    {
+      "nome": "Lucas Barbosa",
+      "pos": "PE",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "José Herrera",
+      "pos": "PE",
+      "idade": 22,
+      "base": 92
+    },
+    {
+      "nome": "Fernando",
+      "pos": "PD",
+      "idade": 26,
+      "base": 92
+    },
+    {
+      "nome": "Gabriel Novaes",
+      "pos": "PD",
+      "idade": 26,
+      "base": 85
+    },
+    {
+      "nome": "Davi Gomes",
+      "pos": "PD",
+      "idade": 20,
+      "base": 92
+    }
+  ],
+  "Grêmio Novorizontino": [
+    {
+      "nome": "Jordi",
+      "pos": "GOL",
+      "idade": 32,
+      "base": 61
+    },
+    {
+      "nome": "César",
+      "pos": "GOL",
+      "idade": 31,
+      "base": 74
+    },
+    {
+      "nome": "Lucas",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 62
+    },
+    {
+      "nome": "João Scapin",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 73
+    },
+    {
+      "nome": "Jhilmar Lora",
+      "pos": "LD",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Mayk",
+      "pos": "LE",
+      "idade": 26,
+      "base": 75
+    },
+    {
+      "nome": "Maykon Jesus",
+      "pos": "LD",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Nilson Castrillón",
+      "pos": "LE",
+      "idade": 30,
+      "base": 90
+    },
+    {
+      "nome": "Dantas",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Alexis Alvariño",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 83
+    },
+    {
+      "nome": "Patrick",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 74
+    },
+    {
+      "nome": "João Araújo",
+      "pos": "ZAG",
+      "idade": 21,
+      "base": 91
+    },
+    {
+      "nome": "Eduardo Brock",
+      "pos": "ZAG",
+      "idade": 34,
+      "base": 72
+    },
+    {
+      "nome": "Renato Palm",
+      "pos": "ZAG",
+      "idade": 34,
+      "base": 81
+    },
+    {
+      "nome": "Gabriel Bahia",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 85
+    },
+    {
+      "nome": "Kauan Alemão",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 88
+    },
+    {
+      "nome": "Bruninho",
+      "pos": "ZAG",
+      "idade": 19,
+      "base": 88
+    },
+    {
+      "nome": "Rômulo",
+      "pos": "VOL",
+      "idade": 24,
+      "base": 79
+    },
+    {
+      "nome": "Juninho",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 84
+    },
+    {
+      "nome": "Léo Naldi",
+      "pos": "ME",
+      "idade": 24,
+      "base": 87
+    },
+    {
+      "nome": "Matheus Bianqui",
+      "pos": "MEI",
+      "idade": 28,
+      "base": 90
+    },
+    {
+      "nome": "Luís Oyama",
+      "pos": "MC",
+      "idade": 29,
+      "base": 85
+    },
+    {
+      "nome": "Tavinho",
+      "pos": "MD",
+      "idade": 21,
+      "base": 77
+    },
+    {
+      "nome": "Christian Ortíz",
+      "pos": "MEI",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Marlon",
+      "pos": "MEI",
+      "idade": 35,
+      "base": 86
+    },
+    {
+      "nome": "Luiz Gabriel",
+      "pos": "MC",
+      "idade": 21,
+      "base": 88
+    },
+    {
+      "nome": "Diego Galo",
+      "pos": "MEI",
+      "idade": 20,
+      "base": 77
+    },
+    {
+      "nome": "Jardiel",
+      "pos": "CA",
+      "idade": 20,
+      "base": 92
+    },
+    {
+      "nome": "Vinícius Paiva",
+      "pos": "CA",
+      "idade": 24,
+      "base": 92
+    },
+    {
+      "nome": "Robson",
+      "pos": "CA",
+      "idade": 34,
+      "base": 81
+    },
+    {
+      "nome": "Caio Dantas",
+      "pos": "PE",
+      "idade": 33,
+      "base": 92
+    },
+    {
+      "nome": "Nicolas Careca",
+      "pos": "PE",
+      "idade": 28,
+      "base": 83
+    },
+    {
+      "nome": "Hélio Borges",
+      "pos": "PD",
+      "idade": 25,
+      "base": 92
+    },
+    {
+      "nome": "Hector Bianchi",
+      "pos": "PD",
+      "idade": 20,
+      "base": 86
+    }
+  ],
+  "América-MG": [
+    {
+      "nome": "Elias",
+      "pos": "GOL",
+      "idade": 28,
+      "base": 65
+    },
+    {
+      "nome": "Dalberson",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 58
+    },
+    {
+      "nome": "Daniel Borges",
+      "pos": "LD",
+      "idade": 30,
+      "base": 67
+    },
+    {
+      "nome": "Matheus Henrique",
+      "pos": "LE",
+      "idade": 26,
+      "base": 62
+    },
+    {
+      "nome": "Ricardo Silva",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 66
+    },
+    {
+      "nome": "Éder Ferreira",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 65
+    },
+    {
+      "nome": "Lucão",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Juninho",
+      "pos": "VOL",
+      "idade": 33,
+      "base": 68
+    },
+    {
+      "nome": "Alê",
+      "pos": "MC",
+      "idade": 27,
+      "base": 66
+    },
+    {
+      "nome": "Benítez",
+      "pos": "MEI",
+      "idade": 30,
+      "base": 65
+    },
+    {
+      "nome": "Fabinho",
+      "pos": "MC",
+      "idade": 25,
+      "base": 60
+    },
+    {
+      "nome": "Felipe Azevedo",
+      "pos": "PD",
+      "idade": 35,
+      "base": 63
+    },
+    {
+      "nome": "Adyson",
+      "pos": "PE",
+      "idade": 23,
+      "base": 60
+    },
+    {
+      "nome": "Rodriguinho",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 58
+    },
+    {
+      "nome": "Brenner",
+      "pos": "CA",
+      "idade": 25,
+      "base": 64
+    },
+    {
+      "nome": "Matheus Davó",
+      "pos": "CA",
+      "idade": 24,
+      "base": 60
+    },
+    {
+      "nome": "Vinicius",
+      "pos": "PE",
+      "idade": 21,
+      "base": 55
+    },
+    {
+      "nome": "Gabriel Gomes",
+      "pos": "VOL",
+      "idade": 22,
+      "base": 55
+    },
+    {
+      "nome": "Pedro Henrique",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Paulinho Bóia",
+      "pos": "ME",
+      "idade": 24,
+      "base": 58
+    },
+    {
+      "nome": "Moisés",
+      "pos": "LE",
+      "idade": 29,
+      "base": 63
+    },
+    {
+      "nome": "Wellington Silva",
+      "pos": "PD",
+      "idade": 22,
+      "base": 55
+    },
+    {
+      "nome": "Igor",
+      "pos": "GOL",
+      "idade": 22,
+      "base": 52
+    }
+  ],
+  "Amazonas FC": [
+    {
+      "nome": "Marcão",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 63
+    },
+    {
+      "nome": "Jonathan Santana",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 55
+    },
+    {
+      "nome": "Ezequiel",
+      "pos": "LD",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Sidcley",
+      "pos": "LE",
+      "idade": 30,
+      "base": 65
+    },
+    {
+      "nome": "Alvariño",
+      "pos": "LD",
+      "idade": 25,
+      "base": 58
+    },
+    {
+      "nome": "Miranda",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 63
+    },
+    {
+      "nome": "Jefté",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 60
+    },
+    {
+      "nome": "Fabiano",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 62
+    },
+    {
+      "nome": "Cauan Barros",
+      "pos": "VOL",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "Erick Varão",
+      "pos": "VOL",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Diego Torres",
+      "pos": "MC",
+      "idade": 32,
+      "base": 63
+    },
+    {
+      "nome": "Cocote",
+      "pos": "MEI",
+      "idade": 24,
+      "base": 58
+    },
+    {
+      "nome": "Matheus Serafim",
+      "pos": "PE",
+      "idade": 23,
+      "base": 60
+    },
+    {
+      "nome": "Ênio",
+      "pos": "PD",
+      "idade": 22,
+      "base": 58
+    },
+    {
+      "nome": "Luan Silva",
+      "pos": "CA",
+      "idade": 26,
+      "base": 63
+    },
+    {
+      "nome": "Rafael Tavares",
+      "pos": "CA",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Sassá",
+      "pos": "CA",
+      "idade": 31,
+      "base": 62
+    },
+    {
+      "nome": "PH",
+      "pos": "ME",
+      "idade": 25,
+      "base": 58
+    },
+    {
+      "nome": "Moacir",
+      "pos": "MC",
+      "idade": 23,
+      "base": 55
+    },
+    {
+      "nome": "Michael",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 58
+    },
+    {
+      "nome": "Igor Bolt",
+      "pos": "PD",
+      "idade": 24,
+      "base": 56
+    }
+  ],
+  "Botafogo-SP": [
+    {
+      "nome": "João Carlos",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 62
+    },
+    {
+      "nome": "Victor Souza",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 55
+    },
+    {
+      "nome": "Sávio",
+      "pos": "LD",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Jean Victor",
+      "pos": "LE",
+      "idade": 25,
+      "base": 58
+    },
+    {
+      "nome": "Fábio Sanches",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 63
+    },
+    {
+      "nome": "Bernardo Schappo",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Matheus Costa",
+      "pos": "ZAG",
+      "idade": 26,
+      "base": 58
+    },
+    {
+      "nome": "Emerson",
+      "pos": "VOL",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Carlos Manuel",
+      "pos": "MC",
+      "idade": 30,
+      "base": 60
+    },
+    {
+      "nome": "Alisson",
+      "pos": "MEI",
+      "idade": 26,
+      "base": 62
+    },
+    {
+      "nome": "Alexandre Jesus",
+      "pos": "PE",
+      "idade": 24,
+      "base": 63
+    },
+    {
+      "nome": "Douglas Baggio",
+      "pos": "PD",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Victor Andrade",
+      "pos": "ME",
+      "idade": 22,
+      "base": 58
+    },
+    {
+      "nome": "Silvinho",
+      "pos": "CA",
+      "idade": 28,
+      "base": 63
+    },
+    {
+      "nome": "Alex Sandro",
+      "pos": "CA",
+      "idade": 25,
+      "base": 60
+    },
+    {
+      "nome": "Patrick",
+      "pos": "LE",
+      "idade": 30,
+      "base": 58
+    },
+    {
+      "nome": "Wallison",
+      "pos": "MC",
+      "idade": 23,
+      "base": 55
+    },
+    {
+      "nome": "Sabit",
+      "pos": "PE",
+      "idade": 22,
+      "base": 56
+    },
+    {
+      "nome": "Filipe Soutto",
+      "pos": "VOL",
+      "idade": 31,
+      "base": 60
+    },
+    {
+      "nome": "Murilo",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 56
+    }
+  ],
+  "Atlético-GO": [
+    {
+      "nome": "Ronaldo",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 65
+    },
+    {
+      "nome": "Pedro Rangel",
+      "pos": "GOL",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Maguinho",
+      "pos": "LD",
+      "idade": 28,
+      "base": 64
+    },
+    {
+      "nome": "Guilherme Romão",
+      "pos": "LE",
+      "idade": 27,
+      "base": 63
+    },
+    {
+      "nome": "Adriano Martins",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 66
+    },
+    {
+      "nome": "Luiz Felipe",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 63
+    },
+    {
+      "nome": "Alix Vinícius",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 60
+    },
+    {
+      "nome": "Roni",
+      "pos": "VOL",
+      "idade": 27,
+      "base": 64
+    },
+    {
+      "nome": "Gabriel Baralhas",
+      "pos": "VOL",
+      "idade": 29,
+      "base": 65
+    },
+    {
+      "nome": "Rhaldney",
+      "pos": "MC",
+      "idade": 24,
+      "base": 62
+    },
+    {
+      "nome": "Janderson",
+      "pos": "PE",
+      "idade": 26,
+      "base": 63
+    },
+    {
+      "nome": "Alejo Cruz",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 64
+    },
+    {
+      "nome": "Luiz Fernando",
+      "pos": "PD",
+      "idade": 29,
+      "base": 66
+    },
+    {
+      "nome": "Derek",
+      "pos": "CA",
+      "idade": 22,
+      "base": 62
+    },
+    {
+      "nome": "Hurtado",
+      "pos": "CA",
+      "idade": 25,
+      "base": 63
+    },
+    {
+      "nome": "Shaylon",
+      "pos": "ME",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Bruno Tubarão",
+      "pos": "PE",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Joel Campbell",
+      "pos": "PD",
+      "idade": 33,
+      "base": 65
+    },
+    {
+      "nome": "Matheus Barbosa",
+      "pos": "MC",
+      "idade": 23,
+      "base": 58
+    },
+    {
+      "nome": "Lucas Kal",
+      "pos": "VOL",
+      "idade": 25,
+      "base": 60
+    },
+    {
+      "nome": "Max",
+      "pos": "LE",
+      "idade": 29,
+      "base": 62
+    }
+  ],
+  "Volta Redonda": [
+    {
+      "nome": "Jean Drosny",
+      "pos": "GOL",
+      "idade": 29,
+      "base": 62
+    },
+    {
+      "nome": "Aílton",
+      "pos": "GOL",
+      "idade": 25,
+      "base": 56
+    },
+    {
+      "nome": "Wellington Silva",
+      "pos": "LD",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Juninho",
+      "pos": "LE",
+      "idade": 26,
+      "base": 58
+    },
+    {
+      "nome": "Gabriel Amaral",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 63
+    },
+    {
+      "nome": "Lucas Souza",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 62
+    },
+    {
+      "nome": "Dan Marcelo",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Pierre",
+      "pos": "VOL",
+      "idade": 29,
+      "base": 63
+    },
+    {
+      "nome": "Robinho",
+      "pos": "MC",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "PK",
+      "pos": "MEI",
+      "idade": 27,
+      "base": 64
+    },
+    {
+      "nome": "MV",
+      "pos": "PE",
+      "idade": 22,
+      "base": 60
+    },
+    {
+      "nome": "Marquinhos",
+      "pos": "PD",
+      "idade": 26,
+      "base": 62
+    },
+    {
+      "nome": "Heliardo",
+      "pos": "ME",
+      "idade": 25,
+      "base": 58
+    },
+    {
+      "nome": "Bruno Santos",
+      "pos": "CA",
+      "idade": 28,
+      "base": 63
+    },
+    {
+      "nome": "Douglas Skilo",
+      "pos": "CA",
+      "idade": 24,
+      "base": 58
+    },
+    {
+      "nome": "Lelê",
+      "pos": "CA",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Henrique Silva",
+      "pos": "MC",
+      "idade": 23,
+      "base": 56
+    },
+    {
+      "nome": "João Carlos",
+      "pos": "LE",
+      "idade": 30,
+      "base": 58
+    },
+    {
+      "nome": "Neto",
+      "pos": "VOL",
+      "idade": 31,
+      "base": 60
+    },
+    {
+      "nome": "Bruno Barra",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 56
+    }
+  ],
+  "Athletic Club": [
+    {
+      "nome": "Jefferson",
+      "pos": "GOL",
+      "idade": 29,
+      "base": 62
+    },
+    {
+      "nome": "Wallerson",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 55
+    },
+    {
+      "nome": "Hayner",
+      "pos": "LD",
+      "idade": 28,
+      "base": 63
+    },
+    {
+      "nome": "Yuri",
+      "pos": "LE",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "Sidimar",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 63
+    },
+    {
+      "nome": "Wendel",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Denílson",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 62
+    },
+    {
+      "nome": "Djalma",
+      "pos": "VOL",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Denner",
+      "pos": "MC",
+      "idade": 25,
+      "base": 60
+    },
+    {
+      "nome": "Geovane",
+      "pos": "MEI",
+      "idade": 26,
+      "base": 63
+    },
+    {
+      "nome": "Diego Cardoso",
+      "pos": "PE",
+      "idade": 27,
+      "base": 63
+    },
+    {
+      "nome": "Marcelinho",
+      "pos": "PD",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "Reinaldo",
+      "pos": "ME",
+      "idade": 24,
+      "base": 58
+    },
+    {
+      "nome": "Pablo",
+      "pos": "CA",
+      "idade": 29,
+      "base": 63
+    },
+    {
+      "nome": "Renatinho",
+      "pos": "CA",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "Nathan",
+      "pos": "MC",
+      "idade": 23,
+      "base": 56
+    },
+    {
+      "nome": "Mateus",
+      "pos": "PE",
+      "idade": 22,
+      "base": 55
+    },
+    {
+      "nome": "Juan",
+      "pos": "VOL",
+      "idade": 31,
+      "base": 60
+    },
+    {
+      "nome": "Douglas",
+      "pos": "LE",
+      "idade": 28,
+      "base": 58
+    },
+    {
+      "nome": "Fernando",
+      "pos": "ZAG",
+      "idade": 24,
+      "base": 56
+    }
+  ],
+  "Ferroviário": [
+    {
+      "nome": "Carlão",
+      "pos": "GOL",
+      "idade": 30,
+      "base": 60
+    },
+    {
+      "nome": "Yuri",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 55
+    },
+    {
+      "nome": "Janeudo",
+      "pos": "LD",
+      "idade": 27,
+      "base": 58
+    },
+    {
+      "nome": "Bernardo",
+      "pos": "LE",
+      "idade": 26,
+      "base": 58
+    },
+    {
+      "nome": "Willian Rocha",
+      "pos": "ZAG",
+      "idade": 29,
+      "base": 62
+    },
+    {
+      "nome": "Jeffão",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 60
+    },
+    {
+      "nome": "Emiliano Velázquez",
+      "pos": "ZAG",
+      "idade": 31,
+      "base": 62
+    },
+    {
+      "nome": "Matheus Felipinho",
+      "pos": "VOL",
+      "idade": 25,
+      "base": 58
+    },
+    {
+      "nome": "Wilker",
+      "pos": "MC",
+      "idade": 27,
+      "base": 62
+    },
+    {
+      "nome": "Mattheus",
+      "pos": "MEI",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "Gabryel Martins",
+      "pos": "PE",
+      "idade": 24,
+      "base": 60
+    },
+    {
+      "nome": "Allanzinho",
+      "pos": "PD",
+      "idade": 25,
+      "base": 58
+    },
+    {
+      "nome": "Marcelinho",
+      "pos": "ME",
+      "idade": 23,
+      "base": 56
+    },
+    {
+      "nome": "Vinícius Alves",
+      "pos": "CA",
+      "idade": 26,
+      "base": 62
+    },
+    {
+      "nome": "Ciel",
+      "pos": "CA",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Robson",
+      "pos": "PD",
+      "idade": 28,
+      "base": 58
+    },
+    {
+      "nome": "Romarinho",
+      "pos": "PE",
+      "idade": 22,
+      "base": 55
+    },
+    {
+      "nome": "Dudu",
+      "pos": "VOL",
+      "idade": 30,
+      "base": 58
+    },
+    {
+      "nome": "Igor",
+      "pos": "MC",
+      "idade": 23,
+      "base": 54
+    },
+    {
+      "nome": "Léo Alves",
+      "pos": "LD",
+      "idade": 31,
+      "base": 56
+    }
+  ],
+  "Botafogo-PB": [
+    {
+      "nome": "Dalton",
+      "pos": "GOL",
+      "idade": 29,
+      "base": 62
+    },
+    {
+      "nome": "Ítalo",
+      "pos": "GOL",
+      "idade": 24,
+      "base": 55
+    },
+    {
+      "nome": "Cássio",
+      "pos": "LD",
+      "idade": 27,
+      "base": 60
+    },
+    {
+      "nome": "Felipinho",
+      "pos": "LE",
+      "idade": 26,
+      "base": 58
+    },
+    {
+      "nome": "Douglas Matheus",
+      "pos": "ZAG",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Reniê",
+      "pos": "ZAG",
+      "idade": 30,
+      "base": 63
+    },
+    {
+      "nome": "Pablo",
+      "pos": "ZAG",
+      "idade": 27,
+      "base": 58
+    },
+    {
+      "nome": "Esquerdinha",
+      "pos": "VOL",
+      "idade": 28,
+      "base": 62
+    },
+    {
+      "nome": "Sávio",
+      "pos": "MC",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "Edmundo",
+      "pos": "MEI",
+      "idade": 25,
+      "base": 60
+    },
+    {
+      "nome": "Thalys",
+      "pos": "PE",
+      "idade": 22,
+      "base": 58
+    },
+    {
+      "nome": "Jô",
+      "pos": "PD",
+      "idade": 26,
+      "base": 60
+    },
+    {
+      "nome": "Henrique Dourado",
+      "pos": "CA",
+      "idade": 33,
+      "base": 64
+    },
+    {
+      "nome": "Pipico",
+      "pos": "CA",
+      "idade": 35,
+      "base": 62
+    },
+    {
+      "nome": "Rafael Oller",
+      "pos": "ME",
+      "idade": 25,
+      "base": 58
+    },
+    {
+      "nome": "Vinícius Leite",
+      "pos": "PE",
+      "idade": 24,
+      "base": 56
+    },
+    {
+      "nome": "Lídio",
+      "pos": "LE",
+      "idade": 30,
+      "base": 58
+    },
+    {
+      "nome": "João Victor",
+      "pos": "MC",
+      "idade": 23,
+      "base": 55
+    },
+    {
+      "nome": "Claudinei",
+      "pos": "VOL",
+      "idade": 31,
+      "base": 60
+    },
+    {
+      "nome": "André MS",
+      "pos": "ZAG",
+      "idade": 25,
+      "base": 56
+    }
+  ]
+}
