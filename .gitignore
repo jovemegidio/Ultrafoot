@@ -65,6 +65,8 @@ teams/
 *.gif
 Fundo*.png
 Logo*.png
+# Allow specific logo for README
+!Logo - UF26 III.png
 
 # ── Temp files ──
 *.tmp
