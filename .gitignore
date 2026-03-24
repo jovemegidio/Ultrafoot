@@ -1,88 +1,41 @@
-# ── Python ──
+.env
+*.db
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.venv/
-venv/
-*.egg-info/
-*.egg
+logs/
+saves/
+_legacy/
 
-# ── Environment / Secrets ──
-.env
-.env.*
-license_status.json
-user_settings.json
-
-# ── Databases ──
-*.db
-*.sqlite3
-
-# ── Build artifacts ──
-build/
+# Build outputs (podem ter dezenas de GB)
 dist/
+build/
 release_build/
 *.spec
 
-# ── IDE / Editor ──
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Ambiente virtual
+.venv/
 
-# ── Logs & Saves ──
-logs/
-saves/
-
-# ── Legacy / Archive ──
-_legacy/
+# Archive
 _archive/
 
-# ── Tauri build artifacts (5+ GB) ──
+# Tauri build artifacts
 src-tauri/target/
 src-tauri/binaries/
 src-tauri/gen/
 
-# ── Donwloader (scraping scripts + downloaded assets ~550 MB) ──
-Donwloader/
-
-# ── Brasfoot source data ──
-BF2026-27/
-
-# ── Large binary assets ──
-data/assets/players/
-data/assets/escudos/
-data/assets/estadios/
-data/assets/patrocinadores/
-data/assets/selecoes/
-data/assets/
-music/
-sons/
-teams/
-
-# ── Large images/GIFs in project root ──
-*.gif
-Fundo*.png
-Logo*.png
-# Allow specific logo for README
-!Logo - UF26 III.png
-
-# ── Temp files ──
+# Temp files
 *.tmp
 tauri_build.log
+build_output.txt
+_fix_colors.py
+_check.txt
 
-# ── OS files ──
-Thumbs.db
-.DS_Store
-desktop.ini
+# Large media (fundos/videos)
+Fundo - Office II.mp4
+Fundo - Office II.png
+Fundo - Office.png
+Fundo II.gif
+Fundo.jpg
 
-# ── Node (if any) ──
-node_modules/
-
-# ── Test artifacts ──
-_test_*
-
-# ── Tracker / pre-jogo ──
-Tracker/
-pre-jogo/
+# Music (large mp3 files ~245 MB)
+music/

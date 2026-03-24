@@ -156,17 +156,28 @@ class MusicManager:
         }
 
     def _faixa_scan_padrao(self, arquivo: str, caminho: str) -> Dict:
+        artista, titulo = self._inferir_artista_titulo(arquivo)
         return {
             "arquivo": arquivo,
             "caminho": caminho,
             "asset_path": self._asset_path(caminho),
-            "titulo": self._titulo_limpo(arquivo),
-            "artista": "",
+            "titulo": titulo,
+            "artista": artista,
             "contextos": ["menu", "general"],
             "streamer_safe": False,
             "licenca": "nao_verificada",
             "origem": "scan_local",
         }
+
+    def _inferir_artista_titulo(self, arquivo: str) -> tuple[str, str]:
+        nome_base = os.path.splitext(arquivo)[0].strip()
+        if " - " in nome_base:
+            artista, titulo = nome_base.split(" - ", 1)
+            artista = artista.strip()
+            titulo = titulo.strip()
+            if artista and titulo:
+                return artista, titulo
+        return "", self._titulo_limpo(arquivo)
 
     def _asset_path(self, caminho: str) -> str:
         try:
@@ -482,6 +493,25 @@ class MusicManager:
         if not faixa:
             return None
         return faixa.get("asset_path")
+
+    def reload_catalogo(self) -> Dict:
+        atual_arquivo = ""
+        if self.playlist:
+            atual_arquivo = self.playlist[self.indice_atual % len(self.playlist)]
+
+        self._carregar_catalogo()
+        self._reconstruir_playlist(keep_current=False)
+
+        if atual_arquivo and atual_arquivo in self.playlist:
+            self.indice_atual = self.playlist.index(atual_arquivo)
+
+        faixa = self.get_faixa_atual()
+        return {
+            "ok": True,
+            "total": len(self._catalogo),
+            "playlist_total": len(self.playlist),
+            "faixa": faixa,
+        }
 
     def to_save_dict(self) -> Dict:
         return {

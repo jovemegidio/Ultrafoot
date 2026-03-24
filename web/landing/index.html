@@ -43,7 +43,7 @@
             color: var(--accent);
         }
         .nav-logo img {
-            height: 48px; width: auto;
+            height: 56px; width: auto;
             filter: drop-shadow(0 0 8px rgba(217,255,63,0.3));
         }
         .nav-links { display: flex; gap: 24px; align-items: center; }
@@ -471,6 +471,42 @@
             font-weight: 600;
         }
 
+        /* PAYMENT MODAL */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 40px 36px;
+            max-width: 460px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+        }
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 22px;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .modal-close:hover { color: var(--text-light); }
+
         /* SECTION ACCENT LINE */
         .section-title::after {
             content: '';
@@ -494,14 +530,14 @@
 
     <!-- NAV -->
     <nav class="nav">
-        <div class="nav-logo"><img src="../Logo%20-%20UF26%20III.png" alt="Ultrafoot 26"> ULTRAFOOT 26</div>
+        <div class="nav-logo"><img src="../Logo%20-%20UF26%20III.png" alt="Ultrafoot 26"></div>
         <div class="nav-links">
             <a href="#features">Funcionalidades</a>
             <a href="#competitions">Competições</a>
             <a href="#registro">Registro</a>
             <a href="#faq">FAQ</a>
         </div>
-        <button class="nav-cta" onclick="document.getElementById('registro').scrollIntoView({behavior:'smooth'})">Registrar Agora</button>
+        <button class="nav-cta" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">Baixar Agora</button>
     </nav>
 
     <!-- HERO -->
@@ -512,8 +548,8 @@
             <h1>O Manager de Futebol <span>Definitivo</span></h1>
             <p>Gerencie seu clube dos sonhos com mais de 40 ligas reais, Libertadores, Champions League, Copa do Brasil e campeonatos estaduais. Tudo em um jogo leve e viciante.</p>
             <div class="hero-buttons">
-                <button class="btn-hero btn-hero--primary" onclick="document.getElementById('registro').scrollIntoView({behavior:'smooth'})">Registrar Ultrafoot 26</button>
-                <button class="btn-hero btn-hero--outline" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Saiba Mais</button>
+                <a class="btn-hero btn-hero--primary" href="#download" style="text-decoration:none;">Baixar Ultrafoot 26</a>
+                <button class="btn-hero btn-hero--outline" onclick="document.getElementById('registro').scrollIntoView({behavior:'smooth'})">Registrar</button>
             </div>
         </div>
     </section>
@@ -587,52 +623,83 @@
 
     <!-- REGISTRO -->
     <section class="section" id="registro">
-        <div class="section-title">100% Gratuito — Registre-se e Jogue</div>
-        <div class="section-sub">O Ultrafoot 26 é totalmente gratuito. Basta usar o serial abaixo para ativar o jogo e jogar sem limites, para sempre.</div>
-        <div style="max-width:560px;margin:40px auto 0;">
-            <div class="pricing-card pricing-card--featured" style="text-align:center;">
-                <div class="pricing-label" style="color:var(--accent);">Ultrafoot Para Sempre</div>
-                <div class="pricing-price" style="font-size:36px;">Grátis</div>
-                <div class="pricing-desc">Licença permanente — jogue para sempre, sem pagar nada</div>
+        <div class="section-title">Registre-se e Jogue sem Limites</div>
+        <div class="section-sub">O jogo requer registro para funcionar 100%. Escolha a opção que combina com você e desbloqueie toda a experiência Ultrafoot.</div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-label">Download Gratuito</div>
+                <div class="pricing-price">Grátis</div>
+                <div class="pricing-desc">Baixe agora e jogue por 14 dias</div>
                 <ul class="pricing-features">
-                    <li>Todas as 40+ ligas e competições</li>
-                    <li>27 campeonatos estaduais</li>
-                    <li>Motor 3D WebGL de partidas</li>
+                    <li>Todas as ligas e competições</li>
+                    <li>Motor de partidas completo</li>
+                    <li>Salvamento ilimitado</li>
+                    <li class="disabled">Editor de banco de dados</li>
+                    <li class="disabled">Modding de assets</li>
+                    <li class="disabled">Atualizações beta</li>
+                </ul>
+                <a class="btn-pricing btn-pricing--outline" href="#download" style="text-decoration:none;display:block;text-align:center;">⬇ Baixar Grátis</a>
+            </div>
+            <div class="pricing-card pricing-card--featured">
+                <div class="pricing-label">Registro Completo</div>
+                <div class="pricing-price">R$ 29<span>,90</span></div>
+                <div class="pricing-desc">Licença permanente — pague uma vez, jogue para sempre</div>
+                <ul class="pricing-features">
+                    <li>Todas as ligas e competições</li>
+                    <li>Motor de partidas completo</li>
                     <li>Salvamento ilimitado</li>
                     <li>Editor de banco de dados</li>
-                    <li>Fantasy League integrado</li>
-                    <li>Integração Discord RPC</li>
-                    <li>Atualizações gratuitas</li>
+                    <li>Modding de assets personalizados</li>
+                    <li>Acesso a atualizações beta</li>
                 </ul>
-                <div style="margin:20px 0;padding:20px;background:rgba(212,255,0,0.06);border:1px solid rgba(212,255,0,0.2);border-radius:12px;">
-                    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-secondary);margin-bottom:6px;">Nome de Registro</div>
-                    <div style="font-size:20px;font-weight:900;color:var(--accent);margin-bottom:16px;">Ultrafoot Para Sempre</div>
-                    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-secondary);margin-bottom:6px;">Serial de Ativação</div>
-                    <div id="serialDisplay" style="font-size:22px;font-weight:900;font-family:monospace;color:var(--accent);letter-spacing:2px;user-select:all;cursor:pointer;" title="Clique para copiar" onclick="navigator.clipboard.writeText('UF26PARASEMPREAIDLPK').then(()=>{this.style.color='#3fb950';this.textContent='Copiado!';setTimeout(()=>{this.style.color='var(--accent)';this.textContent='UF26PARASEMPREAIDLPK'},1500)})">UF26PARASEMPREAIDLPK</div>
-                </div>
-                <p style="font-size:12px;color:var(--text-secondary);line-height:1.6;">Cole este serial na tela de <strong>Configurações → Registro</strong> dentro do jogo para desbloquear a edição completa.</p>
+                <button class="btn-pricing btn-pricing--primary" id="btnRegistro">Registrar e Pagar</button>
             </div>
         </div>
     </section>
 
-    <!-- COMO ATIVAR -->
-    <section class="section" id="como-ativar" style="padding-top:48px;">
-        <div style="max-width:600px;margin:0 auto;text-align:center;">
-            <div class="section-title" style="font-size:28px;">Como Ativar</div>
-            <div class="section-sub" style="margin-bottom:32px;">Siga os 3 passos para ativar o Ultrafoot 26</div>
-            <div style="display:grid;gap:16px;text-align:left;">
-                <div style="display:flex;gap:16px;align-items:flex-start;padding:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;">
-                    <div style="width:36px;height:36px;border-radius:50%;background:rgba(212,255,0,0.15);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--accent);flex-shrink:0;">1</div>
-                    <div><div style="font-weight:800;margin-bottom:4px;">Baixe o Jogo</div><div style="font-size:13px;color:var(--text-secondary);">Clique em "Baixar Agora" no topo da página e instale no seu PC</div></div>
+    <!-- REGISTRO FORM & PAGAMENTO -->
+    <section class="section" id="registro-form" style="padding-top:48px;">
+        <div class="registro-container">
+            <div class="section-title" style="font-size:28px;">Complete seu Registro</div>
+            <div class="section-sub">Preencha seus dados e finalize o pagamento via PIX, cartão ou boleto. Seu serial de ativação será gerado automaticamente.</div>
+            <div class="registro-box">
+                <div class="registro-step" id="registroStep1">
+                    <div class="registro-field">
+                        <label>Nome Completo</label>
+                        <input type="text" id="regNome" placeholder="Seu nome completo" autocomplete="name">
+                    </div>
+                    <div class="registro-field">
+                        <label>E-mail</label>
+                        <input type="email" id="regEmail" placeholder="seuemail@exemplo.com" autocomplete="email">
+                    </div>
+                    <div class="registro-payment-info">
+                        <div class="payment-methods">
+                            <div class="payment-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Cartão</div>
+                            <div class="payment-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> PIX</div>
+                            <div class="payment-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00aaff" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Boleto</div>
+                        </div>
+                        <p class="payment-secure"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Pagamento seguro via Mercado Pago. Seus dados estão protegidos.</p>
+                    </div>
+                    <button class="btn-pricing btn-pricing--primary" id="btnConfirmarRegistro" style="margin-top:12px;" onclick="processarRegistro()">Pagar R$ 29,90 e Registrar</button>
                 </div>
-                <div style="display:flex;gap:16px;align-items:flex-start;padding:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;">
-                    <div style="width:36px;height:36px;border-radius:50%;background:rgba(212,255,0,0.15);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--accent);flex-shrink:0;">2</div>
-                    <div><div style="font-weight:800;margin-bottom:4px;">Acesse Configurações → Registro</div><div style="font-size:13px;color:var(--text-secondary);">Dentro do jogo, vá até o menu Configurações e encontre o card "Registro / Ativação"</div></div>
+                <div class="registro-step" id="registroStep2" style="display:none;">
+                    <div class="registro-success">
+                        <div class="registro-success-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#091104" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                        <h3 id="regSuccessTitle">Registro Realizado!</h3>
+                        <p id="regSuccessMsg">Seu serial de ativação foi enviado para o e-mail informado.</p>
+                        <div class="registro-serial-box" id="regSerialBox" style="display:none;">
+                            <span class="registro-serial-label">Seu Serial:</span>
+                            <code id="regSerialCode">—</code>
+                            <button class="btn-copy" onclick="copiarSerial()">Copiar</button>
+                        </div>
+                        <p class="registro-instruct">Cole este serial na tela de ativação do jogo para desbloquear todos os recursos.</p>
+                    </div>
                 </div>
-                <div style="display:flex;gap:16px;align-items:flex-start;padding:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;">
-                    <div style="width:36px;height:36px;border-radius:50%;background:rgba(212,255,0,0.15);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--accent);flex-shrink:0;">3</div>
-                    <div><div style="font-weight:800;margin-bottom:4px;">Cole o Serial</div><div style="font-size:13px;color:var(--text-secondary);">Digite <code style="background:rgba(212,255,0,0.1);padding:2px 6px;border-radius:4px;color:var(--accent);font-weight:800;">UF26PARASEMPREAIDLPK</code> e clique em Ativar. Pronto!</div></div>
+                <div id="regLoading" class="registro-loading" style="display:none;">
+                    <div class="spinner"></div>
+                    <p>Processando seu registro...</p>
                 </div>
+                <div id="regError" class="registro-error" style="display:none;"></div>
             </div>
         </div>
     </section>
@@ -655,12 +722,12 @@
                 <p>Sim! A edição completa inclui o Editor de Banco de Dados, que permite editar nomes, atributos, formações e muito mais. A versão demo permite jogar, mas o editor é exclusivo da versão completa.</p>
             </details>
             <details class="faq-item">
-                <summary>O jogo é realmente gratuito?</summary>
-                <p>Sim! O Ultrafoot 26 é 100% gratuito. O serial de ativação <strong>UF26PARASEMPREAIDLPK</strong> desbloqueia todas as funcionalidades permanentemente, sem limitações e sem pagamento.</p>
+                <summary>A licença é vitalícia?</summary>
+                <p>Sim. Ao comprar a edição completa, você recebe uma licença permanente para o Ultrafoot 26. Sem assinatura, sem renovação.</p>
             </details>
             <details class="faq-item">
                 <summary>Como funciona o registro?</summary>
-                <p>Basta colar o serial <strong>UF26PARASEMPREAIDLPK</strong> na tela de Configurações → Registro dentro do jogo. A ativação é feita offline, localmente, sem necessidade de internet.</p>
+                <p>Ao registrar-se, você recebe um serial de ativação. O registro gratuito dá acesso completo por 14 dias. O registro completo (R$ 29,90) libera todos os recursos permanentemente. O pagamento é processado via Mercado Pago (PIX, cartão ou boleto) e o serial é entregue automaticamente.</p>
             </details>
             <details class="faq-item">
                 <summary>O jogo tem atualizações?</summary>
@@ -669,13 +736,15 @@
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <h2>Pronto para Liderar?</h2>
-        <p>Baixe agora — é gratuito. O futebol espera por você.</p>
+    <!-- DOWNLOAD -->
+    <section class="cta-section" id="download">
+        <h2>Baixe Agora</h2>
+        <p>Windows 10/11 — Leve, rápido, offline. Comece sua jornada como manager em segundos.</p>
         <div class="hero-buttons">
-            <button class="btn-hero btn-hero--primary" onclick="document.getElementById('registro').scrollIntoView({behavior:'smooth'})">Ver Serial de Ativação</button>
+            <a class="btn-hero btn-hero--primary" href="https://github.com/jovemegidio/Ultrafoot/releases/latest" target="_blank" rel="noopener" style="text-decoration:none;">Download Ultrafoot 26</a>
+            <button class="btn-hero btn-hero--outline" onclick="document.getElementById('registro').scrollIntoView({behavior:'smooth'})">Comprar Registro</button>
         </div>
+        <p style="margin-top:16px;font-size:13px;color:var(--text-secondary);">O jogo é gratuito por 14 dias. Para acesso permanente e recursos extras, <a href="#registro">registre-se</a>.</p>
     </section>
 
     <!-- FOOTER -->
@@ -687,16 +756,177 @@
         </p>
     </footer>
 
-    <script>
+    <!-- Mercado Pago SDK -->
+    <!-- MODAL PAGAMENTO APROVADO -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="fecharModal()">&times;</button>
+            <div class="registro-success-icon">✓</div>
+            <h3 style="font-size:22px;font-weight:900;margin-bottom:8px;">Pagamento Aprovado!</h3>
+            <p style="color:var(--text-secondary);font-size:14px;margin-bottom:20px;">Seu registro completo foi ativado. Use o serial abaixo para ativar o jogo:</p>
+            <div class="registro-serial-box" id="modalSerialBox">
+                <span class="registro-serial-label">Seu Serial:</span>
+                <code id="modalSerialCode">—</code>
+                <button class="btn-copy" onclick="copiarSerialModal()">Copiar</button>
+            </div>
+            <p class="registro-instruct">Cole este serial na tela de ativação do jogo para desbloquear todos os recursos.</p>
+        </div>
+    </div>
 
-    // Smooth scroll for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', e => {
-            e.preventDefault();
-            const target = document.querySelector(a.getAttribute('href'));
-            if (target) target.scrollIntoView({ behavior: 'smooth' });
-        });
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+    // ─── Configuração Mercado Pago ───
+    // IMPORTANTE: Substitua pela sua PUBLIC_KEY real do Mercado Pago
+    const MP_PUBLIC_KEY = 'APP_USR-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
+    // URL do seu backend para criar preferências de pagamento
+    const API_BASE_URL = 'https://seu-servidor.com/api';
+
+    // Scroll to form when clicking registration button
+    document.getElementById('btnRegistro').addEventListener('click', () => {
+        document.getElementById('registro-form').scrollIntoView({ behavior: 'smooth' });
     });
+
+    function validarEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function sanitize(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    async function processarRegistro() {
+        const nome = document.getElementById('regNome').value.trim();
+        const email = document.getElementById('regEmail').value.trim();
+        const errorEl = document.getElementById('regError');
+        errorEl.style.display = 'none';
+
+        // Validação
+        if (!nome || nome.length < 3) {
+            errorEl.textContent = 'Por favor, informe seu nome completo.';
+            errorEl.style.display = 'block';
+            return;
+        }
+        if (!validarEmail(email)) {
+            errorEl.textContent = 'Por favor, informe um e-mail válido.';
+            errorEl.style.display = 'block';
+            return;
+        }
+
+        // Iniciar pagamento via Mercado Pago
+        await iniciarPagamento(nome, email);
+    }
+
+    async function iniciarPagamento(nome, email) {
+        const loading = document.getElementById('regLoading');
+        const step1 = document.getElementById('registroStep1');
+        const errorEl = document.getElementById('regError');
+
+        step1.style.display = 'none';
+        loading.style.display = 'block';
+
+        try {
+            // Criar preferência de pagamento no backend
+            const response = await fetch(API_BASE_URL + '/criar-pagamento', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    nome: nome,
+                    email: email,
+                    produto: 'Ultrafoot 26 — Registro Completo',
+                    valor: 29.90
+                })
+            });
+
+            if (!response.ok) throw new Error('Erro ao criar pagamento');
+
+            const data = await response.json();
+
+            if (data.init_point) {
+                // Redirecionar para checkout do Mercado Pago
+                window.location.href = data.init_point;
+            } else if (data.preference_id) {
+                // Usar Checkout Bricks do Mercado Pago
+                loading.style.display = 'none';
+                step1.style.display = 'none';
+                abrirCheckoutMP(data.preference_id);
+            } else {
+                throw new Error('Resposta inválida do servidor');
+            }
+        } catch (err) {
+            loading.style.display = 'none';
+            step1.style.display = 'block';
+            errorEl.textContent = 'Erro ao processar pagamento. Tente novamente ou entre em contato pelo suporte.';
+            errorEl.style.display = 'block';
+            console.error('Erro pagamento:', err);
+        }
+    }
+
+    function abrirCheckoutMP(preferenceId) {
+        const step2 = document.getElementById('registroStep2');
+        try {
+            const mp = new MercadoPago(MP_PUBLIC_KEY, { locale: 'pt-BR' });
+            mp.checkout({
+                preference: { id: preferenceId },
+                render: {
+                    container: '#registroStep2',
+                    label: 'Pagar R$ 29,90'
+                }
+            });
+            step2.style.display = 'block';
+        } catch (e) {
+            console.error('Erro Mercado Pago Checkout:', e);
+        }
+    }
+
+    function copiarSerial() {
+        const serial = document.getElementById('regSerialCode').textContent;
+        navigator.clipboard.writeText(serial).then(() => {
+            const btn = document.querySelector('#registroStep2 .btn-copy');
+            btn.textContent = 'Copiado!';
+            setTimeout(() => { btn.textContent = 'Copiar'; }, 2000);
+        });
+    }
+
+    function copiarSerialModal() {
+        const serial = document.getElementById('modalSerialCode').textContent;
+        navigator.clipboard.writeText(serial).then(() => {
+            const btn = document.querySelector('#paymentModal .btn-copy');
+            btn.textContent = 'Copiado!';
+            setTimeout(() => { btn.textContent = 'Copiar'; }, 2000);
+        });
+    }
+
+    function abrirModalSerial(serial) {
+        document.getElementById('modalSerialCode').textContent = serial;
+        document.getElementById('paymentModal').classList.add('active');
+    }
+
+    function fecharModal() {
+        document.getElementById('paymentModal').classList.remove('active');
+    }
+
+    // Verificar retorno do Mercado Pago (callback)
+    (function checkPaymentReturn() {
+        const params = new URLSearchParams(window.location.search);
+        const status = params.get('status');
+        const paymentId = params.get('payment_id');
+
+        if (status === 'approved' && paymentId) {
+            fetch(API_BASE_URL + '/verificar-pagamento?payment_id=' + encodeURIComponent(paymentId))
+                .then(r => r.json())
+                .then(data => {
+                    if (data.serial) {
+                        abrirModalSerial(data.serial);
+                    }
+                })
+                .catch(err => console.error('Erro ao verificar pagamento:', err));
+
+            // Clean URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    })();
     </script>
 
 </body>

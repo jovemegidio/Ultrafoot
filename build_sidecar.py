@@ -45,6 +45,7 @@ datas = [
     (os.path.join(BASE, "selecoes"), "selecoes"),
     (os.path.join(BASE, "conf_estadual"), "conf_estadual"),
     (os.path.join(BASE, "conf_ligas_nacionais"), "conf_ligas_nacionais"),
+    (os.path.join(BASE, "data", "assets", "stadiums"), os.path.join("data", "assets", "stadiums")),
     (os.path.join(BASE, "Tracker", "ultrafoot_match_center.css"), "Tracker"),
     (os.path.join(BASE, "Tracker", "ultrafoot_match_center.js"), "Tracker"),
 ]

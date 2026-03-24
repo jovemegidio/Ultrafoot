@@ -159,6 +159,10 @@ class ScoutService:
                     "valor_estimado": j.valor_mercado,
                     "confianca": min(100, precisao + random.randint(-5, 10)),
                 })
+                if len(resultados) >= 200:
+                    break
+            if len(resultados) >= 200:
+                break
 
         # Ordenar por overall visto (desc)
         resultados.sort(key=lambda r: r["overall_visto"], reverse=True)

@@ -564,9 +564,16 @@ class ResultadoPartida:
     faltas_fora: int = 0
     impedimentos_casa: int = 0
     impedimentos_fora: int = 0
+    penaltis_casa: int = 0
+    penaltis_fora: int = 0
     publico: int = 0
     renda: int = 0
     eventos: List[EventoPartida] = field(default_factory=list)
+
+    # Disputa de pênaltis (eliminatórias)
+    penaltis_disputa_casa: int = 0
+    penaltis_disputa_fora: int = 0
+    decidido_penaltis: bool = False
 
     # Fantasy hook — preenchido pelo motor
     notas_jogadores: Dict[int, float] = field(default_factory=dict)
@@ -588,6 +595,13 @@ class ResultadoPartida:
     # Escalações (nomes dos 11 titulares) — preenchido pelo motor
     escalacao_casa: List[str] = field(default_factory=list)
     escalacao_fora: List[str] = field(default_factory=list)
+
+    # Formações usadas
+    formacao_casa: Optional[FormacaoTatica] = None
+    formacao_fora: Optional[FormacaoTatica] = None
+
+    # Prorrogação
+    teve_prorrogacao: bool = False
 
     # Árbitro da partida
     arbitro: str = ""

@@ -15,7 +15,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 BUILD_TOKEN = time.strftime("%Y%m%d_%H%M%S")
 PYI_RELEASE_ROOT = os.path.join(BASE, "release_build")
 PYI_DISTPATH = os.path.join(PYI_RELEASE_ROOT, BUILD_TOKEN)
-PYI_APP_DIST = os.path.join(PYI_DISTPATH, "Ultrafoot")
+PYI_APP_DIST = os.path.join(PYI_DISTPATH, "Ultrafoot 26")
 PYI_WORKPATH = os.path.join(BASE, "build", "pyinstaller_runs", BUILD_TOKEN)
 PYI_SPECPATH = os.path.join(BASE, "build", "spec")
 LATEST_BUILD_FILE = os.path.join(PYI_RELEASE_ROOT, "latest_build.txt")
@@ -31,25 +31,18 @@ def _sync_branding_assets() -> None:
 
 def _sync_frontend_assets() -> None:
     """Sincroniza o frontend raiz com as copias usadas por Tauri e pelo dist do PyInstaller."""
+    tracker_dir = os.path.join(BASE, "web", "Tracker")
     sync_pairs = [
         (os.path.join(BASE, "index.html"), os.path.join(BASE, "web", "index.html")),
         (
-            os.path.join(BASE, "Tracker", "ultrafoot_match_center.css"),
-            os.path.join(BASE, "web", "Tracker", "ultrafoot_match_center.css"),
-        ),
-        (
-            os.path.join(BASE, "Tracker", "ultrafoot_match_center.js"),
-            os.path.join(BASE, "web", "Tracker", "ultrafoot_match_center.js"),
-        ),
-        (os.path.join(BASE, "index.html"), os.path.join(PYI_APP_DIST, "_internal", "index.html")),
-        (
-            os.path.join(BASE, "Tracker", "ultrafoot_match_center.css"),
+            os.path.join(tracker_dir, "ultrafoot_match_center.css"),
             os.path.join(PYI_APP_DIST, "_internal", "Tracker", "ultrafoot_match_center.css"),
         ),
         (
-            os.path.join(BASE, "Tracker", "ultrafoot_match_center.js"),
+            os.path.join(tracker_dir, "ultrafoot_match_center.js"),
             os.path.join(PYI_APP_DIST, "_internal", "Tracker", "ultrafoot_match_center.js"),
         ),
+        (os.path.join(BASE, "index.html"), os.path.join(PYI_APP_DIST, "_internal", "index.html")),
     ]
     for src, dest in sync_pairs:
         if not os.path.exists(src):
@@ -98,6 +91,37 @@ def _sync_tree_in_place(src_root: str, dst_root: str) -> list[str]:
     return locked_files
 
 
+def _cleanup_old_builds(max_keep: int = 2) -> None:
+    """Remove builds antigas de release_build/ e build/pyinstaller_runs/, mantendo apenas as N mais recentes."""
+    for cleanup_dir, label in [
+        (PYI_RELEASE_ROOT, "release_build"),
+        (os.path.join(BASE, "build", "pyinstaller_runs"), "pyinstaller_runs"),
+    ]:
+        if not os.path.isdir(cleanup_dir):
+            continue
+        subdirs = sorted(
+            [d for d in os.listdir(cleanup_dir) if os.path.isdir(os.path.join(cleanup_dir, d))],
+            reverse=True,
+        )
+        to_remove = subdirs[max_keep:]
+        if to_remove:
+            print(f"Cleaning {len(to_remove)} old builds from {label}/...")
+            for name in to_remove:
+                shutil.rmtree(os.path.join(cleanup_dir, name), ignore_errors=True)
+            print(f"Cleaned {label}/: kept {min(len(subdirs), max_keep)}, removed {len(to_remove)}")
+
+    # Limpar backups antigos de dist/
+    if os.path.isdir(MIRROR_BACKUP_ROOT):
+        backups = [
+            d for d in os.listdir(MIRROR_BACKUP_ROOT)
+            if d.startswith("Ultrafoot_backup_") and os.path.isdir(os.path.join(MIRROR_BACKUP_ROOT, d))
+        ]
+        if backups:
+            print(f"Removing {len(backups)} old dist backups...")
+            for b in backups:
+                shutil.rmtree(os.path.join(MIRROR_BACKUP_ROOT, b), ignore_errors=True)
+
+
 def _mirror_build_to_dist(app_dist: str) -> bool:
     """Espelha a build mais recente para dist/Ultrafoot, caminho usado no fluxo manual."""
     if not os.path.isdir(app_dist):
@@ -106,14 +130,10 @@ def _mirror_build_to_dist(app_dist: str) -> bool:
 
     if os.path.isdir(MIRROR_DIST_ROOT):
         try:
-            backup_name = f"Ultrafoot_backup_{BUILD_TOKEN}"
-            backup_path = os.path.join(MIRROR_BACKUP_ROOT, backup_name)
-            if os.path.exists(backup_path):
-                shutil.rmtree(backup_path)
-            shutil.move(MIRROR_DIST_ROOT, backup_path)
-            print(f"Backed up previous dist -> {os.path.relpath(backup_path, BASE)}")
+            shutil.rmtree(MIRROR_DIST_ROOT)
+            print(f"Removed old dist/Ultrafoot")
         except PermissionError as exc:
-            print(f"Warning: dist mirror is in use and could not be moved ({exc}). Trying in-place sync...")
+            print(f"Warning: dist mirror is in use ({exc}). Trying in-place sync...")
             locked_files = _sync_tree_in_place(app_dist, MIRROR_DIST_ROOT)
             if locked_files:
                 preview = ", ".join(os.path.relpath(path, BASE) for path in locked_files[:5])
@@ -161,10 +181,12 @@ datas = [
     (os.path.join(BASE, "conf_estadual"), "conf_estadual"),
     (os.path.join(BASE, "conf_ligas_nacionais"), "conf_ligas_nacionais"),
     (os.path.join(BASE, "data", "assets", "players"), os.path.join("data", "assets", "players")),
+    (os.path.join(BASE, "data", "assets", "stadiums"), os.path.join("data", "assets", "stadiums")),
+    (os.path.join(BASE, "data", "assets", "flags"), os.path.join("data", "assets", "flags")),
 ]
 
-# Add optional image assets
-for img in ["Logo - UF26 II.png", "Logo - UF26 III.png", "Fundo II.gif", "Fundo.png", "Icone.png", "Logo - Japa Rebranding.png"]:
+# Add optional image assets (jpg e png)
+for img in ["Logo - UF26 II.png", "Logo - UF26 III.png", "Fundo II.jpg", "Fundo.jpg", "Fundo III.jpg", "Fundo II.gif", "Fundo.png", "Icone.png", "Logo - Japa Rebranding.png", "Fundo - Office II.mp4"]:
     p = os.path.join(BASE, img)
     if os.path.exists(p):
         datas.append((p, "."))
@@ -214,12 +236,14 @@ hidden_imports = [
 ]
 
 # Incluir apenas arquivos úteis de Tracker (CSS/JS, não HTMLs de dev)
-for tf in os.listdir(os.path.join(BASE, "Tracker")):
-    if tf in _EXCLUDE_TRACKER:
-        continue
-    src = os.path.join(BASE, "Tracker", tf)
-    if os.path.isfile(src):
-        datas.append((src, "Tracker"))
+_tracker_src = os.path.join(BASE, "web", "Tracker")
+if os.path.isdir(_tracker_src):
+    for tf in os.listdir(_tracker_src):
+        if tf in _EXCLUDE_TRACKER:
+            continue
+        src = os.path.join(_tracker_src, tf)
+        if os.path.isfile(src):
+            datas.append((src, "Tracker"))
 
 # Build arguments
 _sync_branding_assets()
@@ -236,6 +260,7 @@ args = [
     f"--workpath={PYI_WORKPATH}",
     f"--specpath={PYI_SPECPATH}",
     "--collect-all=webview",
+    "--collect-all=pythonnet",
 ]
 
 # ── Excluir módulos pesados desnecessários (reduz ~50-80 MB) ──
@@ -290,5 +315,8 @@ _write_latest_build_marker()
 mirrored = _mirror_build_to_dist(APP_DIST)
 if not mirrored:
     print("Build completed, but dist/Ultrafoot was not fully refreshed.")
+
+# Limpeza automática: manter apenas as 2 builds mais recentes
+_cleanup_old_builds(max_keep=2)
 
 print(f"\nBuild complete! Check {APP_DIST}")

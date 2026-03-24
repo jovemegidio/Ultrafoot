@@ -5,7 +5,7 @@ Motor de progressão semanal: treinamento, evolução, lesões, moral, base juve
 from __future__ import annotations
 
 import random
-from typing import List
+from typing import Dict, List
 
 from core.enums import StatusLesao, TipoStaff, NivelTreinamento, CategoriaNoticia, TraitJogador
 from core.models import Time, Jogador, Noticia, Historico
@@ -86,6 +86,8 @@ class MotorTemporada:
     # ── treinamento ───────────────────────────────────────────
 
     def _processar_treinamento(self, time: Time) -> None:
+        if not time.treinamento:
+            return
         treinador = time.staff_por_tipo(TipoStaff.TREINADOR)
         preparador = time.staff_por_tipo(TipoStaff.PREPARADOR)
         f_treinador = (treinador.habilidade / 50) if treinador else 1.0
@@ -143,7 +145,7 @@ class MotorTemporada:
         for _ in range(pontos):
             # Primary focus (stronger effect)
             if fp == "gol":
-                if j.posicao.name == "GOL":
+                if j.posicao.name == "GOL" and j.goleiro:
                     attr = random.choice(["reflexos", "posicionamento_gol", "defesa_1v1", "elasticidade"])
                     setattr(j.goleiro, attr, min(99, getattr(j.goleiro, attr) + 1))
                 else:
@@ -179,6 +181,8 @@ class MotorTemporada:
 
     @staticmethod
     def _declinar_jogador(j: Jogador) -> None:
+        if not j.fisicos:
+            return
         attr = random.choice(["velocidade", "aceleracao", "resistencia", "agilidade"])
         setattr(j.fisicos, attr, max(1, getattr(j.fisicos, attr) - 1))
 
@@ -206,19 +210,21 @@ class MotorTemporada:
     @staticmethod
     def _evoluir_individual(j: Jogador, plano: Dict[str, str], fator: float) -> None:
         """Evolui jogador com base em seu plano individual de treino."""
-        from engine.season_engine import SeasonEngine
         foco = plano.get("foco", "finalizacao")
-        info = SeasonEngine._INDIVIDUAL_MAP.get(foco)
+        info = MotorTemporada._INDIVIDUAL_MAP.get(foco)
         if not info:
             return
         grupo, attrs = info
+        obj = getattr(j, grupo, None)
+        if obj is None:
+            return
         pontos = max(1, int(fator * 2))
         for _ in range(pontos):
             attr = random.choice(attrs)
-            obj = getattr(j, grupo)
-            setattr(obj, attr, min(99, getattr(obj, attr) + 1))
+            current = getattr(obj, attr, 0)
+            setattr(obj, attr, min(99, current + 1))
         # 30% chance extra fitness
-        if random.random() < 0.3:
+        if j.fisicos and random.random() < 0.3:
             j.fisicos.resistencia = min(99, j.fisicos.resistencia + 1)
 
     # ── treinamento individual (sessão avulsa) ────────────────
@@ -314,7 +320,9 @@ class MotorTemporada:
     # ── base juvenil ──────────────────────────────────────────
 
     def _processar_base_juvenil(self, time: Time) -> None:
-        if random.random() > 0.05:
+        if not time.base_juvenil:
+            return
+        if random.random() > 0.95:
             return
         max_id = max((j.id for j in time.jogadores), default=0) + 1
         nivel = time.base_juvenil.nivel

@@ -6195,13 +6195,13 @@
   "sel_ZIM": "selecoes/camisas/ZIM.png"
  },
  "sons": [
-  "sons/contusao.wav",
-  "sons/expulsao.wav",
-  "sons/fimjogo.wav",
-  "sons/gol1.wav",
-  "sons/goladv.wav",
-  "sons/intervalo.wav",
-  "sons/penalty.wav"
+  "sons/contusao.mp3",
+  "sons/expulsao.mp3",
+  "sons/fimjogo.mp3",
+  "sons/gol1.mp3",
+  "sons/goladv.mp3",
+  "sons/intervalo.mp3",
+  "sons/penalty.mp3"
  ],
  "trofeus": [
   "trofeus/tr_conference.png",

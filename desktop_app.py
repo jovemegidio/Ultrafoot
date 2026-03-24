@@ -14,6 +14,7 @@ import re
 import sys
 import threading
 import unicodedata
+from urllib.parse import quote
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -62,6 +63,8 @@ _ESCUDOS_DIR = os.path.join(_BASE, "teams", "escudos")
 _CAMISAS_DIR = os.path.join(_BASE, "teams", "camisas")
 _SONS_DIR = os.path.join(_BASE, "sons")
 _PLAYER_ASSETS_DIR = os.path.join(_BASE, "data", "assets", "players")
+_STADIUM_ASSETS_DIR = os.path.join(_BASE, "data", "assets", "stadiums")
+_FLAGS_DIR = os.path.join(_BASE, "data", "assets", "flags")
 _TROFEUS_DIR = os.path.join(_BASE, "trofeus")
 
 # URL base para assets — vazio porque pywebview serve via HTTP local (bottle)
@@ -146,6 +149,8 @@ class UltrafootAPI:
         "serie_c": "Brasileirão Betano Série C",
         "serie_d": "Brasileirão Betano Série D",
         "copa_brasil": "Copa Betano do Brasil",
+        "copa_nordeste": "Copa do Nordeste",
+        "copa_verde": "Copa Verde",
         "libertadores": "Conmebol Libertadores",
         "sul_americana": "Conmebol Sul-Americana",
         "champions_league": "UEFA Champions League",
@@ -207,6 +212,8 @@ class UltrafootAPI:
             "nivel_gramado": getattr(resultado, "nivel_gramado", 0),
             "escalacao_casa": getattr(resultado, "escalacao_casa", []),
             "escalacao_fora": getattr(resultado, "escalacao_fora", []),
+            "formacao_casa": getattr(resultado.formacao_casa, 'value', '4-4-2') if getattr(resultado, 'formacao_casa', None) else '4-4-2',
+            "formacao_fora": getattr(resultado.formacao_fora, 'value', '4-4-2') if getattr(resultado, 'formacao_fora', None) else '4-4-2',
             "eventos": [
                 {
                     "minuto": evento.minuto,
@@ -224,6 +231,8 @@ class UltrafootAPI:
     # Cache de JSON seeds (evita reler 2.7MB a cada chamada)
     _seeds_cache: dict = {}
     _player_photo_cache: dict[str, str] = {}
+    _stadium_photo_cache: dict[str, str] = {}
+    _stadium_team_index: dict[str, str] | None = None
     _br_teams_cache: dict | None = None
 
     @classmethod
@@ -585,6 +594,67 @@ class UltrafootAPI:
 
         return json.dumps(res_dict, ensure_ascii=False, default=str)
 
+    def _proxima_semana_tem_jogo(self) -> bool:
+        """Check if the NEXT week (semana_atual+1) has a match for the player's team."""
+        casa, fora, comp_key = self._find_player_match_teams()
+        return casa is not None
+
+    def avancar_ate_jogo(self) -> str:
+        """Auto-advance weeks until the player's team has a match.
+
+        Processes training, transfers, etc. for all intermediate weeks.
+        Returns aggregated results and the number of weeks advanced.
+        """
+        if not self._gm:
+            return json.dumps({"error": "Nenhum jogo ativo"})
+
+        gm = self._gm
+        from config import SEMANAS_POR_TEMPORADA
+
+        all_results: dict = {}
+        semanas = 0
+
+        for _ in range(30):
+            # If the next week has a player match, stop — the dashboard
+            # will show the pre-match screen.
+            if self._proxima_semana_tem_jogo():
+                break
+
+            # No match next week — advance silently
+            self._match_snapshot = None
+            self._match_seed = None
+            self._match_casa = None
+            self._match_fora = None
+            self._match_comp_key = ""
+            self._match_subs = []
+            self._match_subs_count = 0
+            gm._pre_match_callback = None
+
+            resultados = gm.avancar_semana()
+            semanas += 1
+
+            for comp, lista in resultados.items():
+                all_results.setdefault(comp, []).extend(lista)
+
+            if gm.competicoes.temporada_encerrada() or gm.semana >= SEMANAS_POR_TEMPORADA:
+                break
+
+        res_dict: dict = {}
+        for comp, lista in all_results.items():
+            res_dict[comp] = [self._serializar_resultado_partida(r, comp) for r in lista]
+
+        if gm.time_jogador:
+            _discord.atualizar_jogo(
+                time=gm.time_jogador.nome,
+                temporada=gm.temporada,
+                semana=gm.semana,
+            )
+
+        return json.dumps({
+            "resultados": res_dict,
+            "semanas_avancadas": semanas,
+        }, ensure_ascii=False, default=str)
+
     # ── Substituições durante partida ─────────────────────────
 
     def _find_player_match_teams(self):
@@ -602,6 +672,8 @@ class UltrafootAPI:
 
         if "estadual" in comps_semana and uf and uf in comps.estaduais:
             est = comps.estaduais[uf]
+            if est.fase_grupos and est.fase_grupos.encerrado and not est._em_mata_mata:
+                est._iniciar_mata_mata()
             if not est.encerrado:
                 if est._em_mata_mata and est.semifinal and not est.semifinal.encerrado:
                     jogo = est.semifinal.jogo_do_jogador(t)
@@ -648,6 +720,16 @@ class UltrafootAPI:
             jogo = comps.sul_americana.jogo_do_jogador(t)
             if jogo:
                 return jogo[0], jogo[1], "sul_americana"
+
+        if "copa_nordeste" in comps_semana and comps.copa_nordeste and not comps.copa_nordeste.encerrado:
+            jogo = comps.copa_nordeste.jogo_do_jogador(t)
+            if jogo:
+                return jogo[0], jogo[1], "copa_nordeste"
+
+        if "copa_verde" in comps_semana and comps.copa_verde and not comps.copa_verde.encerrado:
+            jogo = comps.copa_verde.jogo_do_jogador(t)
+            if jogo:
+                return jogo[0], jogo[1], "copa_verde"
 
         if "europeias" in comps_semana and comps.ligas_europeias:
             for pais, divs in comps.ligas_europeias.items():
@@ -870,6 +952,106 @@ class UltrafootAPI:
                 return uri
         return None
 
+    @staticmethod
+    def _normalize_asset_key(value: str) -> str:
+        texto = (value or "").strip().lower()
+        if not texto:
+            return ""
+        texto = "".join(
+            c for c in unicodedata.normalize("NFKD", texto)
+            if not unicodedata.combining(c)
+        )
+        return re.sub(r"[^a-z0-9]+", "", texto)
+
+    @classmethod
+    def _build_stadium_team_index(cls) -> dict[str, str]:
+        if cls._stadium_team_index is not None:
+            return cls._stadium_team_index
+
+        index: dict[str, str] = {}
+        if not os.path.isdir(_STADIUM_ASSETS_DIR):
+            cls._stadium_team_index = index
+            return index
+
+        valid_exts = {".png", ".jpg", ".jpeg", ".webp"}
+        for root, _dirs, files in os.walk(_STADIUM_ASSETS_DIR):
+            image_files = sorted(
+                file_name for file_name in files
+                if os.path.splitext(file_name)[1].lower() in valid_exts
+            )
+            if not image_files:
+                continue
+
+            rel_root = os.path.relpath(root, _STADIUM_ASSETS_DIR)
+            rel_parts = rel_root.split(os.sep)
+            estadio_idx = next(
+                (idx for idx, part in enumerate(rel_parts) if part.lower().startswith("estadio")),
+                -1,
+            )
+            if estadio_idx <= 0:
+                continue
+
+            team_folder = rel_parts[estadio_idx - 1]
+            team_key = cls._normalize_asset_key(team_folder)
+            if not team_key or team_key in index:
+                continue
+
+            rel_file = os.path.relpath(os.path.join(root, image_files[0]), _BASE)
+            rel_url = "/".join(quote(part) for part in rel_file.split(os.sep))
+            index[team_key] = rel_url
+
+        cls._stadium_team_index = index
+        return index
+
+    @classmethod
+    def _candidate_stadium_team_keys(cls, team_name: str, file_key: str = "",
+                                     short_name: str = "", stadium_name: str = "") -> list[str]:
+        candidates: list[str] = []
+
+        def _add(raw: str):
+            norm = cls._normalize_asset_key(raw)
+            if norm and norm not in candidates:
+                candidates.append(norm)
+
+        for raw in (team_name, file_key, short_name, stadium_name):
+            _add(raw)
+
+        if file_key:
+            stripped = re.sub(
+                r"_(bra|sp|rj|mg|rs|pr|sc|ba|ce|go|pa|pb|pe|pi|al|se|to|mt|ms|ma|rn|am|ac|ap|rr|df|ro|es|ing|esp|ita|ale|fra|por|hol|bel|tur|rus|esc|sui|aut|gre|arg|uru|par|chi|col|mex|eua)$",
+                "",
+                file_key,
+                flags=re.IGNORECASE,
+            )
+            _add(stripped)
+
+        return candidates
+
+    @classmethod
+    def _resolve_stadium_photo_relpath(cls, team_name: str, file_key: str = "",
+                                       short_name: str = "", stadium_name: str = "") -> str:
+        cache_key = "|".join((team_name or "", file_key or "", short_name or "", stadium_name or ""))
+        if cache_key in cls._stadium_photo_cache:
+            return cls._stadium_photo_cache[cache_key]
+
+        index = cls._build_stadium_team_index()
+        rel_path = ""
+        for candidate in cls._candidate_stadium_team_keys(team_name, file_key, short_name, stadium_name):
+            rel_path = index.get(candidate, "")
+            if rel_path:
+                break
+            if len(candidate) < 4:
+                continue
+            for indexed_key, indexed_path in index.items():
+                if candidate in indexed_key or indexed_key in candidate:
+                    rel_path = indexed_path
+                    break
+            if rel_path:
+                break
+
+        cls._stadium_photo_cache[cache_key] = rel_path
+        return rel_path
+
     def _player_photo_src(self, jogador, time=None) -> str:
         foto = getattr(jogador, "foto", "") or ""
         if foto:
@@ -989,6 +1171,9 @@ class UltrafootAPI:
                 "valor_mercado": j.valor_mercado,
                 "valor_fmt": format_reais(j.valor_mercado),
                 "contrato_meses": j.contrato.meses_restantes,
+                "tipo_contrato": j.contrato.tipo.value if hasattr(j.contrato.tipo, 'value') else str(j.contrato.tipo),
+                "time_origem": j.contrato.time_origem,
+                "clausula_compra": j.contrato.clausula_compra,
                 "titular": j.id in gm.time_jogador.titulares,
                 "pode_jogar": j.pode_jogar,
                 "foto": self._player_photo_src(j, gm.time_jogador),
@@ -1061,6 +1246,10 @@ class UltrafootAPI:
                     "contrato_duracao": j.contrato.duracao_meses,
                     "multa_rescisoria": j.contrato.multa_rescisoria,
                     "multa_fmt": format_reais(j.contrato.multa_rescisoria) if j.contrato.multa_rescisoria else "N/A",
+                    "tipo_contrato": j.contrato.tipo.value if hasattr(j.contrato.tipo, 'value') else str(j.contrato.tipo),
+                    "time_origem": j.contrato.time_origem,
+                    "clausula_compra": j.contrato.clausula_compra,
+                    "clausula_compra_fmt": format_reais(j.contrato.clausula_compra) if j.contrato.clausula_compra > 0 else None,
                 }, ensure_ascii=False, default=str)
         return json.dumps({"error": "not_found"})
 
@@ -1245,7 +1434,7 @@ class UltrafootAPI:
                 div = int(parts[2])
                 eu_ligas = comp.ligas_europeias.get(pais, {})
                 camp = eu_ligas.get(div)
-        elif competicao in {"champions_league", "europa_league", "copa_mundo", "eurocopa", "copa_america"}:
+        elif competicao in {"copa_nordeste", "copa_verde", "champions_league", "europa_league", "copa_mundo", "eurocopa", "copa_america"}:
             ccg = getattr(comp, competicao, None)
             if ccg:
                 r = _grupos_json(ccg)
@@ -1427,6 +1616,9 @@ class UltrafootAPI:
                 )
                 oferta.status = StatusOferta.ACEITA
                 gm.mercado._executar_transferencia(oferta, gm.todos_times())
+                # Clean up from pending list
+                if oferta in gm.mercado.ofertas_pendentes:
+                    gm.mercado.ofertas_pendentes.remove(oferta)
                 return json.dumps({"ok": True, "oferta_id": oferta.id,
                     "msg": f"Proposta aceita! {j.nome} foi contratado."})
         return json.dumps({"ok": False, "error": "Jogador não encontrado"})
@@ -1463,6 +1655,8 @@ class UltrafootAPI:
                 )
                 oferta.status = StatusOferta.ACEITA
                 gm.mercado._executar_transferencia(oferta, gm.todos_times())
+                if oferta in gm.mercado.ofertas_pendentes:
+                    gm.mercado.ofertas_pendentes.remove(oferta)
                 return json.dumps({"ok": True, "oferta_id": oferta.id,
                     "msg": f"Empréstimo aceito! {j.nome} emprestado por 12 meses."})
         return json.dumps({"ok": False, "error": "Jogador não encontrado"})
@@ -1472,6 +1666,8 @@ class UltrafootAPI:
         gm = self._gm
         if not gm or not gm.time_jogador:
             return json.dumps({"ok": False, "error": "Nenhum jogo ativo"})
+        if len(gm.time_jogador.jogadores) <= 16:
+            return json.dumps({"ok": False, "error": "Elenco mínimo de 16 jogadores"})
         j = gm.time_jogador.jogador_por_id(jogador_id)
         if not j:
             return json.dumps({"ok": False, "error": "Jogador não encontrado"})
@@ -1489,8 +1685,158 @@ class UltrafootAPI:
         )
         oferta.status = StatusOferta.ACEITA
         gm.mercado._executar_transferencia(oferta, gm.todos_times())
+        if oferta in gm.mercado.ofertas_pendentes:
+            gm.mercado.ofertas_pendentes.remove(oferta)
         return json.dumps({"ok": True, "oferta_id": oferta.id,
             "msg": f"{j.nome} emprestado para {destino.nome} por 12 meses."})
+
+    def exercer_opcao_compra(self, jogador_id: int) -> str:
+        """Exercer cláusula de compra de jogador emprestado ao nosso time."""
+        gm = self._gm
+        if not gm or not gm.time_jogador:
+            return json.dumps({"ok": False, "error": "Nenhum jogo ativo"})
+        j = gm.time_jogador.jogador_por_id(jogador_id)
+        if not j:
+            return json.dumps({"ok": False, "error": "Jogador não encontrado"})
+        from core.enums import TipoContrato
+        if j.contrato.tipo != TipoContrato.EMPRESTIMO:
+            return json.dumps({"ok": False, "error": "Jogador não está por empréstimo"})
+        clausula = j.contrato.clausula_compra
+        if clausula <= 0:
+            clausula = j.valor_mercado
+        if gm.time_jogador.financas.saldo < clausula:
+            return json.dumps({"ok": False, "error": f"Saldo insuficiente. Cláusula: {format_reais(clausula)}"})
+        gm.time_jogador.financas.saldo -= clausula
+        j.contrato.tipo = TipoContrato.PROFISSIONAL
+        j.contrato.time_origem = ""
+        j.contrato.clausula_compra = 0
+        j.contrato.duracao_meses = 24
+        j.contrato.meses_restantes = 24
+        return json.dumps({"ok": True,
+            "msg": f"{j.nome} contratado definitivamente por {format_reais(clausula)}!"})
+
+    # ── Fantasy ───────────────────────────────────────────────
+
+    def get_fantasy_status(self) -> str:
+        gm = self._gm
+        if not gm or not hasattr(gm, 'fantasy'):
+            return json.dumps({"ativo": False})
+        liga = getattr(gm.fantasy, 'liga', None)
+        if not liga or not liga.times:
+            return json.dumps({"ativo": False})
+        return json.dumps({
+            "ativo": True,
+            "nome_liga": liga.nome,
+            "rodada_atual": liga.rodada_atual,
+            "num_times": len(liga.times),
+        })
+
+    def get_fantasy_classificacao(self) -> str:
+        gm = self._gm
+        if not gm or not hasattr(gm, 'fantasy'):
+            return json.dumps([])
+        liga = getattr(gm.fantasy, 'liga', None)
+        if not liga:
+            return json.dumps([])
+        classif = liga.classificacao()
+        return json.dumps([{
+            "id": t.id,
+            "nome": t.nome,
+            "dono": t.dono,
+            "pontos_total": t.pontos_total,
+            "pontos_rodada": t.pontos_rodada,
+            "media": round(t.media_pontos, 1),
+            "eh_jogador": t.dono == "jogador",
+        } for t in classif], ensure_ascii=False)
+
+    def get_fantasy_meu_time(self) -> str:
+        gm = self._gm
+        if not gm or not hasattr(gm, 'fantasy'):
+            return json.dumps(None)
+        tf = gm.fantasy.time_jogador()
+        if not tf:
+            return json.dumps(None)
+        return json.dumps({
+            "id": tf.id,
+            "nome": tf.nome,
+            "pontos_total": tf.pontos_total,
+            "pontos_rodada": tf.pontos_rodada,
+            "historico_rodadas": tf.historico_rodadas[-10:],
+            "escalacao": [{
+                "jogador_id": e.jogador_id,
+                "jogador_nome": e.jogador_nome,
+                "time_real": e.time_real,
+                "posicao": e.posicao,
+                "pontos": e.pontos,
+                "capitao": e.capitao,
+            } for e in tf.escalacao],
+        }, ensure_ascii=False)
+
+    def get_fantasy_jogadores_disponiveis(self) -> str:
+        """Retorna todos os jogadores dos times reais (A+B) para escalação fantasy."""
+        gm = self._gm
+        if not gm:
+            return json.dumps([])
+        pool = []
+        for t in (gm.times_serie_a or []) + (gm.times_serie_b or []):
+            for j in t.jogadores:
+                pool.append({
+                    "id": j.id,
+                    "nome": j.nome,
+                    "posicao": j.posicao.value if hasattr(j.posicao, 'value') else str(j.posicao),
+                    "posicao_name": j.posicao.name if hasattr(j.posicao, 'name') else str(j.posicao),
+                    "overall": j.overall,
+                    "time_real": t.nome,
+                    "foto": self._player_photo_src(j, t),
+                })
+        pool.sort(key=lambda x: x['overall'], reverse=True)
+        return json.dumps(pool, ensure_ascii=False, default=str)
+
+    def set_fantasy_escalacao(self, escalacao_json: str) -> str:
+        """Define a escalação do time fantasy do jogador.
+        escalacao_json: JSON array de {jogador_id, capitao}
+        """
+        gm = self._gm
+        if not gm or not hasattr(gm, 'fantasy'):
+            return json.dumps({"ok": False, "error": "Fantasy não disponível"})
+        tf = gm.fantasy.time_jogador()
+        if not tf:
+            return json.dumps({"ok": False, "error": "Time fantasy não encontrado"})
+        try:
+            dados = json.loads(escalacao_json) if isinstance(escalacao_json, str) else escalacao_json
+        except Exception:
+            return json.dumps({"ok": False, "error": "JSON inválido"})
+        if len(dados) != 11:
+            return json.dumps({"ok": False, "error": "Escalação deve ter exatamente 11 jogadores"})
+
+        mapa_jogadores = {}
+        for t in (gm.times_serie_a or []) + (gm.times_serie_b or []):
+            for j in t.jogadores:
+                mapa_jogadores[j.id] = (j, t.nome)
+
+        from fantasy.models import EscalacaoFantasy
+        nova_esc = []
+        tem_goleiro = False
+        for item in dados:
+            jid = item.get("jogador_id") if isinstance(item, dict) else item
+            cap = item.get("capitao", False) if isinstance(item, dict) else False
+            entry = mapa_jogadores.get(jid)
+            if not entry:
+                return json.dumps({"ok": False, "error": f"Jogador {jid} não encontrado"})
+            j, time_nome = entry
+            pos_name = j.posicao.name if hasattr(j.posicao, 'name') else str(j.posicao)
+            if pos_name == "GOL":
+                tem_goleiro = True
+            nova_esc.append(EscalacaoFantasy(
+                jogador_id=j.id, jogador_nome=j.nome,
+                time_real=time_nome, posicao=pos_name,
+                capitao=bool(cap),
+            ))
+        if not tem_goleiro:
+            return json.dumps({"ok": False, "error": "Escalação deve ter pelo menos 1 goleiro"})
+
+        tf.escalacao = nova_esc
+        return json.dumps({"ok": True, "msg": "Escalação salva com sucesso!"})
 
     # ── Finanças ──────────────────────────────────────────────
 
@@ -1567,8 +1913,8 @@ class UltrafootAPI:
         for f in FormacaoTatica:
             if f.value == formacao_str:
                 gm.time_jogador.tatica.formacao = f
-                return json.dumps({"ok": True})
-        return json.dumps({"ok": False, "error": "Formação inválida"})
+                return json.dumps({"ok": True, "warning": "Revise os titulares para a nova forma\u00e7\u00e3o"})
+        return json.dumps({"ok": False, "error": "Forma\u00e7\u00e3o inv\u00e1lida"})
 
     def set_estilo(self, estilo_str: str) -> str:
         gm = self._gm
@@ -1608,6 +1954,11 @@ class UltrafootAPI:
         clean = [i for i in ids if i in valid_ids]
         if len(clean) != 11:
             return json.dumps({"ok": False, "error": f"Selecione exatamente 11 jogadores (recebido {len(clean)})"})
+        from core.enums import Posicao
+        jogadores_map = {j.id: j for j in gm.time_jogador.jogadores}
+        tem_goleiro = any(jogadores_map[jid].posicao == Posicao.GOL for jid in clean if jid in jogadores_map)
+        if not tem_goleiro:
+            return json.dumps({"ok": False, "error": "Selecione pelo menos um goleiro entre os titulares"})
         gm.time_jogador.titulares = clean
         return json.dumps({"ok": True})
 
@@ -1672,7 +2023,7 @@ class UltrafootAPI:
         return json.dumps(None)
 
     def get_proxima_partida(self) -> str:
-        """Retorna informações da próxima partida agendada (apenas para a próxima semana)."""
+        """Retorna informações da próxima partida agendada (busca até 10 semanas à frente)."""
         gm = self._gm
         if not gm or not gm.time_jogador:
             return json.dumps(None)
@@ -1681,134 +2032,152 @@ class UltrafootAPI:
         info = {"time_casa": nome, "time_fora": "A definir", "competicao": "Campeonato"}
         try:
             comps = gm.competicoes
-            # Get which competitions are scheduled for the NEXT week
-            proxima_semana = comps.semana_atual + 1
-            comps_semana = comps.calendario.get(proxima_semana, [])
-            if not comps_semana:
-                return json.dumps(info, ensure_ascii=False, default=str)
-
             uf = t.estado
 
-            # Check Supercopa Rei first (if scheduled)
-            if "supercopa_rei" in comps_semana and comps.supercopa_rei and not comps.supercopa_rei.get("encerrado"):
-                sc = comps.supercopa_rei
-                if sc["time1"].nome == nome or sc["time2"].nome == nome:
-                    info = {"time_casa": sc["time1"].nome, "time_fora": sc["time2"].nome, "competicao": "Supercopa Rei"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+            for ahead in range(1, 11):
+                proxima_semana = comps.semana_atual + ahead
+                comps_semana = comps.calendario.get(proxima_semana, [])
+                if not comps_semana:
+                    continue
 
-            # Check estaduais first (if scheduled)
-            if "estadual" in comps_semana and uf and uf in comps.estaduais:
-                est = comps.estaduais[uf]
-                if not est.encerrado:
-                    jogo = None
-                    if est._em_mata_mata and est.semifinal and not est.semifinal.encerrado:
-                        jogo = est.semifinal.jogo_do_jogador(t)
-                    elif hasattr(est, 'fase_grupos') and est.fase_grupos and not est.fase_grupos.encerrado:
-                        jogo = est.fase_grupos.jogo_do_jogador(t)
-                    if jogo:
-                        c, f = jogo
-                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": est.nome}
+                # Check Supercopa Rei first (if scheduled)
+                if "supercopa_rei" in comps_semana and comps.supercopa_rei and not comps.supercopa_rei.get("encerrado"):
+                    sc = comps.supercopa_rei
+                    if sc["time1"].nome == nome or sc["time2"].nome == nome:
+                        info = {"time_casa": sc["time1"].nome, "time_fora": sc["time2"].nome, "competicao": "Supercopa Rei", "semana": proxima_semana}
                         return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Check brasileirão (if scheduled)
-            if "brasileirao" in comps_semana:
-                for attr in ['brasileirao_a', 'brasileirao_b', 'brasileirao_c', 'brasileirao_d']:
-                    comp = getattr(comps, attr, None)
+                # Check estaduais first (if scheduled)
+                if "estadual" in comps_semana and uf and uf in comps.estaduais:
+                    est = comps.estaduais[uf]
+                    if est.fase_grupos and est.fase_grupos.encerrado and not est._em_mata_mata:
+                        est._iniciar_mata_mata()
+                    if not est.encerrado:
+                        jogo = None
+                        if est._em_mata_mata and est.semifinal and not est.semifinal.encerrado:
+                            jogo = est.semifinal.jogo_do_jogador(t)
+                        elif hasattr(est, 'fase_grupos') and est.fase_grupos and not est.fase_grupos.encerrado:
+                            jogo = est.fase_grupos.jogo_do_jogador(t)
+                        if jogo:
+                            c, f = jogo
+                            info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": est.nome, "semana": proxima_semana}
+                            return json.dumps(info, ensure_ascii=False, default=str)
+
+                # Check brasileirão (if scheduled)
+                if "brasileirao" in comps_semana:
+                    for attr in ['brasileirao_a', 'brasileirao_b', 'brasileirao_c', 'brasileirao_d']:
+                        comp = getattr(comps, attr, None)
+                        if comp and not comp.encerrado:
+                            jogo = comp.jogo_do_jogador(t)
+                            if jogo:
+                                c, f = jogo
+                                info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": attr, "semana": proxima_semana}
+                                return json.dumps(info, ensure_ascii=False, default=str)
+                if "brasileirao_c" in comps_semana:
+                    comp = comps.brasileirao_c
                     if comp and not comp.encerrado:
                         jogo = comp.jogo_do_jogador(t)
                         if jogo:
                             c, f = jogo
-                            info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": attr}
+                            info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "brasileirao_c", "semana": proxima_semana}
                             return json.dumps(info, ensure_ascii=False, default=str)
-            if "brasileirao_c" in comps_semana:
-                comp = comps.brasileirao_c
-                if comp and not comp.encerrado:
-                    jogo = comp.jogo_do_jogador(t)
+                if "brasileirao_d" in comps_semana:
+                    comp = comps.brasileirao_d
+                    if comp and not comp.encerrado:
+                        jogo = comp.jogo_do_jogador(t)
+                        if jogo:
+                            c, f = jogo
+                            info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "brasileirao_d", "semana": proxima_semana}
+                            return json.dumps(info, ensure_ascii=False, default=str)
+
+                # Copa do Brasil (if scheduled)
+                if "copa_brasil" in comps_semana and comps.copa_brasil and not comps.copa_brasil.encerrado:
+                    jogo = comps.copa_brasil.jogo_do_jogador(t)
                     if jogo:
                         c, f = jogo
-                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "brasileirao_c"}
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "Copa Betano do Brasil", "semana": proxima_semana}
                         return json.dumps(info, ensure_ascii=False, default=str)
-            if "brasileirao_d" in comps_semana:
-                comp = comps.brasileirao_d
-                if comp and not comp.encerrado:
-                    jogo = comp.jogo_do_jogador(t)
+
+                # Libertadores (if scheduled)
+                if "libertadores" in comps_semana and comps.libertadores and not comps.libertadores.encerrado:
+                    jogo = comps.libertadores.jogo_do_jogador(t)
                     if jogo:
                         c, f = jogo
-                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "brasileirao_d"}
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "CONMEBOL Libertadores", "semana": proxima_semana}
                         return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Copa do Brasil (if scheduled)
-            if "copa_brasil" in comps_semana and comps.copa_brasil and not comps.copa_brasil.encerrado:
-                jogo = comps.copa_brasil.jogo_do_jogador(t)
-                if jogo:
-                    c, f = jogo
-                    info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "Copa Betano do Brasil"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+                # Sul-Americana (if scheduled)
+                if "sul_americana" in comps_semana and comps.sul_americana and not comps.sul_americana.encerrado:
+                    jogo = comps.sul_americana.jogo_do_jogador(t)
+                    if jogo:
+                        c, f = jogo
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "CONMEBOL Sul-Americana", "semana": proxima_semana}
+                        return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Libertadores (if scheduled)
-            if "libertadores" in comps_semana and comps.libertadores and not comps.libertadores.encerrado:
-                jogo = comps.libertadores.jogo_do_jogador(t)
-                if jogo:
-                    c, f = jogo
-                    info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "CONMEBOL Libertadores"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+                # Copa do Nordeste (if scheduled)
+                if "copa_nordeste" in comps_semana and comps.copa_nordeste and not comps.copa_nordeste.encerrado:
+                    jogo = comps.copa_nordeste.jogo_do_jogador(t)
+                    if jogo:
+                        c, f = jogo
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "copa_nordeste", "semana": proxima_semana}
+                        return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Sul-Americana (if scheduled)
-            if "sul_americana" in comps_semana and comps.sul_americana and not comps.sul_americana.encerrado:
-                jogo = comps.sul_americana.jogo_do_jogador(t)
-                if jogo:
-                    c, f = jogo
-                    info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "CONMEBOL Sul-Americana"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+                # Copa Verde (if scheduled)
+                if "copa_verde" in comps_semana and comps.copa_verde and not comps.copa_verde.encerrado:
+                    jogo = comps.copa_verde.jogo_do_jogador(t)
+                    if jogo:
+                        c, f = jogo
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "copa_verde", "semana": proxima_semana}
+                        return json.dumps(info, ensure_ascii=False, default=str)
 
-            # European leagues (if scheduled)
-            if "europeias" in comps_semana and comps.ligas_europeias:
-                for pais, divs in comps.ligas_europeias.items():
-                    for div_num, liga in divs.items():
-                        if not liga.encerrado:
-                            jogo = liga.jogo_do_jogador(t)
-                            if jogo:
-                                c, f = jogo
-                                info = {"time_casa": c.nome, "time_fora": f.nome,
-                                        "competicao": f"liga_{pais}_{div_num}"}
-                                return json.dumps(info, ensure_ascii=False, default=str)
+                # European leagues (if scheduled)
+                if "europeias" in comps_semana and comps.ligas_europeias:
+                    for pais, divs in comps.ligas_europeias.items():
+                        for div_num, liga in divs.items():
+                            if not liga.encerrado:
+                                jogo = liga.jogo_do_jogador(t)
+                                if jogo:
+                                    c, f = jogo
+                                    info = {"time_casa": c.nome, "time_fora": f.nome,
+                                            "competicao": f"liga_{pais}_{div_num}", "semana": proxima_semana}
+                                    return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Champions League (if scheduled)
-            if "champions_league" in comps_semana and comps.champions_league and not comps.champions_league.encerrado:
-                jogo = comps.champions_league.jogo_do_jogador(t)
-                if jogo:
-                    c, f = jogo
-                    info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "UEFA Champions League"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+                # Champions League (if scheduled)
+                if "champions_league" in comps_semana and comps.champions_league and not comps.champions_league.encerrado:
+                    jogo = comps.champions_league.jogo_do_jogador(t)
+                    if jogo:
+                        c, f = jogo
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "UEFA Champions League", "semana": proxima_semana}
+                        return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Europa League (if scheduled)
-            if "europa_league" in comps_semana and comps.europa_league and not comps.europa_league.encerrado:
-                jogo = comps.europa_league.jogo_do_jogador(t)
-                if jogo:
-                    c, f = jogo
-                    info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "UEFA Europa League"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+                # Europa League (if scheduled)
+                if "europa_league" in comps_semana and comps.europa_league and not comps.europa_league.encerrado:
+                    jogo = comps.europa_league.jogo_do_jogador(t)
+                    if jogo:
+                        c, f = jogo
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "UEFA Europa League", "semana": proxima_semana}
+                        return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Conference League (if scheduled)
-            if "conference_league" in comps_semana and comps.conference_league and not comps.conference_league.encerrado:
-                jogo = comps.conference_league.jogo_do_jogador(t)
-                if jogo:
-                    c, f = jogo
-                    info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "UEFA Conference League"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+                # Conference League (if scheduled)
+                if "conference_league" in comps_semana and comps.conference_league and not comps.conference_league.encerrado:
+                    jogo = comps.conference_league.jogo_do_jogador(t)
+                    if jogo:
+                        c, f = jogo
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "UEFA Conference League", "semana": proxima_semana}
+                        return json.dumps(info, ensure_ascii=False, default=str)
 
-            # AFC Champions League (if scheduled)
-            if "afc_champions" in comps_semana and comps.afc_champions and not comps.afc_champions.encerrado:
-                jogo = comps.afc_champions.jogo_do_jogador(t)
-                if jogo:
-                    c, f = jogo
-                    info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "AFC Champions League"}
-                    return json.dumps(info, ensure_ascii=False, default=str)
+                # AFC Champions League (if scheduled)
+                if "afc_champions" in comps_semana and comps.afc_champions and not comps.afc_champions.encerrado:
+                    jogo = comps.afc_champions.jogo_do_jogador(t)
+                    if jogo:
+                        c, f = jogo
+                        info = {"time_casa": c.nome, "time_fora": f.nome, "competicao": "AFC Champions League", "semana": proxima_semana}
+                        return json.dumps(info, ensure_ascii=False, default=str)
 
-            # Amistoso agendado
+            # Amistoso agendado (calendar-independent)
             if gm.amistoso_agendado:
                 info = {"time_casa": t.nome, "time_fora": gm.amistoso_agendado.nome,
-                        "competicao": "Amistoso", "eh_amistoso": True}
+                        "competicao": "Amistoso", "eh_amistoso": True, "semana": comps.semana_atual + 1}
                 return json.dumps(info, ensure_ascii=False, default=str)
 
             # Sem jogo — informar que pode agendar amistoso
@@ -1846,13 +2215,10 @@ class UltrafootAPI:
             return json.dumps({"ok": False, "error": "Jogador não encontrado"})
         if len(t.jogadores) <= 16:
             return json.dumps({"ok": False, "error": "Elenco mínimo de 16 jogadores"})
-        # Remove from squad and titulares
-        t.jogadores = [p for p in t.jogadores if p.id != jogador_id]
-        if jogador_id in t.titulares:
-            t.titulares = [tid for tid in t.titulares if tid != jogador_id]
-        # Add to free agents
-        gm.mercado.jogadores_livres.append(j)
-        return json.dumps({"ok": True, "nome": j.nome})
+        # Use transfer engine to properly handle rescission fee
+        multa = gm.mercado.dispensar_jogador(t, j)
+        return json.dumps({"ok": True, "nome": j.nome,
+                           "multa": multa, "multa_fmt": format_reais(multa)})
 
     def renovar_contrato(self, jogador_id: int, novo_salario: int, duracao_meses: int) -> str:
         """Renew a player's contract."""
@@ -2343,6 +2709,12 @@ class UltrafootAPI:
             "nivel_gramado": e.nivel_gramado,
             "nivel_estrutura": e.nivel_estrutura,
             "custo_expansao": int(e.capacidade * 500),
+            "foto_estadio": self._resolve_stadium_photo_relpath(
+                gm.time_jogador.nome,
+                self._file_key_for_nome(gm.time_jogador.nome),
+                getattr(gm.time_jogador, 'nome_curto', ''),
+                e.nome,
+            ),
         }, ensure_ascii=False)
 
     def set_precos_estadio(self, geral: int, arquibancada: int,
@@ -2454,6 +2826,8 @@ class UltrafootAPI:
         uf = gm.time_jogador.estado
         if uf and uf in comps.estaduais:
             est = comps.estaduais[uf]
+            if est.fase_grupos and est.fase_grupos.encerrado and not est._em_mata_mata:
+                est._iniciar_mata_mata()
             if hasattr(est, 'fase_grupos') and est.fase_grupos:
                 _add_comp_jogos(est.fase_grupos, est.nome, 'estadual')
 
@@ -2923,6 +3297,9 @@ class UltrafootAPI:
                     "nome": t.nome, "nome_curto": t.nome_curto,
                     "cor1": t.cor_principal, "cor2": t.cor_secundaria,
                     "divisao": t.divisao, "prestigio": t.prestigio,
+                    "file_key": self._file_key_for_nome(t.nome),
+                    "cidade": getattr(t, 'cidade', ''),
+                    "estado": getattr(t, 'estado', ''),
                     "estadio": getattr(t, 'estadio_nome', getattr(t.financas, 'estadio_nome', '')),
                     "capacidade": getattr(t.financas, 'capacidade_estadio', 0),
                     "tecnico": getattr(t, 'tecnico_nome', ''),
@@ -3289,6 +3666,22 @@ class UltrafootAPI:
         """Retorna URL base para assets locais (file:// ou relativo)."""
         return json.dumps(_ASSET_BASE_URL)
 
+    def get_all_escudos_b64(self) -> str:
+        """Retorna todos os escudos como {file_key: data_uri} para preload."""
+        result = {}
+        if os.path.isdir(_ESCUDOS_DIR):
+            for fname in os.listdir(_ESCUDOS_DIR):
+                if fname.lower().endswith(".png"):
+                    fk = fname[:-4]
+                    path = os.path.join(_ESCUDOS_DIR, fname)
+                    try:
+                        with open(path, "rb") as f:
+                            b64 = base64.b64encode(f.read()).decode("ascii")
+                        result[fk] = "data:image/png;base64," + b64
+                    except Exception:
+                        pass
+        return json.dumps(result, ensure_ascii=False)
+
     def get_escudo_b64(self, file_key: str) -> str:
         """Retorna escudo PNG como data URI base64."""
         path = os.path.join(_ESCUDOS_DIR, file_key + ".png")
@@ -3321,19 +3714,20 @@ class UltrafootAPI:
         return json.dumps(result)
 
     def get_sound_b64(self, nome: str, narrador: str = "") -> str:
-        """Retorna som WAV como data URI base64. Se narrador informado, busca na pasta dele."""
+        """Retorna som como data URI base64. Suporta WAV e MP3."""
+        mime = "audio/mpeg" if nome.lower().endswith(".mp3") else "audio/wav"
         if narrador:
             narr_dir = os.path.join(_SONS_DIR, "narrações", narrador)
             path = os.path.join(narr_dir, nome)
             if os.path.exists(path):
                 with open(path, "rb") as f:
                     b64 = base64.b64encode(f.read()).decode("ascii")
-                return json.dumps("data:audio/wav;base64," + b64)
+                return json.dumps(f"data:{mime};base64," + b64)
         path = os.path.join(_SONS_DIR, nome)
         if os.path.exists(path):
             with open(path, "rb") as f:
                 b64 = base64.b64encode(f.read()).decode("ascii")
-            return json.dumps("data:audio/wav;base64," + b64)
+            return json.dumps(f"data:{mime};base64," + b64)
         return json.dumps(None)
 
     def get_narradores(self) -> str:
@@ -3409,6 +3803,23 @@ class UltrafootAPI:
                 "estado": t.get("estado", t["_cc"]),
                 "prestigio": t.get("prestigio", 50),
             }
+        return json.dumps(result, ensure_ascii=False)
+
+    def get_all_flags_b64(self) -> str:
+        """Retorna todas as bandeiras de países como {code: dataURI}."""
+        result = {}
+        if os.path.isdir(_FLAGS_DIR):
+            for fname in os.listdir(_FLAGS_DIR):
+                if not fname.lower().endswith(".png"):
+                    continue
+                code = os.path.splitext(fname)[0]
+                path = os.path.join(_FLAGS_DIR, fname)
+                try:
+                    with open(path, "rb") as f:
+                        b64 = base64.b64encode(f.read()).decode("ascii")
+                    result[code] = "data:image/png;base64," + b64
+                except Exception:
+                    pass
         return json.dumps(result, ensure_ascii=False)
 
     def get_all_escudos_b64(self) -> str:
@@ -3871,6 +4282,24 @@ class UltrafootAPI:
         ok = self._gm.licensing.atualizar_status_clube(clube_id, StatusLicenca(status))
         return json.dumps({"ok": ok})
 
+    def licensing_licenciar_todos_genericos(self) -> str:
+        """Licencia todos os conteúdos genéricos como LICENCIADO."""
+        if not self._gm:
+            return json.dumps({"ok": False, "count": 0})
+        from core.enums import StatusLicenca
+        lic = self._gm.licensing
+        count = 0
+        for reg in list(lic._ligas.values()):
+            if reg.status == StatusLicenca.GENERICO:
+                lic.atualizar_status_liga(reg.id_liga, StatusLicenca.LICENCIADO)
+                count += 1
+        for reg in list(lic._clubes.values()):
+            if reg.status == StatusLicenca.GENERICO:
+                lic.atualizar_status_clube(reg.id_clube, StatusLicenca.LICENCIADO)
+                count += 1
+        lic.salvar_registro()
+        return json.dumps({"ok": True, "count": count})
+
     # ══════════════════════════════════════════════════════════
     #  MÚSICA & SONS
     # ══════════════════════════════════════════════════════════
@@ -3951,6 +4380,12 @@ class UltrafootAPI:
             return json.dumps({"ok": False})
         self._gm.music.set_shuffle(ativo)
         return json.dumps({"ok": True})
+
+    def music_reload_catalog(self) -> str:
+        if not self._gm:
+            return json.dumps({"ok": False, "total": 0})
+        data = self._gm.music.reload_catalogo()
+        return json.dumps(data, ensure_ascii=False)
 
     def music_get_narradores(self) -> str:
         if not self._gm:
@@ -4190,6 +4625,12 @@ class UltrafootAPI:
             "capacidade": est.capacidade,
             "gramado": est.nivel_gramado,
             "estrutura": est.nivel_estrutura,
+            "foto_estadio": self._resolve_stadium_photo_relpath(
+                t.nome,
+                self._file_key_for_nome(t.nome),
+                getattr(t, 'nome_curto', ''),
+                est.nome,
+            ),
             "obras_em_andamento": obras,
             "semana_atual": self._gm.semana,
             "upgrades_disponiveis": [

@@ -8,6 +8,7 @@ Migrado do legacy motor_partida.py com melhorias:
 """
 from __future__ import annotations
 
+import math
 import random
 from typing import List, Tuple, Optional, Dict
 
@@ -131,7 +132,8 @@ class MotorPartida:
                 substituicoes: list | None = None,
                 aplicar_pos_jogo: bool = True,
                 condicoes: CondicoesPartida | None = None,
-                eh_derby: bool = False) -> ResultadoPartida:
+                eh_derby: bool = False,
+                eliminatorio: bool = False) -> ResultadoPartida:
         """
         Simula uma partida completa.
 
@@ -139,6 +141,7 @@ class MotorPartida:
             seed: semente RNG para replay determinístico.
             substituicoes: lista de dicts {minuto, sai_id, entra_id, time_nome}
             aplicar_pos_jogo: se False, não altera stats de times/jogadores.
+            eliminatorio: se True, joga prorrogação + pênaltis em caso de empate.
         """
         # Deterministic replay support
         if seed is not None:
@@ -182,6 +185,8 @@ class MotorPartida:
         _jmap_f = {j.id: j for j in fora.jogadores}
         resultado.escalacao_casa = [_jmap_c[jid].nome for jid in orig_tit_casa if jid in _jmap_c]
         resultado.escalacao_fora = [_jmap_f[jid].nome for jid in orig_tit_fora if jid in _jmap_f]
+        resultado.formacao_casa = getattr(casa.tatica, 'formacao', None)
+        resultado.formacao_fora = getattr(fora.tatica, 'formacao', None)
 
         # — condições de jogo (clima / gramado) —
         if condicoes is None:
@@ -305,6 +310,36 @@ class MotorPartida:
         resultado.eh_derby = eh_derby
         resultado.eventos = self.eventos
 
+        # ── Prorrogação + Pênaltis (eliminatórias) ──
+        if eliminatorio and resultado.gols_casa == resultado.gols_fora:
+            resultado.teve_prorrogacao = True
+            self.eventos.append(EventoPartida(
+                minuto=90, tipo="prorrogacao",
+                jogador_nome="", jogador_id=0,
+                time="", detalhe="Início da prorrogação!",
+            ))
+            for minuto in range(91, 121):
+                if 105 < minuto <= 106:
+                    continue  # intervalo da prorrogação
+                fator_c = max(0.45, 1.0 - vm_casa * 0.13)
+                fator_f = max(0.45, 1.0 - vm_fora * 0.13)
+                # Fadiga na prorrogação: times perdem 5-15% de força
+                fadiga = 1.0 - (minuto - 90) * 0.005
+                fc_et = forca_casa * fator_c * fadiga
+                ff_et = forca_fora * fator_f * fadiga
+                if random.random() < self._chance_ataque_contextual(casa, fc_et, ff_et):
+                    dv_c, dv_f = self._simular_fase_ofensiva(casa, fora, minuto, resultado, fc_et, ff_et)
+                    vm_casa += dv_c
+                    vm_fora += dv_f
+                if random.random() < self._chance_ataque_contextual(fora, ff_et, fc_et):
+                    dv_c, dv_f = self._simular_fase_ofensiva(fora, casa, minuto, resultado, ff_et, fc_et)
+                    vm_casa += dv_c
+                    vm_fora += dv_f
+
+            # Se ainda empate → disputa de pênaltis
+            if resultado.gols_casa == resultado.gols_fora:
+                self._simular_disputa_penaltis(casa, fora, resultado)
+
         # Notas & Fantasy
         self._calcular_notas(casa, fora, resultado)
         resultado.notas_jogadores = {k: round(sum(v) / len(v), 1)
@@ -337,6 +372,143 @@ class MotorPartida:
         """Apply post-match stats. Call after finalizing subs."""
         self._atualizar_stats_times(casa, fora, resultado)
         self._atualizar_jogadores_pos_jogo(casa, fora, resultado)
+
+    def simular_rapido(self, casa: Time, fora: Time, *, neutro: bool = False,
+                       seed: int | None = None, aplicar_pos_jogo: bool = True) -> ResultadoPartida:
+        """
+        Simula uma partida de forma otimizada (stat-based) para jogos de fundo.
+        """
+        if seed is not None:
+            self._saved_rng_state = random.getstate()
+            random.seed(seed)
+        else:
+            seed = random.randint(0, 2**31)
+            self._saved_rng_state = random.getstate()
+            random.seed(seed)
+
+        condicoes = self._gerar_condicoes()
+        f_cond = condicoes.fator_clima * condicoes.fator_gramado
+
+        fc = self._calcular_forca_efetiva(casa) * f_cond
+        ff = self._calcular_forca_efetiva(fora) * f_cond
+
+        if not neutro:
+            fc *= SIM_VANTAGEM_CASA
+
+        diff = fc - ff
+        base_c = 1.35 + (diff * 0.035)
+        base_f = 0.95 - (diff * 0.035)
+
+        lambda_c = max(0.1, base_c)
+        lambda_f = max(0.1, base_f)
+
+        def get_poisson(lam):
+            L = math.exp(-lam)
+            k = 0
+            p = 1.0
+            while p > L:
+                k += 1
+                p *= random.random()
+            return k - 1
+
+        gc = get_poisson(lambda_c)
+        gf = get_poisson(lambda_f)
+
+        gc = min(9, max(0, gc))
+        gf = min(9, max(0, gf))
+
+        res = ResultadoPartida(
+            time_casa=casa.nome, time_fora=fora.nome,
+            gols_casa=gc, gols_fora=gf,
+            clima=condicoes.clima.value,
+            publico=int(casa.estadio.publico_estimado(0.5))
+        )
+        res.renda = res.publico * casa.estadio.preco_ingresso
+
+        if gc > 0:
+            self._atribuir_gols_rapido(casa, gc, res)
+        if gf > 0:
+            self._atribuir_gols_rapido(fora, gf, res)
+
+        if aplicar_pos_jogo:
+            res.posse_casa = round(min(80.0, max(20.0, 50.0 + (diff * 0.5))), 1)
+            res.finalizacoes_casa = int(gc * 3 + random.randint(2, 6))
+            res.finalizacoes_fora = int(gf * 3 + random.randint(2, 6))
+            self._aplicar_desgaste_rapido(casa, fora, res)
+
+        random.setstate(self._saved_rng_state)
+        return res
+
+    def _atribuir_gols_rapido(self, time: Time, qtd: int, res: ResultadoPartida):
+        tits = self._titulares(time)
+        if not tits: return
+        
+        weights = []
+        for j in tits:
+            w = 1.0
+            p = j.posicao.name
+            if p in ('CA', 'The', 'SA'): w = 8.0 
+            elif p in ('PE', 'PD', 'MEI'): w = 5.0
+            elif p in ('ME', 'MD', 'MC'): w = 2.0
+            elif p == 'VOL': w = 0.5
+            elif p in ('ZAG', 'LD', 'LE'): w = 0.2
+            elif p == 'GOL': w = 0.01
+            
+            if j.tem_trait(TraitJogador.ARTILHEIRO): w *= 1.5
+            weights.append(w)
+
+        try:
+            scorers = random.choices(tits, weights=weights, k=qtd)
+            for sc in scorers:
+                if hasattr(sc, 'historico_temporada'):
+                    sc.historico_temporada.gols += 1
+                res.eventos.append(EventoPartida(
+                    minuto=random.randint(5, 85),
+                    tipo="gol",
+                    jogador_nome=sc.nome,
+                    jogador_id=sc.id,
+                    time=time.nome
+                ))
+        except IndexError:
+            pass
+
+    def _aplicar_desgaste_rapido(self, casa: Time, fora: Time, res: ResultadoPartida):
+        vencedor = None
+        if res.gols_casa > res.gols_fora: vencedor = casa.nome
+        elif res.gols_fora > res.gols_casa: vencedor = fora.nome
+        
+        for t in (casa, fora):
+            delta_moral = 0
+            if t.nome == vencedor: delta_moral = 2
+            elif vencedor is None: delta_moral = 0
+            else: delta_moral = -2
+            
+            lambda_cards = 1.8
+            L = math.exp(-lambda_cards)
+            k = 0
+            p = 1.0
+            while p > L:
+                k += 1
+                p *= random.random()
+            num_yellow = max(0, min(5, k - 1))
+            
+            tits = self._titulares(t)
+            warned = []
+            if num_yellow > 0 and tits:
+                warned = random.sample(tits, k=min(len(tits), num_yellow))
+            
+            for j in tits:
+                loss = random.randint(3, 7)
+                j.condicao_fisica = max(0, min(100, j.condicao_fisica - loss))
+                if hasattr(j, 'historico_temporada'):
+                    j.historico_temporada.jogos += 1
+                j.moral = max(0, min(100, j.moral + delta_moral))
+                
+                if j in warned:
+                    j.cartao_amarelo_acumulado += 1
+                    if j.cartao_amarelo_acumulado >= 3:
+                        j.suspensao_jogos += 1
+                        j.cartao_amarelo_acumulado = 0
 
     # ═══════════════════════════════════════════════════════════
     #  CÁLCULOS INTERNOS
@@ -460,8 +632,8 @@ class MotorPartida:
             # Reservas por melhor overall
             reservas_sorted = sorted(reservas, key=lambda j: j.overall, reverse=True)
             n_subs = min(3, len(reservas_sorted))
-            # Distribuir subs em minutos fixos para determinismo
-            minutos_sub = [58, 68, 78]
+            # Distribuir subs em minutos variados para realismo
+            minutos_sub = sorted(random.sample(range(50, 85), min(3, 35)))
             sub_count = 0
             tit_ids_subbed = set()
             for i in range(n_subs):
@@ -867,7 +1039,7 @@ class MotorPartida:
                 time=time_faltoso.nome,
                 detalhe=_narr(_NARR_VERMELHO, jogador=faltoso.nome),
             ))
-            return self._delta_vermelho(time_faltoso)
+            return self._delta_vermelho(time_faltoso, faltoso)
 
         if random.random() < chance_amarelo:
             faltoso.cartao_amarelo_acumulado += 1
@@ -886,7 +1058,7 @@ class MotorPartida:
                     time=time_faltoso.nome,
                     detalhe=_narr(_NARR_VERMELHO_2AM, jogador=faltoso.nome),
                 ))
-                return self._delta_vermelho(time_faltoso)
+                return self._delta_vermelho(time_faltoso, faltoso)
             self.eventos.append(EventoPartida(
                 minuto=minuto,
                 tipo="cartao_amarelo",
@@ -907,6 +1079,7 @@ class MotorPartida:
         faltoso: Jogador,
     ) -> Tuple[int, int]:
         cobrador = self._escolher_cobrador(atacante, "penalti")
+        self._incrementar_stat(resultado, atacante, "penaltis")
         detalhe = _narr(
             _NARR_PENALTY,
             time=atacante.nome,
@@ -1285,10 +1458,96 @@ class MotorPartida:
     def _registrar_momentum(self, minuto: int, time_nome: str, intensidade: int) -> None:
         self._momentum.append({"min": minuto, "time": time_nome, "intensidade": intensidade})
 
-    def _delta_vermelho(self, time: Time) -> Tuple[int, int]:
+    def _delta_vermelho(self, time: Time, jogador: 'Jogador' = None) -> Tuple[int, int]:
+        # Remove expelled player from active lineup
+        if jogador and jogador.id in time.titulares:
+            time.titulares.remove(jogador.id)
         if time.nome == self._time_casa_nome:
             return 1, 0
         return 0, 1
+
+    def _simular_disputa_penaltis(self, casa: Time, fora: Time,
+                                   resultado: ResultadoPartida) -> None:
+        """Simula disputa de pênaltis (melhor de 5 + morte súbita)."""
+        resultado.decidido_penaltis = True
+        self.eventos.append(EventoPartida(
+            minuto=120, tipo="disputa_penaltis",
+            jogador_nome="", jogador_id=0,
+            time="", detalhe="Início da disputa de pênaltis!",
+        ))
+        pen_casa = 0
+        pen_fora = 0
+        tits_c = self._titulares(casa)
+        tits_f = self._titulares(fora)
+        if not tits_c or not tits_f:
+            # Fallback: random
+            if random.random() < 0.5:
+                resultado.gols_casa += 1
+            else:
+                resultado.gols_fora += 1
+            return
+
+        cobradores_c = sorted(tits_c, key=lambda j: j.tecnicos.penalti, reverse=True)
+        cobradores_f = sorted(tits_f, key=lambda j: j.tecnicos.penalti, reverse=True)
+
+        def cobrar(cobrador: 'Jogador', goleiro: 'Jogador', time_nome: str) -> bool:
+            habilidade = cobrador.tecnicos.penalti + cobrador.mentais.compostura
+            reflexo = goleiro.tecnicos.reflexo if hasattr(goleiro.tecnicos, 'reflexo') else 50
+            chance = 0.72 + (habilidade - 100) / 800 - (reflexo - 50) / 600
+            chance = max(0.55, min(0.92, chance))
+            gol = random.random() < chance
+            self.eventos.append(EventoPartida(
+                minuto=120, tipo="penalti_disputa",
+                jogador_nome=cobrador.nome, jogador_id=cobrador.id,
+                time=time_nome,
+                detalhe=f"{'GOL' if gol else 'PERDEU'}! {cobrador.nome} {'converte' if gol else 'desperdiça'} a cobrança.",
+            ))
+            return gol
+
+        goleiro_c = next((j for j in tits_c if j.posicao == Posicao.GOL), tits_c[-1])
+        goleiro_f = next((j for j in tits_f if j.posicao == Posicao.GOL), tits_f[-1])
+
+        # 5 cobranças cada
+        for i in range(5):
+            idx_c = i % len(cobradores_c)
+            idx_f = i % len(cobradores_f)
+            if cobrar(cobradores_c[idx_c], goleiro_f, casa.nome):
+                pen_casa += 1
+            if cobrar(cobradores_f[idx_f], goleiro_c, fora.nome):
+                pen_fora += 1
+            # Verificar se já é impossível empatar (otimização)
+            restantes = 4 - i
+            if pen_casa > pen_fora + restantes or pen_fora > pen_casa + restantes:
+                break
+
+        # Morte súbita se empate
+        rodada = 5
+        while pen_casa == pen_fora:
+            rodada += 1
+            idx_c = rodada % len(cobradores_c)
+            idx_f = rodada % len(cobradores_f)
+            gol_c = cobrar(cobradores_c[idx_c], goleiro_f, casa.nome)
+            gol_f = cobrar(cobradores_f[idx_f], goleiro_c, fora.nome)
+            if gol_c:
+                pen_casa += 1
+            if gol_f:
+                pen_fora += 1
+            if gol_c != gol_f:
+                break
+            if rodada > 20:  # safety — decidir aleatoriamente
+                if random.random() < 0.5:
+                    pen_casa += 1
+                else:
+                    pen_fora += 1
+                break
+
+        resultado.penaltis_disputa_casa = pen_casa
+        resultado.penaltis_disputa_fora = pen_fora
+        # O vencedor nos pênaltis recebe +1 gol simbólico para fins de classificação
+        if pen_casa > pen_fora:
+            resultado.gols_casa += 1
+        else:
+            resultado.gols_fora += 1
 
     def _resolver_finalizacao(
         self, atacante: Time, defensor: Time, minuto: int

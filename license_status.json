@@ -1,0 +1,10 @@
+{
+  "edition": "demo",
+  "activated": false,
+  "build_channel": "release",
+  "game_version": "2.0.0",
+  "trial_days": 14,
+  "trial_started_at": 1773362808,
+  "serial_hint": "",
+  "last_validation": 1773362808
+}

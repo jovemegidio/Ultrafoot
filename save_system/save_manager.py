@@ -29,6 +29,9 @@ from core.models import (
 )
 from fantasy.models import LigaFantasy, TimeFantasy, EscalacaoFantasy
 from utils.helpers import enum_val
+from utils.logger import get_logger
+
+_log = get_logger(__name__)
 
 
 # ══════════════════════════════════════════════════════════════
@@ -140,8 +143,10 @@ def _dict_to_jogador(d: dict) -> Jogador:
 
     # New compact format: flat list "a" with 41 ints
     a = d.get("a")
-    if a is not None:
+    if a is not None and len(a) >= 41:
         _unpack_attrs(a, j)
+    elif a is not None:
+        _log.warning("Atributos corrompidos para jogador %s: %d campos (esperado 41)", d.get("nome", "?"), len(a))
     else:
         # Legacy format: nested dicts
         t = d.get("tec", {})
@@ -1062,7 +1067,10 @@ def desserializar_jogo(gm: Any, json_data) -> None:
     for pais, divs in dados.get("times_europeus", {}).items():
         gm.times_europeus[pais] = {}
         for div_str, times_data in divs.items():
-            gm.times_europeus[pais][int(div_str)] = [_dict_to_time(td) for td in times_data]
+            try:
+                gm.times_europeus[pais][int(div_str)] = [_dict_to_time(td) for td in times_data]
+            except (ValueError, TypeError):
+                _log.warning("Divisao invalida em times_europeus[%s]: %r", pais, div_str)
 
     # Restaurar referência ao time do jogador
     nome_jogador = dados.get("time_jogador_nome", "")
@@ -1088,7 +1096,10 @@ def desserializar_jogo(gm: Any, json_data) -> None:
     # Restaurar artilharia em memória
     gm.artilharia_memoria = {}
     for jid_str, entry in dados.get("artilharia_memoria", {}).items():
-        gm.artilharia_memoria[int(jid_str)] = entry
+        try:
+            gm.artilharia_memoria[int(jid_str)] = entry
+        except (ValueError, TypeError):
+            _log.warning("ID invalido em artilharia_memoria: %r", jid_str)
 
     if hasattr(gm, 'mercado'):
         mercado_data = dados.get("mercado")
@@ -1115,6 +1126,7 @@ def desserializar_jogo(gm: Any, json_data) -> None:
         # Versão 3: compatibilidade — recriar e avançar (aproximado)
         _desserializar_competicoes(gm, comp_data)
     else:
+        _log.warning("Save antigo (versão < 3): recriando temporada. Progresso de competições perdido.")
         gm._iniciar_temporada()
 
     # Restaurar inbox (v6+)
@@ -1122,15 +1134,15 @@ def desserializar_jogo(gm: Any, json_data) -> None:
     if inbox_data and hasattr(gm, 'inbox'):
         try:
             gm.inbox.from_save_dict(inbox_data)
-        except Exception:
-            pass  # inbox vazia OK em saves antigos
+        except Exception as e:
+            _log.warning("Erro ao restaurar inbox: %s", e)
 
     # Restaurar novos subsistemas (v7+)
     if hasattr(gm, 'music') and dados.get("music"):
         try:
             gm.music.from_save_dict(dados["music"])
-        except Exception:
-            pass
+        except Exception as e:
+            _log.warning("Erro ao restaurar music: %s", e)
     if hasattr(gm, 'fantasy'):
         try:
             fantasy_data = dados.get("fantasy")
@@ -1138,28 +1150,28 @@ def desserializar_jogo(gm: Any, json_data) -> None:
                 _desserializar_fantasy(gm.fantasy, fantasy_data)
             elif not getattr(gm.fantasy.liga, "times", None):
                 gm.fantasy.criar_liga(gm.times_serie_a + gm.times_serie_b)
-        except Exception:
-            pass
+        except Exception as e:
+            _log.warning("Erro ao restaurar fantasy: %s", e)
     if hasattr(gm, 'coletiva') and dados.get("coletiva"):
         try:
             gm.coletiva.from_save_dict(dados["coletiva"])
-        except Exception:
-            pass
+        except Exception as e:
+            _log.warning("Erro ao restaurar coletiva: %s", e)
     if hasattr(gm, 'conquistas') and dados.get("conquistas"):
         try:
             gm.conquistas.from_save_dict(dados["conquistas"])
-        except Exception:
-            pass
+        except Exception as e:
+            _log.warning("Erro ao restaurar conquistas: %s", e)
     if hasattr(gm, 'premiacoes') and dados.get("premiacoes"):
         try:
             gm.premiacoes.from_save_dict(dados["premiacoes"])
-        except Exception:
-            pass
+        except Exception as e:
+            _log.warning("Erro ao restaurar premiacoes: %s", e)
     if hasattr(gm, 'recordes') and dados.get("recordes"):
         try:
             gm.recordes.from_save_dict(dados["recordes"])
-        except Exception:
-            pass
+        except Exception as e:
+            _log.warning("Erro ao restaurar recordes: %s", e)
     gm.auto_save_ativo = dados.get("auto_save", True)
     gm.tutorial_visto = dados.get("tutorial_visto", False)
 
@@ -1178,10 +1190,8 @@ def desserializar_jogo(gm: Any, json_data) -> None:
         if d and hasattr(gm, attr):
             try:
                 getattr(gm, attr).from_save_dict(d)
-            except Exception:
-                pass
-
-    # Restaurar estado de desemprego
+            except Exception as e:
+                _log.warning("Erro ao restaurar %s: %s", key, e)
     gm._desempregado = dados.get("desempregado", False)
     gm._semanas_desempregado = dados.get("semanas_desempregado", 0)
     gm._ofertas_emprego = dados.get("ofertas_emprego", [])
@@ -1197,8 +1207,8 @@ def desserializar_jogo(gm: Any, json_data) -> None:
         if d and hasattr(gm, attr):
             try:
                 getattr(gm, attr).from_save_dict(d)
-            except Exception:
-                pass
+            except Exception as e:
+                _log.warning("Erro ao restaurar %s (v10): %s", key, e)
     # Se ranking vazio após load, inicializar
     if hasattr(gm, 'rankings_engine') and not gm.rankings_engine._pontos:
         gm.rankings_engine.inicializar(gm.todos_times())

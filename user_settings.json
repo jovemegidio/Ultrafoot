@@ -1,0 +1,20 @@
+{
+  "window_fullscreen": false,
+  "window_maximized": true,
+  "window_width": 1366,
+  "window_height": 768,
+  "ui_scale": 0.95,
+  "perf_mode": true,
+  "music_volume": 0.35,
+  "effects_volume": 0.55,
+  "narration_volume": 0.65,
+  "narrator": "",
+  "streamer_safe": false,
+  "menu_music": true,
+  "pre_match_music": true,
+  "auto_save": true,
+  "show_notifications": true,
+  "animations": true,
+  "match_speed": 2.0,
+  "difficulty": "dificil"
+}

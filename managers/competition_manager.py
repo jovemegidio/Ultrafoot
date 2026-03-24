@@ -84,7 +84,10 @@ class Campeonato:
             c = self._time_por_id(c_id)
             f = self._time_por_id(f_id)
             if c and f:
-                r = self.motor.simular(c, f)
+                if c.eh_jogador or f.eh_jogador:
+                    r = self.motor.simular(c, f)
+                else:
+                    r = self.motor.simular_rapido(c, f)
                 resultados_rodada.append(r)
                 # Update per-competition standings
                 sc = self._stats.get(c.id)
@@ -231,9 +234,23 @@ class Copa:
         if self.encerrado:
             return []
         resultados: List[ResultadoPartida] = []
+        eliminatorio = not self.ida_e_volta
         for t1, t2 in self.confrontos[self.fase_atual]:
             if t1 and t2:
-                resultados.append(self.motor.simular(t1, t2))
+                if t1.eh_jogador or t2.eh_jogador:
+                    resultados.append(self.motor.simular(t1, t2, eliminatorio=eliminatorio))
+                elif eliminatorio:
+                    resultados.append(self.motor.simular_rapido(t1, t2))
+                    # Em jogo único, desempate simples para CPU
+                    r = resultados[-1]
+                    if r.gols_casa == r.gols_fora:
+                        if random.random() < 0.5:
+                            r.gols_casa += 1
+                        else:
+                            r.gols_fora += 1
+                        r.decidido_penaltis = True
+                else:
+                    resultados.append(self.motor.simular_rapido(t1, t2))
         self.resultados_ida.append(resultados)
         if not self.ida_e_volta:
             self.classificados.append(self._resolver_classificados_ida(resultados))
@@ -306,15 +323,23 @@ class Copa:
             if t1 is None:
                 classificados_fase.append(t2)
                 continue
-            resultado = self.motor.simular(t2, t1, neutro=False)
+            
+            if t1.eh_jogador or t2.eh_jogador:
+                resultado = self.motor.simular(t2, t1, neutro=False)
+            else:
+                resultado = self.motor.simular_rapido(t2, t1, neutro=False)
             resultados.append(resultado)
 
-            ida = self.resultados_ida[self.fase_atual]
             res_ida = None
-            for r in ida:
-                if r.time_casa == t1.nome and r.time_fora == t2.nome:
-                    res_ida = r
-                    break
+            try:
+                # Recuperar jogo de ida correspondente
+                lista_ida = self.resultados_ida[self.fase_atual]
+                for r in lista_ida:
+                    if r.time_casa == t1.nome and r.time_fora == t2.nome:
+                         res_ida = r
+                         break
+            except (IndexError, KeyError):
+                pass
 
             if res_ida:
                 g1 = res_ida.gols_casa + resultado.gols_fora
@@ -333,10 +358,16 @@ class Copa:
                     else:
                         classificados_fase.append(random.choice([t1, t2]))
                 else:
-                    # Sem gol fora: empate no agregado vai direto para penaltis (random)
+                    # Sem gol fora: empate no agregado — decidir nos pênaltis
                     classificados_fase.append(random.choice([t1, t2]))
             else:
-                classificados_fase.append(t1)
+                # Fallback: sem ida, usar resultado da volta
+                if resultado.gols_casa > resultado.gols_fora:
+                    classificados_fase.append(t2)
+                elif resultado.gols_fora > resultado.gols_casa:
+                    classificados_fase.append(t1)
+                else:
+                    classificados_fase.append(random.choice([t1, t2]))
 
         self.resultados_volta.append(resultados)
         self.classificados.append(classificados_fase)
@@ -772,18 +803,30 @@ class GruposIntergrupais:
         used: List[set] = [set() for _ in range(n_rounds)]
 
         for m in all_matches:
+            placed = False
             for r in range(n_rounds):
                 if (m[0] not in used[r] and m[1] not in used[r]
                         and len(rounds[r]) < n_per_round):
                     rounds[r].append(m)
                     used[r].add(m[0])
                     used[r].add(m[1])
+                    placed = True
                     break
-            else:
+            if not placed:
+                # Fallback: add extra round if needed to avoid conflict
                 for r in range(n_rounds):
-                    if len(rounds[r]) < n_per_round:
+                    if (m[0] not in used[r] and m[1] not in used[r]
+                            and len(rounds[r]) < n_per_round):
                         rounds[r].append(m)
+                        used[r].add(m[0])
+                        used[r].add(m[1])
+                        placed = True
                         break
+                if not placed:
+                    # Create new round
+                    rounds.append([m])
+                    used.append({m[0], m[1]})
+                    n_rounds += 1
 
         self.jogos = [r for r in rounds if r]
         self.resultados = []
@@ -937,6 +980,8 @@ class CampeonatoEstadual:
                 if self._max_rodadas and hasattr(self.fase_grupos, 'rodada_atual'):
                     if self.fase_grupos.rodada_atual >= self._max_rodadas:
                         self.fase_grupos.encerrado = True
+                        if not self._em_mata_mata:
+                            self._iniciar_mata_mata()
                 return resultado
             elif self.fase_grupos and self.fase_grupos.encerrado and not self._em_mata_mata:
                 self._iniciar_mata_mata()

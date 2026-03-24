@@ -18,8 +18,25 @@ else:
 
 DATA_DIR = os.path.join(BASE_DIR, "data")
 SEEDS_DIR = os.path.join(DATA_DIR, "seeds")
-SAVES_DIR = os.path.join(_APP_DIR, "saves")
-LOGS_DIR = os.path.join(_APP_DIR, "logs")
+
+# Saves and logs go to Documents/Ultrafoot/ so they survive updates
+_DOCS_DIR = os.path.join(os.path.expanduser("~"), "Documents", "Ultrafoot")
+SAVES_DIR = os.path.join(_DOCS_DIR, "saves")
+LOGS_DIR = os.path.join(_DOCS_DIR, "logs")
+
+# Migrate saves from old exe-relative location to Documents
+_OLD_SAVES = os.path.join(_APP_DIR, "saves")
+if os.path.isdir(_OLD_SAVES) and _OLD_SAVES != SAVES_DIR:
+    import shutil as _shutil
+    os.makedirs(SAVES_DIR, exist_ok=True)
+    for _fn in os.listdir(_OLD_SAVES):
+        _src = os.path.join(_OLD_SAVES, _fn)
+        _dst = os.path.join(SAVES_DIR, _fn)
+        if os.path.isfile(_src) and not os.path.exists(_dst):
+            _shutil.copy2(_src, _dst)
+        elif os.path.isdir(_src) and not os.path.exists(_dst):
+            _shutil.copytree(_src, _dst)
+
 APP_DIR = _APP_DIR
 RUNTIME_DIR = _APP_DIR
 

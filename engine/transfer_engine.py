@@ -196,7 +196,8 @@ class MotorTransferencias:
         multa = 0
         if jogador.contrato.meses_restantes > 0:
             multa = jogador.contrato.salario * jogador.contrato.meses_restantes // 2
-        time.jogadores.remove(jogador)
+        if jogador in time.jogadores:
+            time.jogadores.remove(jogador)
         if jogador.id in time.titulares:
             time.titulares.remove(jogador.id)
         if jogador.id in time.reservas:
@@ -211,9 +212,23 @@ class MotorTransferencias:
     @staticmethod
     def renovar_contrato(jogador: Jogador, salario: int,
                          duracao: int, multa: int) -> bool:
-        if jogador.moral < 30 and random.random() < 0.6:
-            return False
-        if jogador.quer_sair and random.random() < 0.8:
+        from core.enums import TraitJogador
+        chance_recusa = 0.0
+        if jogador.moral < 30:
+            chance_recusa += 0.6
+        if jogador.quer_sair:
+            chance_recusa += 0.8
+        # Traits afetam disposição
+        if jogador.tem_trait(TraitJogador.PROFISSIONAL):
+            chance_recusa -= 0.2
+        if jogador.tem_trait(TraitJogador.LIDERANCA_NATO):
+            chance_recusa -= 0.15
+        if jogador.tem_trait(TraitJogador.PANELEIRO):
+            chance_recusa += 0.15
+        if jogador.tem_trait(TraitJogador.INCONSISTENTE):
+            chance_recusa += 0.1
+        chance_recusa = max(0.0, min(0.95, chance_recusa))
+        if random.random() < chance_recusa:
             return False
         jogador.contrato.salario = salario
         jogador.contrato.duracao_meses = duracao
@@ -254,12 +269,16 @@ class MotorTransferencias:
                 valor = int(alvo.valor_mercado * random.uniform(0.8, 1.3))
                 if valor > time.financas.saldo * 0.4:
                     continue
+                # Validar teto salarial: salário não pode exceder 15% da folha atual
+                folha_atual = time.folha_salarial
+                if folha_atual > 0 and alvo.contrato.salario > folha_atual * 0.15:
+                    continue
                 oferta = self.fazer_oferta(time, outro, alvo, valor,
                                            alvo.contrato.salario)
                 oferta.status = self.avaliar_oferta_ia(oferta, outro, alvo)
                 if oferta.status == StatusOferta.ACEITA:
                     self._executar_transferencia(oferta, times)
-                break
+                    break
 
     @staticmethod
     def _identificar_necessidades(time: Time) -> List[Posicao]:
@@ -283,15 +302,38 @@ class MotorTransferencias:
                 jogador.contrato.meses_restantes = max(0, jogador.contrato.meses_restantes - 12)
                 if jogador.contrato.meses_restantes <= 0:
                     if jogador.contrato.tipo == TipoContrato.EMPRESTIMO:
-                        time.jogadores.remove(jogador)
+                        clausula = getattr(jogador.contrato, 'clausula_compra', 0) or 0
                         dono = time_map.get(jogador.contrato.time_origem)
-                        if dono:
-                            dono.jogadores.append(jogador)
+                        # Exercer cláusula de compra (IA automática)
+                        if clausula > 0 and not time.eh_jogador and time.financas.saldo >= clausula:
+                            time.financas.saldo -= clausula
+                            if dono:
+                                dono.financas.saldo += clausula
                             jogador.contrato = ContratoJogador(
                                 tipo=TipoContrato.PROFISSIONAL,
                                 salario=jogador.contrato.salario,
-                                meses_restantes=12, duracao_meses=12,
+                                duracao_meses=48, meses_restantes=48,
                             )
+                            self.noticias.append(Noticia(
+                                titulo=f"COMPRA DEFINITIVA — {jogador.nome}",
+                                texto=f"{time.nome} exerceu a cláusula de compra de {jogador.nome} por R$ {clausula:,.0f}.",
+                                categoria=CategoriaNoticia.TRANSFERENCIA,
+                            ))
+                        else:
+                            # Devolver ao time de origem
+                            time.jogadores.remove(jogador)
+                            if dono:
+                                dono.jogadores.append(jogador)
+                                jogador.contrato = ContratoJogador(
+                                    tipo=TipoContrato.PROFISSIONAL,
+                                    salario=jogador.contrato.salario,
+                                    meses_restantes=12, duracao_meses=12,
+                                )
+                            else:
+                                # Dono não encontrado — jogador vira agente livre
+                                jogador.contrato = ContratoJogador()
+                                if jogador not in self.jogadores_livres:
+                                    self.jogadores_livres.append(jogador)
                     else:
                         time.jogadores.remove(jogador)
                         if jogador.id in time.titulares:

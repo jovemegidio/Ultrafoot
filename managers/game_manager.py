@@ -744,7 +744,6 @@ class GameManager:
 
         # 2b. Persistir estatísticas no banco
         self._persistir_resultados(resultados)
-        self._processar_fantasy(resultados)
 
         # 2b2. Análise pós-jogo inteligente
         self._gerar_analise_pos_jogo(resultados)
@@ -822,6 +821,17 @@ class GameManager:
                         ))
                 except Exception as e:
                     log.warning("Erro ao verificar FFP: %s", e)
+            # FFP check para times da IA (aplicar restrições silenciosas)
+            try:
+                for t in todos:
+                    if t.eh_jogador:
+                        continue
+                    violacoes_ia = self.ffp_engine.verificar_violacao(t, self.temporada)
+                    if violacoes_ia:
+                        # Penalizar IA: cortar 10% do saldo por violação
+                        t.financas.saldo = int(t.financas.saldo * 0.9)
+            except Exception as e:
+                log.warning("Erro ao verificar FFP IA: %s", e)
 
         # 5. Verificar obras no estádio
         self._processar_obras_estadio()
@@ -861,8 +871,8 @@ class GameManager:
         ):
             try:
                 self.salvar("autosave")
-            except Exception:
-                pass
+            except Exception as e:
+                log.warning("Autosave falhou: %s", e)
 
         self._resumo_semana = self._montar_resumo_semana(resultados)
         return resultados
@@ -885,7 +895,7 @@ class GameManager:
                             "nome": ev.jogador_nome, "time": ev.time,
                         })
                         entry["gols"] += 1
-                        if ev.detalhe.startswith("Assistência de "):
+                        if ev.detalhe and ev.detalhe.startswith("Assistência de "):
                             nome_assist = ev.detalhe[15:]
                             time_obj = todos.get(ev.time)
                             if time_obj:
@@ -940,9 +950,21 @@ class GameManager:
         self.noticias.extend(noticias_fim)
         self.mercado.fim_temporada_contratos(todos)
 
-        self._lib_qualificados = self._gerar_qualificados_libertadores()
+        try:
+            self._lib_qualificados = self._gerar_qualificados_libertadores()
+        except Exception as e:
+            log.warning("Erro ao gerar qualificados Libertadores: %s", e)
+            self._lib_qualificados = []
 
-        # Guardar campeões para Supercopa Rei da próxima temporada
+        try:
+            self._processar_promocao_rebaixamento(todos)
+        except Exception as e:
+            log.error("Erro crítico na promoção/rebaixamento: %s", e)
+
+        self._finalizar_temporada(todos)
+
+    def _processar_promocao_rebaixamento(self, todos: list) -> None:
+        """Lógica de promoção/rebaixamento separada para proteção."""
         campeao_br = None
         campeao_copa = None
         if self.competicoes.brasileirao_a:
@@ -1208,6 +1230,8 @@ class GameManager:
                 self.times_europeus[pais][sup] = novos_sup
                 self.times_europeus[pais][inf] = novos_inf
 
+    def _finalizar_temporada(self, todos: list) -> None:
+        """Premiações e reset de temporada — protegido contra erros."""
         # Premiações de fim de temporada (Bola de Ouro, Artilheiro, etc.)
         try:
             todos = self.todos_times()
@@ -1573,10 +1597,75 @@ class GameManager:
             "Volt", "Kanxa", "BSide", "N2 Sports", "Lupo",
         ]
 
+        # Real sponsors map {team_name: (master, material, costas, manga)}
+        REAL_SPONSORS: dict[str, tuple[str, str, str, str]] = {
+            # Brasileirão Série A
+            "Flamengo":            ("Betano",          "Adidas",     "NuBank",          "BetNacional"),
+            "Corinthians":         ("Sicredi",          "Nike",       "RecargaPay",      "Hypera"),
+            "Palmeiras":           ("Crefisa",          "Puma",       "Cred-System",     "Palazzo"),
+            "São Paulo":           ("Betano",           "Adidas",     "Blaze",           "RecargaPay"),
+            "Santos":              ("Umbro",            "Umbro",      "NovaBet",         "Esportes da Sorte"),
+            "Fluminense":          ("Unimed",           "Umbro",      "BTG Pactual",     "BetNacional"),
+            "Vasco da Gama":       ("KTO",              "Kappa",      "Superbet",        "Banco do Brasil"),
+            "Botafogo":            ("Betano",           "Reebok",     "Pixbet",          "Claro"),
+            "Grêmio":              ("Randoncorp",       "Umbro",      "Banrisul",        "EstrelaBet"),
+            "Internacional":       ("Banrisul",         "Umbro",      "Consul",          "Blaze"),
+            "Atlético Mineiro":    ("Esportes da Sorte","Le Coq Sportif","Parimatch",    "Caixa"),
+            "Cruzeiro":            ("Betano",           "Umbro",      "Unimed",          "RecargaPay"),
+            "Athletico PR":        ("Betano",           "Nike",       "Caixa",           "SuperBet"),
+            "Bragantino":          ("Betano",           "Nike",       "Hypera",          "Crefisa"),
+            "Bahia":               ("Esportes da Sorte","Penalty",    "Sicredi",         "Bradesco"),
+            "Fortaleza":           ("Esportes da Sorte","Penalty",    "Superbet",        "Caixa"),
+            "Ceará":               ("Esportes da Sorte","Penalty",    "Vale Digital",    "Sicredi"),
+            "Goiás":               ("EstrelaBet",       "Penalty",    "Banco do Brasil", "Sicredi"),
+            "Sport":               ("Penalty",          "Penalty",    "Caixa",           "Banco do Brasil"),
+            "América Mineiro":     ("Crefisa",          "Penalty",    "Unimed",          "Sicredi"),
+            # Série B common
+            "Coritiba":            ("Penalty",          "Penalty",    "Caixa",           "Sicredi"),
+            "Chapecoense":         ("Penalty",          "Penalty",    "Banco do Brasil", "Sicredi"),
+            "Criciúma":            ("Penalty",          "Penalty",    "Caixa",           "Banrisul"),
+            "Operário":            ("Penalty",          "Topper",     "Caixa",           "Sicredi"),
+            # International top clubs (European)
+            "Real Madrid":         ("Emirates",         "Adidas",     "Mastercard",      "Audi"),
+            "Barcelona":           ("Spotify",          "Nike",       "Mastercard",      "Visa"),
+            "Manchester United":   ("Snapdragon",       "Adidas",     "DHL",             "Kohler"),
+            "Manchester City":     ("Etihad",           "Puma",       "Nissan",          "Nexen"),
+            "Liverpool":           ("Standard Chartered","Nike",      "Carlsberg",       "Axa"),
+            "Arsenal":             ("Emirates",         "Adidas",     "Expedia",         "Cazoo"),
+            "Chelsea":             ("Infinity Athlete", "Nike",       "Carabao",         "Hyundai"),
+            "Tottenham":           ("AIA",              "Nike",       "Hewlett Packard", "Cinch"),
+            "Juventus":            ("Jeep",             "Adidas",     "Jeep",            "Allianz"),
+            "AC Milan":            ("Emirates",         "Puma",       "Emirates",        "BitMex"),
+            "Inter de Milão":      ("DigitalBits",      "Nike",       "Paramount+",      "Socios"),
+            "Inter Milan":         ("DigitalBits",      "Nike",       "Paramount+",      "Socios"),
+            "Bayern de Munique":   ("Deutsche Telekom", "Adidas",     "Audi",            "Allianz"),
+            "Bayern Munich":       ("Deutsche Telekom", "Adidas",     "Audi",            "Allianz"),
+            "Borussia Dortmund":   ("Evonik",           "Puma",       "Signal Iduna",    "Opel"),
+            "Paris Saint-Germain": ("Visit Qatar",      "Nike",       "Accor",           "Hisense"),
+            "PSG":                 ("Visit Qatar",      "Nike",       "Accor",           "Hisense"),
+            "Benfica":             ("Promovideo",       "Adidas",     "Betway",          "BPI"),
+            "Porto":               ("Caixa Geral",      "Nike",       "ActivoBank",      "Axa"),
+            "Sporting CP":         ("SportingBet",      "Puma",       "Betclic",         "Caixa"),
+            "Ajax":                ("Ziggo",            "Adidas",     "ABN AMRO",        "Axa"),
+            "Atlético de Madrid":  ("Plus500",          "Nike",       "Santander",       "Wanda"),
+            "Sevilla":             ("W88",              "Castore",    "Fútbol Emotion",  "Marcapas"),
+        }
+
         for t in self.todos_times():
             div = t.divisao if t.divisao in tv_por_divisao else 4
             fator_prestigio = t.prestigio / 80  # scales around 1.0
             t.financas.receita_tv_mensal = int(tv_por_divisao[div] * fator_prestigio)
+            # Apply real sponsor if team is in the map
+            real = REAL_SPONSORS.get(t.nome)
+            if real:
+                if t.financas.patrocinador_principal in ("Sem patrocinador", ""):
+                    t.financas.patrocinador_principal = real[0]
+                if not t.financas.material_esportivo:
+                    t.financas.material_esportivo = real[1]
+                if not t.financas.patrocinador_costas:
+                    t.financas.patrocinador_costas = real[2]
+                if not t.financas.patrocinador_manga:
+                    t.financas.patrocinador_manga = real[3]
             # Only reset sponsor if it's the default low value
             if t.financas.receita_patrocinio_mensal <= 500_000:
                 t.financas.receita_patrocinio_mensal = int(patrocinio_base[div] * fator_prestigio)
